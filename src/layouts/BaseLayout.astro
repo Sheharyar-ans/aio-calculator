@@ -1,0 +1,385 @@
+---
+import { CATEGORIES } from '../data/categories';
+import { allCalculators } from '../data/calculators';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  schemaType?: 'website' | 'tool' | 'article';
+  toolData?: any;
+  articleData?: any;
+}
+
+const {
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  schemaType = 'website',
+  toolData,
+  articleData
+} = Astro.props;
+
+// Ensure trailing slash on canonical URL
+const cleanPath = canonicalPath.endsWith('/') ? canonicalPath : `${canonicalPath}/`;
+const canonicalUrl = `https://aio-calculator.com${cleanPath === '//' ? '/' : cleanPath}`;
+const currentYear = new Date().getFullYear();
+
+// Build Breadcrumbs
+const pathSegments = cleanPath.split('/').filter(Boolean);
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://aio-calculator.com/' }
+];
+
+if (pathSegments.length > 0) {
+  const currentSlug = pathSegments[0];
+  if (toolData) {
+    const cat = CATEGORIES[toolData.category];
+    if (cat) {
+      breadcrumbItems.push({
+        name: cat.name,
+        url: `https://aio-calculator.com/${cat.slug}/`
+      });
+    }
+    breadcrumbItems.push({
+      name: toolData.name,
+      url: canonicalUrl
+    });
+  } else if (articleData) {
+    breadcrumbItems.push({
+      name: 'Blog',
+      url: 'https://aio-calculator.com/blog/'
+    });
+    breadcrumbItems.push({
+      name: articleData.title,
+      url: canonicalUrl
+    });
+  } else {
+    breadcrumbItems.push({
+      name: title.split('—')[0].trim(),
+      url: canonicalUrl
+    });
+  }
+}
+
+// Generate JSON-LD Schemas
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'AIO Calculator',
+  url: 'https://aio-calculator.com/',
+  logo: 'https://aio-calculator.com/logo.png',
+  description: '100+ free online calculators for finance, health, math, and everyday utility. In-browser calculations with zero tracking.'
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    item: item.url
+  }))
+};
+
+let toolSchema = null;
+let faqSchema = null;
+let articleSchema = null;
+
+if (schemaType === 'tool' && toolData) {
+  toolSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: toolData.name,
+    url: canonicalUrl,
+    applicationCategory: toolData.category === 'financial' ? 'FinanceApplication' : 'UtilityApplication',
+    operatingSystem: 'All',
+    description: toolData.shortDescription,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD'
+    },
+    featureList: toolData.steps?.join(', ') || 'In-browser real-time calculation',
+    creator: {
+      '@type': 'Organization',
+      name: 'AIO Calculator'
+    }
+  };
+
+  if (toolData.faqs && toolData.faqs.length > 0) {
+    faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: toolData.faqs.map((faq: any) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    };
+  }
+} else if (schemaType === 'article' && articleData) {
+  articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: articleData.title,
+    description: articleData.summary,
+    author: {
+      '@type': 'Organization',
+      name: articleData.author || 'AIO Calculator Editorial Team'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AIO Calculator',
+      url: 'https://aio-calculator.com/'
+    },
+    datePublished: articleData.publishDate,
+    dateModified: articleData.updateDate,
+    mainEntityOfPage: canonicalUrl
+  };
+}
+
+// Prepare quick search index payload
+const searchIndex = allCalculators.map(c => ({
+  name: c.name,
+  slug: c.slug,
+  desc: c.shortDescription,
+  cat: c.category
+}));
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+  
+  <!-- OpenGraph -->
+  <meta property="og:site_name" content="AIO Calculator" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:type" content={schemaType === 'article' ? 'article' : 'website'} />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://aio-calculator.com" />
+
+  <!-- Fixed Root-Relative CSS (Pure Static Hosting Portability) -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  {toolSchema && <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />}
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-link" aria-label="AIO Calculator Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);">
+          <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+          <line x1="8" y1="6" x2="16" y2="6"></line>
+          <line x1="16" y1="14" x2="16" y2="18"></line>
+          <path d="M16 10h.01"></path>
+          <path d="M12 10h.01"></path>
+          <path d="M8 10h.01"></path>
+          <path d="M12 14h.01"></path>
+          <path d="M8 14h.01"></path>
+          <path d="M12 18h.01"></path>
+          <path d="M8 18h.01"></path>
+        </svg>
+        <span>AIO Calculator</span>
+        <span class="brand-badge">Free</span>
+      </a>
+
+      <!-- Dynamic Category Landing Page Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        {Object.values(CATEGORIES).map(cat => (
+          <a
+            href={`/${cat.slug}/`}
+            class={`nav-link ${cleanPath.startsWith(`/${cat.slug}/`) ? 'active' : ''}`}
+          >
+            {cat.name.replace(' Calculators', '')}
+          </a>
+        ))}
+        <a href="/all-tools/" class={`nav-link ${cleanPath === '/all-tools/' ? 'active' : ''}`}>All Tools</a>
+        <a href="/blog/" class={`nav-link ${cleanPath.startsWith('/blog/') ? 'active' : ''}`}>Guides</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="search-trigger-btn" class="btn-search-trigger" type="button" aria-label="Search calculators">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search tools...</span>
+          <kbd style="font-size: 0.75rem; background: var(--color-slate-200); padding: 0.1rem 0.35rem; border-radius: 4px; font-family: monospace;">/</kbd>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Strip -->
+  <aside class="trust-strip" aria-label="Privacy and accuracy guarantees">
+    <div class="container trust-strip-inner">
+      <span class="trust-item">
+        <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        100% Free Forever
+      </span>
+      <span class="trust-item">
+        <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        No Sign-Up or Paywall
+      </span>
+      <span class="trust-item">
+        <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        Private In-Browser Calculations
+      </span>
+      <span class="trust-item">
+        <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        Official Verified 2026 Formulas
+      </span>
+    </div>
+  </aside>
+
+  <!-- Breadcrumbs -->
+  {cleanPath !== '/' && (
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="container">
+        <ol>
+          {breadcrumbItems.map((item, idx) => (
+            <li>
+              {idx === breadcrumbItems.length - 1 ? (
+                <span aria-current="page">{item.name}</span>
+              ) : (
+                <a href={item.url}>{item.name}</a>
+              )}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </nav>
+  )}
+
+  <!-- Main Content Slot -->
+  <main id="main-content">
+    <slot />
+  </main>
+
+  <!-- Footer with dynamic current year -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="grid-column: span 1.5;">
+          <h4>AIO Calculator</h4>
+          <p style="color: var(--color-slate-400); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">
+            Over 100 free online calculators for personal finance, mortgages, fitness, academic math, and everyday utility. Calculations execute directly in your browser with zero data tracking.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--color-slate-400);">
+            <strong>Privacy Guarantee:</strong> Your numbers never leave your device.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Financial Calculators</h4>
+          <ul>
+            {allCalculators.filter(c => c.category === 'financial').slice(0, 6).map(c => (
+              <li><a href={`/${c.slug}/`}>{c.name}</a></li>
+            ))}
+            <li><a href="/financial-calculators/">View All Finance ({allCalculators.filter(c => c.category === 'financial').length}) →</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Health & Fitness</h4>
+          <ul>
+            {allCalculators.filter(c => c.category === 'health').slice(0, 6).map(c => (
+              <li><a href={`/${c.slug}/`}>{c.name}</a></li>
+            ))}
+            <li><a href="/fitness-health-calculators/">View All Health ({allCalculators.filter(c => c.category === 'health').length}) →</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Math & Everyday</h4>
+          <ul>
+            {allCalculators.filter(c => c.category === 'math').slice(0, 3).map(c => (
+              <li><a href={`/${c.slug}/`}>{c.name}</a></li>
+            ))}
+            {allCalculators.filter(c => c.category === 'everyday').slice(0, 3).map(c => (
+              <li><a href={`/${c.slug}/`}>{c.name}</a></li>
+            ))}
+            <li><a href="/all-tools/">All Tools Directory ({allCalculators.length}) →</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About & Legal</h4>
+          <ul>
+            <li><a href="/about-us/">About Us</a></li>
+            <li><a href="/contact-us/">Contact Us</a></li>
+            <li><a href="/blog/">Calculation Guides</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer-aio-calculator/">Disclaimer</a></li>
+            <li><a href="/terms-conditions-aio-calculator/">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="current-year">{currentYear}</span> AIO Calculator. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/disclaimer-aio-calculator/">Disclaimer</a>
+          <a href="/terms-conditions-aio-calculator/">Terms</a>
+          <a href="/all-tools/">Directory</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Instant Search Modal -->
+  <div id="search-modal" class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search all calculators">
+    <div class="search-modal">
+      <div class="search-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-slate-400);">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input id="global-search-input" class="search-input" type="search" placeholder="Search 45+ free calculators (e.g. mortgage, BMI, GPA, tax)..." autocomplete="off" />
+        <button id="search-close-btn" type="button" class="btn btn-secondary btn-sm" aria-label="Close search">Esc</button>
+      </div>
+      <div id="search-results-box" class="search-results">
+        <!-- Results populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Root-Relative Client Scripts (Pure Static Hosting Portability) -->
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

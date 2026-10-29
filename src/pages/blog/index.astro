@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { blogPosts } from '../../data/blogPosts';
+---
+
+<BaseLayout
+  title="Calculation Guides, Formulas & Educational Articles | AIO Calculator"
+  description="In-depth calculation guides, financial formulas, health science, and step-by-step mathematical methods from the AIO Calculator editorial team."
+  canonicalPath="/blog/"
+  schemaType="website"
+>
+  <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div style="max-width: 800px; margin-bottom: 2.5rem;">
+      <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em;">AIO Knowledgebase</span>
+      <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Calculation Guides & Insights</h1>
+      <p style="font-size: 1.1rem; color: var(--color-slate-600); line-height: 1.6;">
+        Master the mathematics behind personal finance, home loans, health metrics, and daily numbers with our comprehensive, verified guides.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.75rem;">
+      {blogPosts.map((post) => (
+        <article style="background: var(--color-white); border: 1px solid var(--color-slate-200); border-radius: var(--radius-lg); padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); transition: all 0.15s ease;">
+          <div>
+            <div style="font-size: 0.85rem; color: var(--color-slate-500); margin-bottom: 0.5rem;">
+              {post.publishDate} • {post.readingTime}
+            </div>
+            <h2 style="font-size: 1.25rem; margin-top: 0; margin-bottom: 0.75rem; line-height: 1.35;">
+              <a href={`/${post.slug}/`} style="color: var(--color-slate-900); text-decoration: none;">{post.title}</a>
+            </h2>
+            <p style="font-size: 0.925rem; color: var(--color-slate-600); line-height: 1.55; margin-bottom: 1rem;">
+              {post.summary}
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--color-slate-100); display: flex; justify-content: space-between; align-items: center;">
+            <a href={`/${post.slug}/`} style="font-weight: 600; font-size: 0.9rem;">Read Guide →</a>
+            <a href={`/${post.relatedToolSlug}/`} style="font-size: 0.825rem; color: var(--color-slate-500);">Open Tool →</a>
+          </div>
+        </article>
+      ))}
+
+      <!-- Special Card for Upgraded Percentage Calculator -->
+      <article style="background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); border: 1.5px solid var(--color-primary-border); border-radius: var(--radius-lg); padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+          <div style="font-size: 0.85rem; color: var(--color-primary); font-weight: 700; margin-bottom: 0.5rem;">
+            Upgraded Interactive Tool
+          </div>
+          <h2 style="font-size: 1.25rem; margin-top: 0; margin-bottom: 0.75rem; line-height: 1.35;">
+            <a href="/percentage-calculator/" style="color: var(--color-slate-900); text-decoration: none;">Percentage Calculator (Tool & Comprehensive Guide)</a>
+          </h2>
+          <p style="font-size: 0.925rem; color: var(--color-slate-600); line-height: 1.55; margin-bottom: 1rem;">
+            Upgraded from a static guide into a full interactive tool page with three calculation modes, formulas, worked examples, and shopping discounts.
+          </p>
+        </div>
+        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--color-slate-100);">
+          <a href="/percentage-calculator/" class="btn btn-primary btn-sm" style="text-decoration: none; color: #fff;">Open Tool Page →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</BaseLayout>

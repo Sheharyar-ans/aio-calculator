@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About Us — Mission, Editorial Standards & Privacy | AIO Calculator"
+  description="Learn about AIO Calculator's mission to provide 100+ free, fast, in-browser online calculators with verified formulas and strict client-side data privacy."
+  canonicalPath="/about-us/"
+  schemaType="website"
+>
+  <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <article class="prose" style="margin-left: auto; margin-right: auto;">
+      <h1>About AIO Calculator</h1>
+
+      <p class="lead" style="font-size: 1.15rem; color: var(--color-slate-700); line-height: 1.6;">
+        AIO Calculator was built with a simple, uncompromising objective: to provide 100+ fast, modern, completely free online calculators that run directly in your browser without paywalls, sign-ups, or invasive tracking of personal numbers.
+      </p>
+
+      <h2>Our Core Founding Principles</h2>
+      <div style="display: grid; gap: 1.25rem; margin: 1.5rem 0;">
+        <div style="background: var(--color-white); border: 1px solid var(--color-slate-200); border-radius: var(--radius-md); padding: 1.25rem;">
+          <h3 style="margin-top: 0; color: var(--color-primary); font-size: 1.1rem;">1. 100% Free & Open Access</h3>
+          <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--color-slate-600);">
+            We believe essential everyday calculation tools—whether budgeting a family mortgage, calculating medicine-related gestational due dates, or solving algebra homework—should be accessible to everyone worldwide without subscriptions, credit cards, or forced account creation.
+          </p>
+        </div>
+
+        <div style="background: var(--color-white); border: 1px solid var(--color-slate-200); border-radius: var(--radius-md); padding: 1.25rem;">
+          <h3 style="margin-top: 0; color: var(--color-primary); font-size: 1.1rem;">2. Client-Side Calculation & Privacy by Design</h3>
+          <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--color-slate-600);">
+            Your salary, debts, home purchase prices, body weight, and cryptographic passwords are confidential. Whenever mathematically possible, our calculations execute entirely in client JavaScript within your device's browser memory. Your financial and health inputs are never sent to our servers or saved in a database.
+          </p>
+        </div>
+
+        <div style="background: var(--color-white); border: 1px solid var(--color-slate-200); border-radius: var(--radius-md); padding: 1.25rem;">
+          <h3 style="margin-top: 0; color: var(--color-primary); font-size: 1.1rem;">3. Rigorous Formula Verification & Dated Sourcing</h3>
+          <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--color-slate-600);">
+            We reject undated or unverified rules of thumb. Every calculator clearly documents its mathematical formula, input definitions, worked test examples, and official regulatory sources (such as IRS Revenue Procedure tax brackets, Freddie Mac PMMS mortgage rates, and WHO health thresholds).
+          </p>
+        </div>
+      </div>
+
+      <h2>Our Editorial & Testing Methodology</h2>
+      <p>
+        Before any calculation tool is released on AIO Calculator, it undergoes multi-tiered verification:
+      </p>
+      <ul>
+        <li><strong>Unit Testing:</strong> Formulas are benchmarked against known closed-form mathematical solutions and published federal reference datasets.</li>
+        <li><strong>Worked Example Parity:</strong> Every worked example presented in plain HTML on our pages is verified to produce the exact stated output when entered into the live interactive tool.</li>
+        <li><strong>Mobile Usability:</strong> Every tool is optimized for single-hand mobile touch usage with responsive inputs and pre-allocated zero-layout-shift result displays.</li>
+      </ul>
+
+      <h2>Get in Touch</h2>
+      <p>
+        Have a tool suggestion, a feature request, or an issue to report? We welcome your input. Please reach out via our <a href="/contact-us/">Contact Us page</a>.
+      </p>
+    </article>
+  </div>
+</BaseLayout>

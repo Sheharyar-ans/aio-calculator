@@ -1,0 +1,394 @@
+[
+  {
+    "name": "EMI Calculator",
+    "slug": "emi-calculator",
+    "url": "/emi-calculator/",
+    "desc": "Calculate your Equated Monthly Instalment (EMI) for personal, car, or home loans with complete interest breakdowns.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Loan Interest Analyzer",
+    "slug": "loan-interest-analyzer",
+    "url": "/loan-interest-analyzer/",
+    "desc": "Analyze the total interest cost across loan terms, compare interest-to-principal ratios, and find savings opportunities.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Mortgage Calculator",
+    "slug": "mortgage-calculator",
+    "url": "/mortgage-calculator/",
+    "desc": "Calculate full monthly mortgage payments including principal, interest, property taxes, homeowners insurance (PITI), and PMI.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Credit Card Calculator",
+    "slug": "credit-card-calculator",
+    "url": "/credit-card-calculator/",
+    "desc": "Calculate credit card payoff timelines, interest costs under minimum payments, and savings with fixed monthly payoff plans.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Amortization Calculator",
+    "slug": "amortization-calculator",
+    "url": "/amortization-calculator/",
+    "desc": "Generate complete month-by-month and year-by-year loan amortization schedules showing principal vs interest splits.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "SIP Investment Planner",
+    "slug": "sip-investment-planner",
+    "url": "/sip-investment-planner/",
+    "desc": "Plan your Systematic Investment Plan (SIP) contributions and visualize long-term compound wealth creation in mutual funds and index funds.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "FD vs RD Comparison",
+    "slug": "fd-vs-rd-comparison",
+    "url": "/fd-vs-rd-comparison/",
+    "desc": "Compare Fixed Deposit (lump-sum) vs Recurring Deposit (monthly installment) returns, maturity values, and interest earned.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Investment Calculator",
+    "slug": "investment-calculator",
+    "url": "/investment-calculator/",
+    "desc": "Project the future growth of lump-sum investments with compound returns and additional contributions.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Investment and ROI Calculator",
+    "slug": "investment-roi-calculator",
+    "url": "/investment-roi-calculator/",
+    "desc": "Calculate Return on Investment (ROI), annualized ROI (CAGR), and net profit from real estate, stocks, or business ventures.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Retirement Calculator",
+    "slug": "retirement-calculator",
+    "url": "/retirement-calculator/",
+    "desc": "Plan your retirement nest egg, estimate sustainable post-work income, and calculate savings targets under the 4% rule.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Budget Calculator",
+    "slug": "budget-calculator",
+    "url": "/budget-calculator/",
+    "desc": "Plan your monthly income using the popular 50/30/20 budgeting rule for needs, wants, and financial goals.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Savings Calculator",
+    "slug": "savings-calculator",
+    "url": "/savings-calculator/",
+    "desc": "Calculate how your savings grow over time with compound interest and recurring deposits, or find the timeline to hit a goal.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Income Tax Calculator",
+    "slug": "income-tax-calculator",
+    "url": "/income-tax-calculator/",
+    "desc": "Estimate your federal income tax, effective tax rate, and take-home pay under verified 2026 IRS tax brackets.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Currency and Inflation Calculator",
+    "slug": "currency-inflation-calculator",
+    "url": "/currency-inflation-calculator/",
+    "desc": "Calculate the erosion of purchasing power over time and determine equivalent buying power across historical and future years.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Compound Interest Calculator",
+    "slug": "compound-interest-calculator",
+    "url": "/compound-interest-calculator/",
+    "desc": "Calculate compound interest growth with regular monthly contributions, custom compounding frequencies, and inflation adjustments.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Home Affordability Calculator",
+    "slug": "home-affordability-calculator",
+    "url": "/home-affordability-calculator/",
+    "desc": "Discover how much house you can comfortably afford based on your income, monthly debts, down payment, and DTI ratios.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Rent vs Buy Calculator",
+    "slug": "rent-vs-buy-calculator",
+    "url": "/rent-vs-buy-calculator/",
+    "desc": "Compare the true long-term financial cost of buying a home vs renting and investing the difference to find your break-even year.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Refinance Calculator",
+    "slug": "refinance-calculator",
+    "url": "/refinance-calculator/",
+    "desc": "Calculate monthly payment savings, lifetime interest reduction, and break-even months to recoup refinance closing costs.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "FIRE Calculator",
+    "slug": "fire-calculator",
+    "url": "/fire-calculator/",
+    "desc": "Calculate your FIRE number, savings rate, and exact timeline to achieve Financial Independence, Retire Early.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Debt Payoff Calculator",
+    "slug": "debt-payoff-calculator",
+    "url": "/debt-payoff-calculator/",
+    "desc": "Compare Debt Snowball vs Debt Avalanche strategies across multiple debts to find your debt-free date and interest savings.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Paycheck Calculator",
+    "slug": "paycheck-calculator",
+    "url": "/paycheck-calculator/",
+    "desc": "Calculate net take-home pay per paycheck after federal income tax, state tax, and FICA payroll deductions.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "Auto Loan Calculator",
+    "slug": "auto-loan-calculator",
+    "url": "/auto-loan-calculator/",
+    "desc": "Calculate monthly car payments, total loan interest, sales tax, and trade-in value impact on new and used auto financing.",
+    "cat": "financial",
+    "keywords": []
+  },
+  {
+    "name": "BMI and Ideal Weight Calculator",
+    "slug": "bmi-ideal-weight-calculator",
+    "url": "/bmi-ideal-weight-calculator/",
+    "desc": "Calculate your Body Mass Index (BMI) and discover your healthy ideal body weight range across Devine, Robinson, and Hamwi formulas.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "BMI and Body Fat Calculator",
+    "slug": "bmi-body-fat-calculator",
+    "url": "/bmi-body-fat-calculator/",
+    "desc": "Estimate your body fat percentage, fat mass, and lean muscle tissue using the validated U.S. Navy circumference method.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "Calorie Intake / Deficit Tracker",
+    "slug": "calorie-intake-deficit-tracker",
+    "url": "/calorie-intake-deficit-tracker/",
+    "desc": "Calculate target daily calorie intake, calorie deficits for safe fat loss, and projected weekly weight change timelines.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "Calorie and Macro Calculator",
+    "slug": "calorie-macro-calculator",
+    "url": "/calorie-macro-calculator/",
+    "desc": "Calculate your daily calorie needs, BMR, TDEE, and optimal macronutrient split (protein, carbs, fats) for your fitness goals.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "TDEE Calculator",
+    "slug": "tdee-calculator",
+    "url": "/tdee-calculator/",
+    "desc": "Calculate your Total Daily Energy Expenditure (TDEE) and Basal Metabolic Rate (BMR) with Mifflin-St Jeor and Katch-McArdle models.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "Fitness and Workout Calculator",
+    "slug": "fitness-workout-calculator",
+    "url": "/fitness-workout-calculator/",
+    "desc": "Calculate calories burned during workouts using metabolic equivalents (METs) and find your target heart rate training zones.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "Pregnancy Due Date Finder",
+    "slug": "pregnancy-due-date-finder",
+    "url": "/pregnancy-due-date-finder/",
+    "desc": "Calculate your estimated date of delivery (EDD), current gestational age, and pregnancy milestone trimesters based on Naegele’s rule.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "Steps to Km Converter",
+    "slug": "steps-to-km-converter",
+    "url": "/steps-to-km-converter/",
+    "desc": "Convert pedometer step counts into distance in kilometers and miles, and estimate calories burned based on stride length.",
+    "cat": "health",
+    "keywords": []
+  },
+  {
+    "name": "Basic Math Calculator",
+    "slug": "basic-math-calculator",
+    "url": "/basic-math-calculator/",
+    "desc": "Free clean online arithmetic calculator with standard operations, percentage, memory recall (M+, M-, MR), and keyboard support.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Scientific Calculator",
+    "slug": "scientific-calculator",
+    "url": "/scientific-calculator/",
+    "desc": "Advanced scientific calculator with trigonometry (sin, cos, tan), logarithms, exponential powers, factorials, and constants (π, e).",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Algebra and Equations Calculator",
+    "slug": "algebra-equations-calculator",
+    "url": "/algebra-equations-calculator/",
+    "desc": "Solve linear and quadratic equations step by step with discriminant analysis and exact roots.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Geometry Calculator",
+    "slug": "geometry-calculator",
+    "url": "/geometry-calculator/",
+    "desc": "Calculate area, perimeter, surface area, and volume for 2D and 3D geometric shapes with instant formulas.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Average and Statistics Calculator",
+    "slug": "average-statistics-calculator",
+    "url": "/average-statistics-calculator/",
+    "desc": "Calculate mean, median, mode, sample and population standard deviation, variance, and range for any dataset.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Probability and Data Calculator",
+    "slug": "probability-data-calculator",
+    "url": "/probability-data-calculator/",
+    "desc": "Calculate single-event probability, independent compound probabilities, combinations (nCr), and permutations (nPr).",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Fraction Calculator",
+    "slug": "fraction-calculator",
+    "url": "/fraction-calculator/",
+    "desc": "Add, subtract, multiply, and divide fractions with mixed numbers, common denominators, and instant reduction to simplest form.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Percentage Calculator",
+    "slug": "percentage-calculator",
+    "url": "/percentage-calculator/",
+    "desc": "Calculate percentage of a number, percentage increase and decrease, and percentage change between two values.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "GPA Calculator",
+    "slug": "gpa-calculator",
+    "url": "/gpa-calculator/",
+    "desc": "Calculate college and high school semester and cumulative Grade Point Average (GPA) on standard 4.0 weighted and unweighted scales.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Final Grade Calculator",
+    "slug": "final-grade-calculator",
+    "url": "/final-grade-calculator/",
+    "desc": "Calculate the exact score you need on your final exam to achieve your desired target class grade.",
+    "cat": "math",
+    "keywords": []
+  },
+  {
+    "name": "Time and Date Calculator",
+    "slug": "time-date-calculator",
+    "url": "/time-date-calculator/",
+    "desc": "All-in-one time and date hub featuring an Age Calculator, Date Difference Finder, Day Counter, and Time Zone Converter.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Unit and Conversion Calculator",
+    "slug": "unit-conversion-calculator",
+    "url": "/unit-conversion-calculator/",
+    "desc": "Comprehensive conversion hub for length, weight, volume, temperature, shoe sizes, and live multi-currency exchange rates.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Finance and Shopping Tools",
+    "slug": "finance-shopping-tools",
+    "url": "/finance-shopping-tools/",
+    "desc": "All-in-one shopping and dining hub featuring a Tip Calculator with bill splitting, Discount & Sale Price Calculator, and Sales Tax Calculator.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Home and Vehicle Tools",
+    "slug": "home-vehicle-tools",
+    "url": "/home-vehicle-tools/",
+    "desc": "Practical automotive and household utility hub for calculating trip fuel costs, gas mileage (MPG), tire size dimensions, and home electricity usage costs.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Tech and Security Tools",
+    "slug": "tech-security-tools",
+    "url": "/tech-security-tools/",
+    "desc": "Technical utility hub featuring a Cryptographic Password Generator, IPv4 Subnet Calculator, and Binary / Decimal / Hexadecimal Converter.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Sleep Calculator",
+    "slug": "sleep-calculator",
+    "url": "/sleep-calculator/",
+    "desc": "Calculate optimal bedtimes and wake-up times based on natural 90-minute sleep cycles to wake up refreshed without morning grogginess.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Free Online Dice Roller (1 to 100)",
+    "slug": "free-online-dice-roller-1-to-100",
+    "url": "/free-online-dice-roller-1-to-100/",
+    "desc": "Roll virtual polyhedral dice (d4, d6, d8, d10, d12, d20, d100) and custom random numbers (1 to 100) with cryptographic fairness.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Countdown Timer",
+    "slug": "countdown-timer",
+    "url": "/countdown-timer/",
+    "desc": "Real-time countdown timer to any future date, event, holiday, or milestone with live days, hours, minutes, and seconds.",
+    "cat": "everyday",
+    "keywords": []
+  },
+  {
+    "name": "Timezone Converter",
+    "slug": "timezone-converter",
+    "url": "/timezone-converter/",
+    "desc": "Convert times across world time zones, schedule international meetings, and compare time differences across major global cities.",
+    "cat": "everyday",
+    "keywords": []
+  }
+]

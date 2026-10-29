@@ -1,0 +1,55 @@
+---
+import type { CalculatorDefinition } from '../data/calculators';
+
+interface Props {
+  calc: CalculatorDefinition;
+}
+
+const { calc } = Astro.props;
+---
+
+<div
+  class="calculator-card"
+  id="calculator-root"
+  data-tool-type={calc.toolType}
+  data-defaults={JSON.stringify(calc.initialDefaults || {})}
+>
+  <div class="calculator-card-header">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+      <span style="font-weight: 700; color: var(--color-slate-900); font-size: 1.1rem;">Interactive {calc.name}</span>
+      <span style="font-size: 0.8rem; background-color: var(--color-primary-light); color: var(--color-primary); font-weight: 600; padding: 0.2rem 0.6rem; border-radius: var(--radius-sm);">
+        Instant In-Browser Calculation
+      </span>
+    </div>
+  </div>
+
+  <!-- Dynamic Calculator UI Form Container -->
+  <div id="calc-form-container">
+    <!-- Populated by tool-specific modular engine from /assets/js/calculators/[toolType].js -->
+  </div>
+
+  <!-- Output / Results Box (Pre-allocated in HTML to guarantee Zero Layout Shift / CLS = 0) -->
+  <div class="results-box" id="calc-results-container" style="min-height: 180px; margin-top: 1.5rem;" aria-live="polite">
+    <div>
+      <div class="result-main">
+        <div class="result-label" id="res-primary-label">Estimated Output</div>
+        <div class="result-value" id="res-primary-value">--</div>
+      </div>
+      <div class="result-breakdown" id="res-breakdown-rows">
+        <!-- Breakdown rows populated dynamically -->
+      </div>
+    </div>
+    <div class="result-actions">
+      <button type="button" class="btn btn-secondary btn-sm" id="btn-copy-result" style="width: 100%;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span id="copy-btn-text">Copy Result</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modular High-Performance Client Calculator Script (CloudPages / LiteSpeed Non-Blocking Asset) -->
+<script src={`/assets/js/calculators/${calc.toolType}.js`} defer></script>

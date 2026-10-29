@@ -1,0 +1,16 @@
+{
+  "name": "aio-calculator",
+  "version": "2.0.0",
+  "description": "AIO Calculator - 100+ Free Online Calculators for Finance, Health, Math, and Everyday Use",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.4"
+  }
+}

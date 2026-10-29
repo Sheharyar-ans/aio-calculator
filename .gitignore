@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build caches & temp
+.astro/
+.cache/
+
+# OS and Log files
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.*.local

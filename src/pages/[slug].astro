@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CalculatorShell from '../components/CalculatorShell.astro';
+import { allCalculators } from '../data/calculators';
+import type { CalculatorDefinition } from '../data/calculators';
+
+export function getStaticPaths() {
+  return allCalculators.map((calc) => ({
+    params: { slug: calc.slug },
+    props: { calc }
+  }));
+}
+
+interface Props {
+  calc: CalculatorDefinition;
+}
+
+const { calc } = Astro.props;
+---
+
+<BaseLayout
+  title={calc.metaTitle}
+  description={calc.metaDescription}
+  canonicalPath={`/${calc.slug}/`}
+  schemaType="tool"
+  toolData={calc}
+>
+  <CalculatorShell calc={calc} />
+</BaseLayout>
