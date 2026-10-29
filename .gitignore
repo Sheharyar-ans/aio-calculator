@@ -14,3 +14,7 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# External reference archives
+_scroll_world_ref/
+
