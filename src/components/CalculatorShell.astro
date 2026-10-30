@@ -2,6 +2,7 @@
 import type { CalculatorDefinition } from '../data/calculators';
 import { getCalculatorsByCategory, getCalculatorBySlug } from '../data/calculators';
 import { CATEGORIES } from '../data/categories';
+import { blogPosts } from '../data/blogPosts';
 import CalculatorInteractive from './CalculatorInteractive.astro';
 
 interface Props {
@@ -19,6 +20,12 @@ const currentCategory = CATEGORIES[calc.category];
 const relatedTools = calc.relatedSlugs
   .map(slug => getCalculatorBySlug(slug))
   .filter((t): t is CalculatorDefinition => t !== undefined);
+
+// Related articles lookup
+const relatedArticles = blogPosts.filter(p =>
+  p.relatedToolSlug === calc.slug ||
+  (p.secondaryToolSlugs && p.secondaryToolSlugs.includes(calc.slug))
+);
 ---
 
 <div class="container">
@@ -126,6 +133,22 @@ const relatedTools = calc.relatedSlugs
               <a href={`/${rt.slug}/`} style="display: block; background: var(--color-white); border: 1px solid var(--color-slate-200); border-radius: var(--radius-md); padding: 1rem; text-decoration: none; color: inherit; transition: all 0.15s ease;">
                 <div style="font-weight: 700; color: var(--color-primary); font-size: 0.95rem; margin-bottom: 0.25rem;">{rt.name}</div>
                 <div style="font-size: 0.825rem; color: var(--color-slate-600); line-height: 1.4;">{rt.shortDescription}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- Related In-Depth Guides & Articles -->
+      {relatedArticles.length > 0 && (
+        <section id="related-articles" style="margin-top: 2.5rem;" aria-labelledby="heading-articles">
+          <h2 id="heading-articles">Related Educational Guides & Articles</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            {relatedArticles.map(art => (
+              <a href={`/${art.slug}/`} style="display: block; background: var(--color-slate-50); border: 1px solid var(--color-slate-200); border-radius: var(--radius-md); padding: 1.25rem; text-decoration: none; color: inherit; transition: all 0.15s ease;">
+                <div style="font-size: 0.75rem; color: var(--color-primary); font-weight: 700; text-transform: uppercase; margin-bottom: 0.25rem;">Guide • {art.readingTime}</div>
+                <div style="font-weight: 700; color: var(--color-slate-900); font-size: 0.95rem; line-height: 1.35; margin-bottom: 0.5rem;">{art.title}</div>
+                <div style="font-size: 0.825rem; color: var(--color-slate-600); line-height: 1.4;">{art.summary}</div>
               </a>
             ))}
           </div>

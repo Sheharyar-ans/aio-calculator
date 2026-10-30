@@ -10,7 +10,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'BMI and Ideal Weight Calculator — Free Online Body Mass & Ideal Weight Tool',
     metaDescription: 'Free online BMI and ideal weight calculator. Calculate your exact Body Mass Index, WHO health category, and healthy weight range using metric or imperial units.',
     primaryKeyword: 'BMI calculator',
-    secondaryKeywords: ['ideal weight calculator', 'BMI and ideal weight', 'healthy BMI range'],
+    secondaryKeywords: ['ideal weight calculator', 'BMI and ideal weight', 'healthy BMI range', 'BMI for men', 'BMI for women', 'BMI chart by age', 'ideal weight by height', 'healthy weight range'],
     directAnswer: 'Body Mass Index (BMI) is a screening metric that evaluates body weight relative to height to assess whether an individual falls into an underweight, normal, overweight, or obese classification. For adults, a healthy BMI ranges between 18.5 and 24.9 according to the World Health Organization (WHO), while ideal body weight formulas estimate target healthy weights based on biological sex and height.',
     formulaHtml: `
       <p>Standard Body Mass Index (BMI) formulas:</p>
@@ -53,6 +53,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Not calibrated for pregnant women, growing children/teens (who require CDC age-growth percentiles), or the elderly.'
     ],
     faqs: [
+      {
+        question: "Does the BMI formula differ for men and women?",
+        answer: "The standard WHO formula (weight in kg / height in meters squared) is identical for adult men and women, but healthy body fat percentages and body composition distribution vary significantly between biological sexes."
+      },
       {
         question: 'What is considered a healthy BMI range?',
         answer: 'The World Health Organization (WHO) and Centers for Disease Control and Prevention (CDC) define a normal, healthy adult BMI as 18.5 to 24.9 kg/m². BMIs below 18.5 are classified as underweight, 25.0 to 29.9 as overweight, and 30.0 or above as obese.'
@@ -101,7 +105,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'Body Fat Percentage Calculator — Free U.S. Navy Method & BMI Tool',
     metaDescription: 'Free online body fat calculator. Estimate body fat percentage, lean body mass, and fat mass using the validated U.S. Navy circumference method for men and women.',
     primaryKeyword: 'body fat percentage calculator',
-    secondaryKeywords: ['BMI body fat calculator', 'Navy body fat method', 'body fat estimate'],
+    secondaryKeywords: ['BMI body fat calculator', 'Navy body fat method', 'body fat estimate', 'BMI vs body fat percentage', 'BMI limitations muscle vs fat'],
     directAnswer: 'A body fat percentage calculator estimates the proportion of your total body weight composed of adipose tissue relative to lean muscle, bone, and water. Using the scientifically validated U.S. Navy circumference method based on neck, waist, hip, and height measurements, it provides a much more accurate evaluation of physical fitness and health risks than height-weight BMI alone.',
     formulaHtml: `
       <p>Hodgdon-Beckett (U.S. Navy) Body Fat Equations (measurements in centimeters):</p>
@@ -143,6 +147,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Dual-Energy X-ray Absorptiometry (DEXA) and hydrostatic weighing remain clinical gold standards with narrower margins of error.'
     ],
     faqs: [
+      {
+        question: "What are the limitations of BMI regarding muscle vs fat?",
+        answer: "BMI cannot distinguish between skeletal muscle mass, bone density, and adipose fat tissue. Athletes and bodybuilders with high muscle mass may be classified as overweight or obese despite possessing low body fat."
+      },
       {
         question: 'What is a healthy body fat percentage for men and women?',
         answer: 'The American Council on Exercise (ACE) defines healthy fitness body fat ranges as 14% to 17% for men and 21% to 24% for women. An acceptable general health range is 18% to 24% for men and 25% to 31% for women.'
@@ -192,7 +200,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'Calorie Intake & Deficit Tracker — Free Daily Calorie Target Tool',
     metaDescription: 'Free online calorie deficit tracker. Calculate your daily calorie intake target for sustainable weight loss, mild deficit, or lean muscle gain with target completion dates.',
     primaryKeyword: 'calorie intake calculator',
-    secondaryKeywords: ['calorie deficit calculator', 'daily calorie needs', 'calorie deficit for weight loss'],
+    secondaryKeywords: ['calorie deficit calculator', 'daily calorie needs', 'calorie deficit for weight loss', 'calorie deficit to lose weight', 'how many calories per day'],
     directAnswer: 'A calorie deficit tracker calculates the specific daily caloric intake needed to produce safe, sustainable fat loss by creating a negative energy balance below your Total Daily Energy Expenditure (TDEE). A consistent daily deficit of 500 calories equates to approximately one pound of body fat lost per week, balancing fat reduction while preserving lean muscle mass.',
     formulaHtml: `
       <p>Energy balance and calorie deficit equations:</p>
@@ -234,6 +242,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Women should generally not consume fewer than 1,200 calories/day and men not fewer than 1,500 calories/day without physician supervision.'
     ],
     faqs: [
+      {
+        question: "How many calories per day should you cut to lose weight safely?",
+        answer: "A daily caloric deficit of 300 to 500 kcal below your maintenance TDEE supports a safe, sustainable fat loss rate of approximately 0.35 to 0.5 kg (0.75 to 1.1 lbs) per week."
+      },
       {
         question: 'What is a calorie deficit?',
         answer: 'A calorie deficit occurs when you consume fewer calories from food and drink than your body expends for baseline metabolic bodily functions and physical activity. To bridge the energy shortfall, your body metabolizes stored adipose body fat.'
@@ -283,7 +295,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'Calorie and Macro Calculator — Free TDEE & Macronutrient Split Tool',
     metaDescription: 'Free online calorie and macro calculator. Calculate your BMR, TDEE, and custom daily grams of protein, carbohydrates, and fats for fat loss, maintenance, or muscle gain.',
     primaryKeyword: 'calorie calculator',
-    secondaryKeywords: ['macro calculator', 'TDEE', 'BMR', 'protein carbs fat calculator'],
+    secondaryKeywords: ['macro calculator', 'TDEE', 'BMR', 'protein carbs fat calculator', 'protein intake per kg bodyweight', 'macro split for cutting and bulking'],
     directAnswer: 'A calorie and macro calculator determines your Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), and optimal distribution of daily calories across the three primary macronutrients: protein, carbohydrates, and dietary fats. Tailoring your macros ensures you maintain energy levels and retain lean muscle while hitting your body composition targets.',
     formulaHtml: `
       <p>Mifflin-St Jeor Equation for Basal Metabolic Rate (BMR):</p>
@@ -325,6 +337,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Individuals with kidney or liver conditions should consult their physician before adopting high-protein dietary protocols.'
     ],
     faqs: [
+      {
+        question: "What is the optimal protein intake per kg for body composition?",
+        answer: "For active individuals and resistance trainers, research recommends 1.6 to 2.2 grams of protein per kilogram of body weight (0.73 to 1.0 g/lb) to stimulate muscle protein synthesis and prevent lean tissue loss."
+      },
       {
         question: 'What are macronutrients?',
         answer: 'Macronutrients (macros) are the three primary nutritional categories your body requires in large quantities for energy and survival: proteins (tissue repair and enzymes, 4 kcal/g), carbohydrates (primary fuel for brain and muscles, 4 kcal/g), and dietary fats (hormone production and cellular health, 9 kcal/g).'
@@ -374,7 +390,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'TDEE Calculator — Free Total Daily Energy Expenditure & BMR Tool',
     metaDescription: 'Free online TDEE calculator. Discover your exact Total Daily Energy Expenditure, Basal Metabolic Rate, and maintenance calorie burn across multiple activity tiers.',
     primaryKeyword: 'TDEE calculator',
-    secondaryKeywords: ['BMR calculator', 'Mifflin-St Jeor', 'macros calculator', 'protein calculator'],
+    secondaryKeywords: ['BMR calculator', 'Mifflin-St Jeor', 'macros calculator', 'protein calculator', 'BMR vs TDEE difference', 'TDEE for weight loss', 'TDEE for muscle gain', 'daily water intake by weight', 'water requirement calculator'],
     directAnswer: 'A TDEE calculator determines your Total Daily Energy Expenditure—the total number of calories your body burns in a 24-hour period across basal metabolic function, physical exercise, and daily movement. Knowing your precise TDEE is the essential scientific starting point for maintaining, losing, or gaining body weight.',
     formulaHtml: `
       <p>Components of Total Daily Energy Expenditure:</p>
@@ -412,6 +428,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Thyroid conditions, prior extreme dieting, and hormonal factors can affect actual metabolic expenditure.'
     ],
     faqs: [
+      {
+        question: "How do you calculate daily water requirement by body weight?",
+        answer: "A general baseline is 30 to 35 ml of water per kilogram of body weight (roughly half an ounce per pound), increased by 350 to 500 ml for every 30 minutes of vigorous physical activity."
+      },
       {
         question: 'What is the difference between BMR and TDEE?',
         answer: 'BMR (Basal Metabolic Rate) is the energy your body burns strictly at rest to keep vital organs functioning (heart, lungs, brain). TDEE (Total Daily Energy Expenditure) is your BMR plus all additional energy burned through walking, working, digesting food, and exercising.'
@@ -459,7 +479,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'Fitness & Workout Calculator — Free Exercise Calories & Heart Rate Zones',
     metaDescription: 'Free online fitness and workout calculator. Calculate exercise calories burned across 30+ activities using MET values and determine your Karvonen target heart rate zones.',
     primaryKeyword: 'fitness calculator',
-    secondaryKeywords: ['workout calculator', 'exercise calorie calculator', 'workout planning'],
+    secondaryKeywords: ['workout calculator', 'exercise calorie calculator', 'workout planning', 'workout calorie calculator', 'exercise calories burned', 'calories burned walking running', 'daily water intake by weight'],
     directAnswer: 'A fitness and workout calculator estimates the total calories burned during specific physical activities using scientific Metabolic Equivalent of Task (MET) values, and determines your target aerobic training heart rate zones using the Karvonen formula. It helps athletes optimize cardiovascular intensity and energy expenditure.',
     formulaHtml: `
       <p>Calorie burn based on Metabolic Equivalent of Task (MET):</p>
@@ -501,6 +521,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Beta-blocker medications alter heart rate response and render standard max heart rate formulas inaccurate.'
     ],
     faqs: [
+      {
+        question: "How are calories burned walking vs running calculated?",
+        answer: "Calories burned depend on Metabolic Equivalent of Task (MET) values: Calories = MET × weight in kg × time in hours. Walking at a moderate 5 km/h is ~3.5 METs, while running at 10 km/h is ~9.8 METs."
+      },
       {
         question: 'What is a MET (Metabolic Equivalent of Task)?',
         answer: 'One MET represents the rate of energy expenditure while sitting quietly at rest (equivalent to approximately 3.5 milliliters of oxygen per kilogram of body weight per minute, or 1 kcal/kg/hour). An activity with a MET of 8.0 burns 8 times more energy than sitting still.'
@@ -548,7 +572,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'Pregnancy Due Date Calculator — Free Estimated Due Date (EDD) Finder',
     metaDescription: 'Free online pregnancy due date finder. Calculate your estimated delivery date, gestational weeks, and trimester calendar based on your last menstrual period (LMP).',
     primaryKeyword: 'pregnancy due date calculator',
-    secondaryKeywords: ['due date finder', 'pregnancy calculator', 'conception date'],
+    secondaryKeywords: ['due date finder', 'pregnancy calculator', 'conception date', 'pregnancy due date from last period', 'pregnancy trimester calculator', 'due date by conception date'],
     directAnswer: 'A pregnancy due date finder estimates your baby’s expected delivery date (EDD) and current gestational age based on the first day of your Last Menstrual Period (LMP), conception date, or ultrasound date. Using clinical Naegele’s rule (280 days / 40 weeks from LMP), it generates an organized trimester timeline and developmental milestones.',
     formulaHtml: `
       <p>Standard Naegele’s Rule for Estimated Date of Delivery (EDD):</p>
@@ -587,6 +611,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'First-trimester crown-rump length (CRL) ultrasound measurements provide the most clinically authoritative dating if menstrual dates are irregular.'
     ],
     faqs: [
+      {
+        question: "How is pregnancy due date calculated from the last menstrual period (LMP)?",
+        answer: "Using Naegele's Rule: add 280 days (40 weeks) to the first day of your last normal menstrual period. Note: This calculation is an estimate only; always confirm gestational age with an ultrasound and your healthcare provider."
+      },
       {
         question: 'How accurate is a pregnancy due date calculator?',
         answer: 'Calculations based on Naegele’s rule provide an estimated benchmark. While only ~4% of births occur on the exact date, approximately 80% of babies are born within two weeks before or after the estimated date (between 38 and 42 weeks of gestation).'
@@ -632,7 +660,7 @@ export const healthCalculators: CalculatorDefinition[] = [
     metaTitle: 'Steps to Km Converter — Free Step Count to Distance & Calories Tool',
     metaDescription: 'Free online steps to km converter. Convert walking or running steps into kilometers and miles with custom stride lengths, walking pace, and calories burned.',
     primaryKeyword: 'steps to km converter',
-    secondaryKeywords: ['steps to kilometers', 'step distance converter', 'walking distance'],
+    secondaryKeywords: ['steps to kilometers', 'step distance converter', 'walking distance', '10000 steps in km', 'steps to calories burned', 'walking distance calculator', 'steps to miles'],
     directAnswer: 'A steps to km converter converts your pedometer or smartwatch daily step counts into kilometers and miles, while calculating calories burned based on your biological sex, height, and estimated stride length. For an average adult walking stride (approx. 0.74 to 0.79 meters), 10,000 steps equals roughly 7.5 to 8.0 kilometers (4.7 to 5.0 miles).',
     formulaHtml: `
       <p>Step-to-distance conversion formulas:</p>
@@ -671,6 +699,10 @@ export const healthCalculators: CalculatorDefinition[] = [
       'Running steps produce a significantly longer stride length (height × 0.84) than casual walking steps.'
     ],
     faqs: [
+      {
+        question: "How many kilometers and miles is 10,000 steps?",
+        answer: "For an average adult stride length of 76 cm (2.5 feet), 10,000 steps equals approximately 7.6 kilometers or 4.7 to 5.0 miles, burning roughly 300 to 450 calories depending on body weight."
+      },
       {
         question: 'How many kilometers is 10,000 steps?',
         answer: 'For an average adult stride length of 2.4 to 2.6 feet (73 to 79 cm), 10,000 steps translates to approximately 7.4 to 8.0 kilometers, or roughly 4.6 to 5.0 miles.'

@@ -10,7 +10,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Time and Date Calculator — Free Age, Date Difference & Day Counter Hub',
     metaDescription: 'Free online time and date calculator hub. Calculate your exact age in years/months/days, find duration between two dates, count business days, and convert time zones.',
     primaryKeyword: 'time and date calculator',
-    secondaryKeywords: ['age calculator', 'date difference calculator', 'day counter', 'business days'],
+    secondaryKeywords: ['age calculator', 'date difference calculator', 'day counter', 'business days', 'age in years months days', 'age on a specific date', 'days between two dates', 'business days calculator excluding weekends', 'countdown days to a date', 'time to decimal'],
     directAnswer: 'A time and date calculator computes chronological intervals between dates and times, including chronological age in years, months, and days, duration between two calendar dates, business work days excluding weekends and holidays, and world time differences. It combines all common temporal calculations into one fast, browser-based hub.',
     formulaHtml: `
       <p>Time and Date calculation rules:</p>
@@ -46,6 +46,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'Daylight Saving Time (DST) transitions create 23-hour or 25-hour days twice annually in participating jurisdictions.'
     ],
     faqs: [
+      {
+        question: "How do you calculate business days between two dates excluding weekends?",
+        answer: "Count total calendar days, determine complete 7-day weeks (each having 5 business days), and add remaining weekday days, optionally subtracting official statutory holidays."
+      },
       {
         question: 'How does the Age Calculator account for leap years?',
         answer: 'Our age calculation algorithms track exact calendar leap years (incorporating February 29 every 4 years, with century rules), ensuring your age in days and months is mathematically exact.'
@@ -97,7 +101,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Unit and Conversion Calculator — Free Imperial, Metric & Currency Converter',
     metaDescription: 'Free online unit conversion calculator hub. Convert length, weight, temperature, area, volume, international shoe sizes, and foreign currency exchange amounts.',
     primaryKeyword: 'unit converter',
-    secondaryKeywords: ['unit conversion calculator', 'currency converter', 'shoe size converter', 'length weight temperature converter'],
+    secondaryKeywords: ['unit conversion calculator', 'currency converter', 'shoe size converter', 'length weight temperature converter', 'kg to pounds', 'cm to feet and inches', 'Celsius to Fahrenheit', 'miles to km', 'liters to gallons', 'unit conversion table'],
     directAnswer: 'A unit and conversion calculator converts measurements between Metric and Imperial systems across physical dimensions—length, weight, volume, area, speed, and temperature—alongside practical utilities for international shoe size charts and foreign currency conversions. It ensures quick conversions without memorizing conversion factors.',
     formulaHtml: `
       <p>Key Unit Conversion Factors:</p>
@@ -134,6 +138,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'Foreign currency rates fluctuate continuously during open global forex trading hours.'
     ],
     faqs: [
+      {
+        question: "What are the exact conversion factors for common units?",
+        answer: "1 kilogram = 2.20462 pounds; 1 inch = 2.54 centimeters; 1 mile = 1.60934 kilometers; 1 US gallon = 3.78541 liters; Fahrenheit = (Celsius × 9/5) + 32."
+      },
       {
         question: 'What is the difference between this Currency Converter and the Inflation Calculator?',
         answer: 'The Currency Converter on this page converts amounts between world currencies (such as USD, EUR, GBP, CAD, JPY) at current exchange rates. Our Currency and Inflation Calculator measures how domestic purchasing power erodes over years due to price inflation.'
@@ -187,7 +195,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Finance & Shopping Tools — Free Tip, Discount & Sales Tax Calculator Hub',
     metaDescription: 'Free online finance and shopping tools. Calculate restaurant tips and bill splits, percentage discounts with sale prices, and local sales tax in one convenient hub.',
     primaryKeyword: 'tip calculator',
-    secondaryKeywords: ['discount calculator', 'sales tax calculator', 'bill split calculator', 'sale price calculator'],
+    secondaryKeywords: ['discount calculator', 'sales tax calculator', 'bill split calculator', 'sale price calculator', 'tip percentage calculator', 'split bill with tip', 'discount price after percentage', 'sales tax inclusive vs exclusive', 'VAT calculation'],
     directAnswer: 'Finance and shopping tools provide daily retail and dining utilities: calculating restaurant tips with fair per-person bill splits, computing markdown discounts and double coupons, and determining state and municipal sales tax. It helps shoppers and diners calculate exact out-of-pocket costs instantly before checking out.',
     formulaHtml: `
       <p>Shopping and Dining Mathematical Formulas:</p>
@@ -223,6 +231,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'Certain municipal jurisdictions exempt specific grocery food items or clothing from sales tax.'
     ],
     faqs: [
+      {
+        question: "How is sales tax exclusive vs inclusive calculated?",
+        answer: "Tax Exclusive: Total = Price × (1 + Tax Rate). Tax Inclusive: Pre-tax Base = Total / (1 + Tax Rate), and Tax Amount = Total - Pre-tax Base."
+      },
       {
         question: 'What is the standard tipping percentage at restaurants?',
         answer: 'In the United States, 15% is standard for acceptable service, 18% to 20% is typical for good to excellent table service, and 10% is customary for takeout or buffet dining.'
@@ -274,7 +286,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Home and Vehicle Tools — Free Fuel Cost, Mileage, Tire & Electricity Hub',
     metaDescription: 'Free online home and vehicle tools. Calculate road trip fuel costs, vehicle fuel efficiency (MPG / L/100km), tire size differences, and home appliance electricity costs.',
     primaryKeyword: 'fuel cost calculator',
-    secondaryKeywords: ['mileage calculator', 'tire size calculator', 'electricity cost calculator', 'trip cost calculator'],
+    secondaryKeywords: ['mileage calculator', 'tire size calculator', 'electricity cost calculator', 'trip cost calculator', 'fuel consumption L per 100km vs MPG', 'trip fuel cost calculator', 'electricity bill kWh cost calculator'],
     directAnswer: 'Home and vehicle tools provide essential automotive and residential utility calculations: trip fuel expenses, vehicle fuel efficiency (MPG vs L/100km), tire size diameter and speedometer discrepancies, and household appliance electricity consumption costs. It helps homeowners and drivers budget operating expenses accurately.',
     formulaHtml: `
       <p>Automotive and Household Formulas:</p>
@@ -311,6 +323,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'Electric utility rates often include tiered billing or seasonal peak-hour surcharges.'
     ],
     faqs: [
+      {
+        question: "How do you convert between L/100km and US MPG?",
+        answer: "The conversion formula is: MPG = 235.214 / (L/100km). For example, 8.0 L/100km equals 235.214 / 8.0 = 29.4 US MPG."
+      },
       {
         question: 'How do you calculate vehicle gas mileage (MPG)?',
         answer: 'Fill your fuel tank completely and record your odometer mileage. Drive normally until you need gas again, then refill completely and note the exact gallons pumped. Divide the miles driven by the gallons pumped to find your true MPG.'
@@ -363,7 +379,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Tech and Security Tools — Free Password Generator, Subnet & Binary Hub',
     metaDescription: 'Free online tech and security tools. Generate cryptographically strong random passwords, calculate IPv4 CIDR subnets, and convert numbers between binary, hex, and decimal.',
     primaryKeyword: 'password generator',
-    secondaryKeywords: ['IP subnet calculator', 'binary to hex converter', 'subnet mask calculator', 'strong password generator'],
+    secondaryKeywords: ['IP subnet calculator', 'binary to hex converter', 'subnet mask calculator', 'strong password generator', 'strong password tips', 'password strength checker guide', 'subnet mask CIDR explained', 'binary decimal hex conversion steps'],
     directAnswer: 'Tech and security tools provide essential digital utilities for developers, network administrators, and security-conscious internet users: generating cryptographically strong random passwords and passphrases in-browser, calculating IPv4 CIDR subnet network/broadcast addresses, and converting numbers between binary, decimal, and hexadecimal representations.',
     formulaHtml: `
       <p>Technical and Cryptographic Foundations:</p>
@@ -402,6 +418,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'IPv4 subnetting is modeled for classless CIDR notation (IPv6 uses 128-bit hexadecimal addressing).'
     ],
     faqs: [
+      {
+        question: "What does CIDR notation (e.g., /24) mean in IP networking?",
+        answer: "CIDR (Classless Inter-Domain Routing) denotes the number of leading 1-bits in a subnet mask. A /24 subnet has 24 network bits (255.255.255.0), leaving 8 host bits for 256 IP addresses (254 usable hosts)."
+      },
       {
         question: 'Are passwords generated by this tool truly secure?',
         answer: 'Yes. Unlike weak math pseudo-random functions (like Math.random()), our tool uses the browser Web Cryptography API (`crypto.getRandomValues()`), the same cryptographic source used in operating systems and SSL/TLS key generation, running 100% locally on your machine.'
@@ -455,7 +475,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Sleep Calculator — Free Bedtime, Wake-Up Time & Sleep Cycle Tool',
     metaDescription: 'Free online sleep calculator. Discover the best times to go to sleep or wake up based on natural 90-minute ultradian sleep cycles, avoiding sleep inertia and grogginess.',
     primaryKeyword: 'sleep calculator',
-    secondaryKeywords: ['wake up time calculator', 'bedtime calculator', 'sleep cycle calculator', '90-minute sleep cycles'],
+    secondaryKeywords: ['wake up time calculator', 'bedtime calculator', 'sleep cycle calculator', '90-minute sleep cycles', 'best time to wake up', 'best bedtime calculator', 'sleep cycles 90 minutes', 'how much sleep by age', 'wake up refreshed calculator'],
     directAnswer: 'A sleep calculator determines the ideal times to fall asleep or wake up based on natural 90-minute human sleep cycles (ultradian rhythms). Waking up at the conclusion of a full sleep cycle—rather than in the middle of deep REM sleep—prevents sleep inertia, ensuring you wake feeling alert and rejuvenated.',
     formulaHtml: `
       <p>Human Sleep Cycle Mathematics:</p>
@@ -491,6 +511,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'Sleep quality factors (caffeine, alcohol, blue screen light, sleep apnea) disrupt architectural sleep progression.'
     ],
     faqs: [
+      {
+        question: "Why does the sleep calculator use 90-minute sleep cycles?",
+        answer: "Human nocturnal sleep progresses through cycles of light sleep, deep slow-wave sleep, and REM sleep lasting roughly 90 minutes. Waking at the completion of a cycle rather than during deep sleep prevents sleep inertia and grogginess."
+      },
       {
         question: 'Why are 90-minute sleep cycles so important?',
         answer: 'During a 90-minute sleep cycle, your brain progresses through Stage 1 (light sleep), Stage 2, Stage 3 (deep slow-wave restorative sleep), and REM (dream sleep). Waking at the end of a cycle occurs during light sleep, minimizing morning grogginess.'
@@ -539,7 +563,7 @@ export const everydayCalculators: CalculatorDefinition[] = [
     metaTitle: 'Free Online Dice Roller (1 to 100) — Virtual Polyhedral & D20 Dice Tool',
     metaDescription: 'Free online dice roller. Roll d4, d6, d8, d10, d12, d20, and d100 polyhedral dice or roll random numbers from 1 to 100 with cryptographic randomness and history log.',
     primaryKeyword: 'dice roller',
-    secondaryKeywords: ['free online dice roller', 'roll dice 1 to 100', 'random dice roller'],
+    secondaryKeywords: ['free online dice roller', 'roll dice 1 to 100', 'random dice roller', 'dice probability', 'random number generator 1 to 100', 'roll a dice online free'],
     directAnswer: 'The Free Online Dice Roller generates provably fair, cryptographically random dice rolls for tabletop gaming (D&D, RPGs, board games) and random number selection from 1 to 100. Supporting standard polyhedral dice—d4, d6, d8, d10, d12, d20, and percentile d100—it tracks roll history, modifiers (+/-), and multi-dice sums with zero lag.',
     formulaHtml: `
       <p>Cryptographic Uniform Randomness Generation:</p>
@@ -575,6 +599,10 @@ export const everydayCalculators: CalculatorDefinition[] = [
       'Dice rolls are generated on each client device without network lag.'
     ],
     faqs: [
+      {
+        question: "How does the random number generator ensure fair dice rolls?",
+        answer: "The tool utilizes cryptographic pseudo-random number generation (window.crypto.getRandomValues) in your browser, guaranteeing uniform distribution between 1 and the selected upper bound without server bias."
+      },
       {
         question: 'Are dice rolls on this site truly random and fair?',
         answer: 'Yes. Unlike pseudo-random number generators (PRNG) that can be biased or predictable, this dice roller uses the browser\'s hardware-seeded Web Cryptography API (`crypto.getRandomValues`), providing uniform mathematical randomness identical to physical fair dice.'

@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { blogPostsBySlug } from '../data/blogPosts';
+
+const post = blogPostsBySlug['tdee-macros-protein-guide'];
+---
+
+<BaseLayout
+  title={post.metaTitle}
+  description={post.metaDescription}
+  canonicalPath={`/${post.slug}/`}
+  schemaType="article"
+  articleData={post}
+>
+  <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <article class="prose" style="margin-left: auto; margin-right: auto; max-width: 820px;">
+      <div style="font-size: 0.85rem; color: var(--color-slate-500); margin-bottom: 0.75rem;">
+        Published: {post.publishDate} • {post.readingTime}
+      </div>
+
+      <h1>{post.title}</h1>
+
+      <div style="background-color: var(--color-primary-light); border-left: 4px solid var(--color-primary); padding: 1rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 2rem;">
+        <p style="margin: 0; font-size: 1.05rem; color: #1e3a8a; line-height: 1.5;">
+          <strong>Quick Tool Access:</strong> Need to compute your numbers right now? Jump straight to our free <a href={`/${post.relatedToolSlug}/`}>Interactive Calculator</a> with real-time in-browser calculations.
+        </p>
+      </div>
+
+      <div set:html={post.contentHtml} />
+
+      {post.faqs && post.faqs.length > 0 && (
+        <section class="faq-section" style="margin-top: 3rem;" aria-labelledby="heading-faqs">
+          <h2 id="heading-faqs">Frequently Asked Questions</h2>
+          {post.faqs.map(faq => (
+            <article class="faq-item" style="margin-bottom: 1.25rem; border-bottom: 1px solid var(--color-slate-200); padding-bottom: 1rem;">
+              <h3 class="faq-question" style="font-size: 1.1rem; color: var(--color-slate-900); margin-bottom: 0.35rem;">
+                <span>{faq.question}</span>
+              </h3>
+              <div class="faq-answer">
+                <p style="color: var(--color-slate-700); line-height: 1.6; margin: 0;">{faq.answer}</p>
+              </div>
+            </article>
+          ))}
+        </section>
+      )}
+
+      <div style="margin-top: 3rem; padding: 1.75rem; background: var(--color-white); border: 1.5px solid var(--color-slate-200); border-radius: var(--radius-lg); text-align: center;">
+        <h3 style="margin-top: 0; margin-bottom: 0.5rem;">Ready to Calculate?</h3>
+        <p style="color: var(--color-slate-600); margin-bottom: 1.25rem;">
+          Test your own figures with our fast, client-side calculation engine.
+        </p>
+        <a href={`/${post.relatedToolSlug}/`} class="btn btn-primary">Open Free Interactive Tool &rarr;</a>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

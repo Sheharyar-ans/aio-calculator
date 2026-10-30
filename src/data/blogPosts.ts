@@ -1,3 +1,5 @@
+import { newArticles } from './articles';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -9,10 +11,13 @@ export interface BlogPost {
   readingTime: string;
   summary: string;
   relatedToolSlug: string;
+  secondaryToolSlugs?: string[];
+  keywords?: string[];
+  faqs?: Array<{ question: string; answer: string }>;
   contentHtml: string;
 }
 
-export const blogPosts: BlogPost[] = [
+export const originalBlogPosts: BlogPost[] = [
   {
     slug: 'how-to-use-a-mortgage-calculator',
     title: 'How to Use a Mortgage Calculator to Plan Your Home Purchase',
@@ -164,6 +169,11 @@ export const blogPosts: BlogPost[] = [
       </ul>
     `
   }
+];
+
+export const blogPosts: BlogPost[] = [
+  ...newArticles,
+  ...originalBlogPosts
 ];
 
 export const blogPostsBySlug: Record<string, BlogPost> = Object.fromEntries(

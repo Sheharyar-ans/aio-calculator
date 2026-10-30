@@ -10,7 +10,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'EMI Calculator — Free Online Monthly Loan EMI & Interest Calculator',
     metaDescription: 'Free online EMI calculator to compute your monthly loan instalments, total interest payable, and total loan payment instantly. Fast, private, and free.',
     primaryKeyword: 'EMI calculator',
-    secondaryKeywords: ['loan EMI calculator', 'monthly EMI calculation', 'EMI formula'],
+    secondaryKeywords: ['loan EMI calculator', 'monthly EMI calculation', 'EMI formula', 'how to calculate EMI', 'home loan EMI', 'personal loan EMI', 'car loan EMI', 'EMI with prepayment', 'flat interest vs reducing interest'],
     directAnswer: 'An Equated Monthly Instalment (EMI) is the fixed monthly payment made by a borrower to a lender on a specified date each month. It repays both principal and interest across the loan term, ensuring the debt is fully amortized by the maturity date. This calculator computes your exact monthly payment and total interest cost instantly.',
     formulaHtml: `
       <p>The standard mathematical formula for calculating loan EMI is:</p>
@@ -53,6 +53,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Lenders may calculate interest on daily reducing balance or monthly reducing balance schedules, creating minor cent variations.'
     ],
     faqs: [
+      {
+        question: "What is the difference between flat interest and reducing interest on EMI?",
+        answer: "Flat interest calculates interest on the full original principal for the entire loan life, whereas reducing balance interest charges interest only on the remaining unpaid principal each month. A 9% flat rate is equivalent to an effective reducing rate of approximately 16.5%."
+      },
       {
         question: 'What is an EMI calculator used for?',
         answer: 'An EMI calculator determines your exact fixed monthly loan obligation before you apply for credit. It helps you verify affordability, compare competing lender interest rates, and adjust your loan tenure to fit your monthly household budget.'
@@ -98,7 +102,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Loan Interest Analyzer — Free Total Interest & Loan Cost Analysis Tool',
     metaDescription: 'Free online loan interest analyzer. Calculate the total interest paid, analyze the interest-to-principal ratio, and see how extra payments reduce your borrowing cost.',
     primaryKeyword: 'loan interest calculator',
-    secondaryKeywords: ['loan interest analyzer', 'total interest on a loan', 'loan interest breakdown'],
+    secondaryKeywords: ['loan interest analyzer', 'total interest on a loan', 'loan interest breakdown', 'how much interest will I pay', 'loan payoff with extra payments'],
     directAnswer: 'A loan interest analyzer evaluates the true borrowing cost of debt by calculating the cumulative interest paid and the interest-to-principal ratio across your loan term. Unlike a basic payment calculator that only reports your monthly bill, this tool shows the exact percentage of your money going to finance charges versus actual equity.',
     formulaHtml: `
       <p>Total interest and interest ratio are computed using the total repaid balance:</p>
@@ -134,6 +138,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Origination fees and closing costs are excluded from nominal interest calculations unless bundled into principal.'
     ],
     faqs: [
+      {
+        question: "How much interest will I pay on a loan with extra payments?",
+        answer: "Extra payments go directly toward reducing the outstanding principal balance. Because amortized loans calculate monthly interest based on remaining balance, any extra principal prepayment eliminates future compounding interest cycles."
+      },
       {
         question: 'What is an interest-to-principal ratio?',
         answer: 'The interest-to-principal ratio expresses total finance charges as a percentage of the amount originally borrowed. For example, a 26% ratio means you are paying $26 in pure financing fees for every $100 of debt you take on.'
@@ -180,7 +188,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Mortgage Calculator — Free Monthly PITI & PMI Payment Calculator',
     metaDescription: 'Free mortgage calculator. Calculate complete monthly payments including principal, interest, property taxes, home insurance (PITI), and PMI. Updated with live reference rates.',
     primaryKeyword: 'mortgage calculator',
-    secondaryKeywords: ['monthly mortgage payment', 'mortgage payment calculator', 'PITI', 'PMI', 'amortization schedule'],
+    secondaryKeywords: ['monthly mortgage payment', 'mortgage payment calculator', 'PITI', 'PMI', 'amortization schedule', 'mortgage payment formula', 'monthly mortgage payment breakdown', 'PITI explained', 'mortgage amortization table', '15 vs 30 year mortgage', 'mortgage with extra payments', 'how to calculate mortgage payment'],
     directAnswer: 'A mortgage payment is the monthly sum paid to a home lender, typically comprising Principal, Interest, Property Taxes, and Homeowners Insurance (PITI), plus Private Mortgage Insurance (PMI) if your down payment is under 20%. This calculator computes your complete all-in monthly housing cost and reveals your total interest over 15 or 30 years.',
     formulaHtml: `
       <p>The total monthly mortgage payment (PITI + PMI) equals:</p>
@@ -222,6 +230,14 @@ export const financialCalculators: CalculatorDefinition[] = [
       'PMI automatically drops when loan-to-value reaches 78-80% under the federal Homeowners Protection Act; this calculator models upfront PMI.'
     ],
     faqs: [
+      {
+        question: "How does a 15-year mortgage compare to a 30-year mortgage with extra payments?",
+        answer: "A 15-year fixed loan carries a slightly lower interest rate and forces rapid equity building, but requires higher monthly cash flow. Alternatively, adding extra payments to a 30-year mortgage gives you payment flexibility while achieving similar interest savings."
+      },
+      {
+        question: "What is the mortgage payment formula and what does PITI mean?",
+        answer: "The standard mortgage payment formula calculates monthly Principal and Interest: M = P[r(1+r)^n] / [(1+r)^n - 1]. PITI represents Principal, Interest, property Taxes, and homeowners Insurance—the four components of your complete monthly housing draft."
+      },
       {
         question: 'What does PITI stand for in a mortgage payment?',
         answer: 'PITI stands for Principal, Interest, Taxes, and Insurance. Principal repays the borrowed loan balance; Interest is the lender finance charge; Taxes represent local municipal property taxes held in escrow; Insurance covers homeowners hazard protection.'
@@ -273,7 +289,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Credit Card Payoff Calculator — Free Card Debt & Interest Savings Tool',
     metaDescription: 'Free credit card payoff calculator. Discover how long it takes to clear credit card debt with minimum payments versus a fixed monthly plan and calculate interest saved.',
     primaryKeyword: 'credit card payoff calculator',
-    secondaryKeywords: ['credit card interest calculator', 'credit card payment calculator', 'credit card debt payoff'],
+    secondaryKeywords: ['credit card interest calculator', 'credit card payment calculator', 'credit card debt payoff', 'credit card minimum payment calculator', 'how long to pay off credit card', 'credit card interest trap', 'credit card payoff plan'],
     directAnswer: 'A credit card payoff calculator calculates the exact number of months and total interest required to eliminate your revolving balance. It directly compares paying only the lender minimum requirement against fixed monthly payments, illustrating how small extra amounts can cut years of repayment and thousands in financing costs.',
     formulaHtml: `
       <p>Credit card interest accrues daily based on the average daily balance:</p>
@@ -308,6 +324,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Does not account for variable APR rate hikes initiated by the credit card issuer or late payment penalties.'
     ],
     faqs: [
+      {
+        question: "How long does it take to pay off a credit card paying only the minimum?",
+        answer: "Because minimum payments decline alongside the balance, paying only the minimum on a $5,000 balance at 22% APR typically requires 15 to 19 years and more than $6,000 in interest alone."
+      },
       {
         question: 'Why does paying only the minimum take so long?',
         answer: 'Minimum payments are typically set at just 1% to 2% of the principal balance plus accrued monthly interest. As the principal drops, the required minimum drops as well, causing the vast majority of each payment to service interest rather than eliminate debt.'
@@ -354,7 +374,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Amortization Calculator — Free Loan Amortization Schedule & Table',
     metaDescription: 'Free online amortization calculator. Generate a detailed monthly and annual loan amortization schedule showing principal vs interest breakdown and balance over time.',
     primaryKeyword: 'amortization calculator',
-    secondaryKeywords: ['loan amortization schedule', 'amortization schedule calculator', 'principal vs interest'],
+    secondaryKeywords: ['loan amortization schedule', 'amortization schedule calculator', 'principal vs interest', 'amortization schedule explained', 'principal vs interest over time', 'loan amortization table'],
     directAnswer: 'An amortization calculator generates a complete schedule of periodic loan payments, detailing the exact allocation of every installment toward principal repayment versus interest charges over time. In the early stages of a loan, payments consist predominantly of interest, while later payments shift progressively toward reducing principal.',
     formulaHtml: `
       <p>For each payment period <em>t</em>:</p>
@@ -390,6 +410,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Escrow fees (taxes, insurance) are excluded from basic loan amortization schedules as they do not reduce loan principal.'
     ],
     faqs: [
+      {
+        question: "How does principal vs interest change over time in an amortization schedule?",
+        answer: "Early loan payments consist predominantly of interest because the unpaid balance is highest. As principal decreases each month, the interest portion shrinks and the principal portion expands, creating an inverted curve over the loan term."
+      },
       {
         question: 'What is a loan amortization schedule?',
         answer: 'A loan amortization schedule is a complete chronological table showing each scheduled periodic payment, detailing exactly how much money goes toward interest charges, how much reduces principal, and the ending loan balance.'
@@ -436,7 +460,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'SIP Calculator — Free Systematic Investment Plan Wealth Planner',
     metaDescription: 'Free online SIP investment planner. Calculate expected maturity value, wealth gained, and compound returns from regular monthly mutual fund and ETF investments.',
     primaryKeyword: 'SIP calculator',
-    secondaryKeywords: ['SIP investment planner', 'systematic investment plan calculator', 'SIP returns'],
+    secondaryKeywords: ['SIP investment planner', 'systematic investment plan calculator', 'SIP returns', 'SIP vs lump sum', 'SIP returns explained'],
     directAnswer: 'A Systematic Investment Plan (SIP) calculator determines the future maturity value of regular, disciplined monthly contributions to mutual funds or exchange-traded funds (ETFs). By investing a fixed sum on a set monthly date, you harness rupee-cost / dollar-cost averaging and compounding growth to build long-term wealth.',
     formulaHtml: `
       <p>Future value of an annuity due (investments made at the beginning of each period):</p>
@@ -476,6 +500,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Does not deduct capital gains taxes, fund expense ratios, or inflation unless modeled separately.'
     ],
     faqs: [
+      {
+        question: "How do SIP returns compare to lump sum investing?",
+        answer: "A Systematic Investment Plan (SIP) utilizes rupee-cost averaging by investing fixed sums at regular intervals, purchasing more units when prices fall and fewer when prices rise. Lump-sum investing benefits if markets trend upward immediately, but carries higher timing risk."
+      },
       {
         question: 'What is a Systematic Investment Plan (SIP)?',
         answer: 'A Systematic Investment Plan (SIP) is an investment vehicle that allows you to invest a fixed amount of money at regular monthly intervals into a mutual fund, index fund, or ETF, automating wealth accumulation through dollar-cost averaging.'
@@ -521,7 +549,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'FD vs RD Calculator — Compare Fixed Deposit vs Recurring Deposit Returns',
     metaDescription: 'Free online FD vs RD comparison calculator. Compare maturity returns and interest earned between a one-time Fixed Deposit and monthly Recurring Deposits.',
     primaryKeyword: 'FD vs RD calculator',
-    secondaryKeywords: ['fixed deposit vs recurring deposit', 'FD vs RD comparison', 'FD RD returns'],
+    secondaryKeywords: ['fixed deposit vs recurring deposit', 'FD vs RD comparison', 'FD RD returns', 'FD interest calculator', 'RD interest calculator', 'fixed deposit vs recurring deposit returns'],
     directAnswer: 'An FD vs RD comparison calculator evaluates the return difference between investing a single lump-sum amount in a Fixed Deposit (FD) versus investing periodic monthly installments in a Recurring Deposit (RD) over the same timeframe. Because an FD has all capital compounding from day one, it generates significantly higher total interest than an RD of the same total deposited principal.',
     formulaHtml: `
       <p>Fixed Deposit compounding formula (compounded quarterly):</p>
@@ -557,6 +585,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Interest earned is subject to applicable personal income taxes (or TDS) according to your tax bracket.'
     ],
     faqs: [
+      {
+        question: "How do Fixed Deposit (FD) and Recurring Deposit (RD) interest calculations differ?",
+        answer: "A Fixed Deposit compounds interest on the entire lump sum deposited on day one for the full tenure. A Recurring Deposit compounds interest on incremental monthly installments, meaning each subsequent installment earns interest for a progressively shorter duration."
+      },
       {
         question: 'What is the main difference between an FD and an RD?',
         answer: 'A Fixed Deposit requires a one-time lump sum deposit upfront that earns compound interest for the entire duration. A Recurring Deposit allows you to deposit a fixed installment every month, ideal for savers building wealth from a monthly salary.'
@@ -603,7 +635,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Investment Calculator — Free Lump-Sum & Portfolio Growth Projections',
     metaDescription: 'Free online investment calculator. Calculate the future value of a lump-sum investment with compound interest, regular additions, and inflation adjustments.',
     primaryKeyword: 'investment calculator',
-    secondaryKeywords: ['lump sum investment calculator', 'investment growth calculator', 'compound growth'],
+    secondaryKeywords: ['lump sum investment calculator', 'investment growth calculator', 'compound growth', 'lump sum investment growth', 'long term investment calculator'],
     directAnswer: 'An investment calculator projects the future growth of a lump-sum capital investment over time based on expected annual returns and compounding frequency. It answers the question: "How much will my current portfolio balance be worth in 10, 20, or 30 years?" If you want to calculate return on investment percentage from an asset sale, visit our companion Investment and ROI Calculator.',
     formulaHtml: `
       <p>The standard future value formula with continuous or periodic compounding is:</p>
@@ -640,6 +672,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Taxes on dividends and realized capital gains will lower after-tax compound returns in non-tax-advantaged accounts.'
     ],
     faqs: [
+      {
+        question: "How is lump sum investment growth calculated over 10 or 20 years?",
+        answer: "Lump sum growth follows the compound formula A = P(1 + r)^t. A single $20,000 lump sum at an 8% average annual return grows to $43,178 in 10 years and $93,219 in 20 years without adding any new capital."
+      },
       {
         question: 'How is this Investment Calculator different from the Investment and ROI Calculator?',
         answer: 'The Investment Calculator projects future lump-sum compounding and portfolio balance growth over future decades. In contrast, our Investment and ROI Calculator calculates the percentage return and annualized gain generated by a past or completed transaction.'
@@ -768,7 +804,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Retirement Calculator — Free Retirement Savings & Nest Egg Planner',
     metaDescription: 'Free online retirement calculator. Calculate your target retirement nest egg, monthly savings requirements, and post-retirement withdrawal timeline.',
     primaryKeyword: 'retirement calculator',
-    secondaryKeywords: ['retirement planning calculator', 'retirement savings calculator', 'retirement income'],
+    secondaryKeywords: ['retirement planning calculator', 'retirement savings calculator', 'retirement income', 'how much to save for retirement', 'retirement savings by age', '4 percent rule retirement'],
     directAnswer: 'A retirement calculator determines how much capital you must accumulate to maintain your desired standard of living after you stop working. By evaluating your current age, planned retirement age, savings rate, and expected investment growth, it projects whether your nest egg will sustain you through your retirement years without running out of money.',
     formulaHtml: `
       <p>Target retirement corpus based on annual desired retirement spending (S) and safe withdrawal rate (SWR):</p>
@@ -807,6 +843,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Does not guarantee market returns or account for sequence-of-returns risk in early retirement.'
     ],
     faqs: [
+      {
+        question: "How much should I have saved for retirement by age?",
+        answer: "Industry benchmarks suggest having 1x your annual salary by age 30, 3x by 40, 6x by 50, 8x by 60, and 10x by age 67 to maintain your standard of living in retirement."
+      },
       {
         question: 'What is the 4% rule in retirement planning?',
         answer: 'Originating from the landmark Trinity Study, the 4% rule suggests that withdrawing 4% of your initial retirement portfolio in year one, and adjusting that dollar amount for inflation each subsequent year, gives a 95%+ probability that your portfolio will last at least 30 years.'
@@ -855,7 +895,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Budget Calculator — Free 50/30/20 Monthly Personal Budget Planner',
     metaDescription: 'Free online budget calculator. Allocate your take-home pay using the 50/30/20 budgeting rule across essentials, discretionary lifestyle, and debt payoff or savings.',
     primaryKeyword: 'budget calculator',
-    secondaryKeywords: ['monthly budget planner', 'personal budget calculator', '50/30/20 budget'],
+    secondaryKeywords: ['monthly budget planner', 'personal budget calculator', '50/30/20 budget', '50 30 20 budget rule', 'monthly expenses tracker'],
     directAnswer: 'A budget calculator divides your monthly take-home income into structured spending and savings categories to ensure living within your financial means. Utilizing the popular 50/30/20 framework, it allocates 50% of net income toward essential needs, 30% toward personal wants, and 20% toward debt repayment and wealth-building savings.',
     formulaHtml: `
       <p>50/30/20 budget allocation formulas:</p>
@@ -888,6 +928,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Budgeting plans must be revisited when major life events (job transitions, relocations, childcare) occur.'
     ],
     faqs: [
+      {
+        question: "How does the 50/30/20 budget rule divide your income?",
+        answer: "The 50/30/20 rule allocates net after-tax income into three buckets: 50% for Needs (housing, groceries, utilities, minimum debt payments), 30% for Wants (dining out, entertainment, hobbies), and 20% for Savings and extra debt paydown."
+      },
       {
         question: 'What is the 50/30/20 budgeting rule?',
         answer: 'Popularized by Senator Elizabeth Warren, the 50/30/20 rule is an intuitive personal budgeting guideline that divides net after-tax income into: 50% for vital needs, 30% for discretionary wants, and 20% for savings and debt repayment.'
@@ -934,7 +978,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Savings Calculator — Free Savings Goal & Compound Interest Growth Tool',
     metaDescription: 'Free online savings calculator. Calculate how your bank savings grow with compound interest or find the monthly deposit needed to achieve your target financial goal.',
     primaryKeyword: 'savings calculator',
-    secondaryKeywords: ['savings goal calculator', 'savings growth calculator', 'emergency fund savings'],
+    secondaryKeywords: ['savings goal calculator', 'savings growth calculator', 'emergency fund savings', 'savings goal timeline', 'emergency fund calculator'],
     directAnswer: 'A savings calculator determines the future accumulated balance of your bank savings account or emergency fund when regular contributions compound with interest over time. It can also reverse-calculate the exact monthly deposit required to reach a specific financial savings milestone (such as a house down payment or vacation fund) by a target deadline.',
     formulaHtml: `
       <p>Compound savings future value formula with regular monthly deposits:</p>
@@ -970,6 +1014,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Annual bank interest income exceeding $10 is taxable and reported on IRS Form 1099-INT.'
     ],
     faqs: [
+      {
+        question: "How much should be in an emergency fund?",
+        answer: "A standard emergency fund covers 3 to 6 months of essential living expenses (housing, utilities, groceries, debt minimums) held in a liquid, high-yield savings account."
+      },
       {
         question: 'How large should my emergency fund be?',
         answer: 'Financial planners universally recommend maintaining 3 to 6 months of essential living expenses (rent, food, utilities, debt payments) in a liquid, FDIC-insured high-yield savings account to protect against unexpected job loss or medical events.'
@@ -1107,7 +1155,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Inflation Calculator — Free Purchasing Power & Currency Value Tool',
     metaDescription: 'Free online currency and inflation calculator. Calculate how purchasing power changes over time, inflation-adjusted dollar values, and cumulative price erosion.',
     primaryKeyword: 'inflation calculator',
-    secondaryKeywords: ['currency inflation calculator', 'purchasing power calculator', 'inflation over time'],
+    secondaryKeywords: ['currency inflation calculator', 'purchasing power calculator', 'inflation over time', 'inflation calculator', 'purchasing power over time', 'what is 100 dollars worth in 10 years', 'inflation vs salary growth'],
     directAnswer: 'An inflation calculator measures how purchasing power changes over time due to compound price inflation, showing what a specific sum of money from the past is worth today or what today’s dollars will buy in the future. It answers: "How much purchasing power does my money lose over 10 or 20 years?" For converting exchange rates between currencies, visit our Unit and Conversion Calculator.',
     formulaHtml: `
       <p>Inflation-adjusted value formula using compound annual inflation rate (r) and years (t):</p>
@@ -1141,6 +1189,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Historical inflation rates vary widely between recessions, supply shocks, and monetary policy eras.'
     ],
     faqs: [
+      {
+        question: "What is 100 dollars worth in 10 years at average inflation?",
+        answer: "At an average annual inflation rate of 3.0%, $100 today will have the purchasing power of approximately $74.41 in 10 years, meaning you would need $134.39 to purchase what $100 buys today."
+      },
       {
         question: 'How is this Currency and Inflation Calculator different from the Currency Converter?',
         answer: 'This tool calculates the loss of purchasing power over time caused by economic price inflation. In contrast, the currency converter inside our Unit and Conversion Calculator converts monetary amounts between foreign currencies at current exchange rates.'
@@ -1187,7 +1239,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Compound Interest Calculator — Free Investment Growth & Interest Tool',
     metaDescription: 'Free online compound interest calculator with monthly contributions. Visualize compound interest, compare compounding intervals, and view annual growth schedules.',
     primaryKeyword: 'compound interest calculator',
-    secondaryKeywords: ['compound interest with monthly contributions', 'inflation-adjusted returns', 'compound growth chart'],
+    secondaryKeywords: ['compound interest with monthly contributions', 'inflation-adjusted returns', 'compound growth chart', 'compound interest formula', 'compound interest vs simple interest', 'compound interest monthly vs yearly', 'power of compounding example'],
     directAnswer: 'A compound interest calculator computes the exponential growth of an investment when interest earned is reinvested to generate its own earnings over time. By incorporating an initial principal deposit, recurring regular additions, and compounding frequency, it demonstrates why starting early creates massive long-term wealth.',
     formulaHtml: `
       <p>Compound interest formula with ongoing regular deposits:</p>
@@ -1226,6 +1278,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Taxes on interest, dividends, and capital gains can reduce net compound growth in non-sheltered accounts.'
     ],
     faqs: [
+      {
+        question: "What is the compound interest formula with monthly contributions?",
+        answer: "The formula combines lump-sum compounding with an ordinary annuity: A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)], where PMT is the monthly contribution amount."
+      },
       {
         question: 'What is the difference between simple interest and compound interest?',
         answer: 'Simple interest is calculated exclusively on your initial principal deposit. Compound interest is calculated on both your original principal and all previously accumulated interest, causing your balance to grow exponentially rather than linearly.'
@@ -1273,7 +1329,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Home Affordability Calculator — How Much House Can I Afford?',
     metaDescription: 'Free online home affordability calculator. Find your maximum home purchase price and monthly mortgage limit based on income, debt-to-income (DTI) ratio, and down payment.',
     primaryKeyword: 'home affordability calculator',
-    secondaryKeywords: ['how much house can I afford', 'house affordability', 'DTI affordability'],
+    secondaryKeywords: ['how much house can I afford', 'house affordability', 'DTI affordability', 'house affordability by salary', 'home buying budget', 'down payment and monthly payment'],
     directAnswer: 'A home affordability calculator computes the maximum home purchase price and loan amount you qualify for based on your gross annual household income, recurring monthly debt obligations, down payment cash, and lender Debt-to-Income (DTI) guidelines. It ensures you select a home price that leaves sufficient breathing room for savings, emergencies, and life.',
     formulaHtml: `
       <p>Standard lender Debt-to-Income (DTI) qualification limits:</p>
@@ -1314,6 +1370,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Closing costs typically require an additional 2% to 5% in cash beyond your down payment funds.'
     ],
     faqs: [
+      {
+        question: "How do lenders determine house affordability by salary?",
+        answer: "Lenders apply the 28/36 rule: your monthly mortgage and escrow costs should not exceed 28% of your gross monthly salary, and total debt payments (including car notes, student loans, and credit cards) must stay under 36%."
+      },
       {
         question: 'What is the 28/36 rule in mortgage qualification?',
         answer: 'The 28/36 rule is a standard underwriting benchmark used by mortgage lenders. It stipulates that your housing costs (PITI) should not exceed 28% of your gross monthly income (front-end ratio), and total debt obligations including housing should not exceed 36% (back-end ratio).'
@@ -1361,7 +1421,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Rent vs Buy Calculator — Free Homeownership Break-Even Analysis Tool',
     metaDescription: 'Free online rent vs buy calculator. Compare the total cost of homeownership against renting and investing your down payment to discover your true break-even year.',
     primaryKeyword: 'rent vs buy calculator',
-    secondaryKeywords: ['rent vs buy break-even', 'buying vs renting', 'break-even year'],
+    secondaryKeywords: ['rent vs buy break-even', 'buying vs renting', 'break-even year', 'rent vs buy which is better', 'rent vs buy break-even year', 'buying vs renting costs', 'opportunity cost of down payment'],
     directAnswer: 'A rent vs buy calculator compares the comprehensive financial cost of purchasing and maintaining a home against renting an equivalent property and investing the down payment difference in stock index funds. By projecting home appreciation, mortgage interest, property taxes, maintenance, and investment returns, it identifies your exact break-even year.',
     formulaHtml: `
       <p>Net Wealth from Buying vs Renting over <em>N</em> years:</p>
@@ -1400,6 +1460,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Local property taxes, HOA fees, and unexpected capital repairs (roof, HVAC) can significantly shift the break-even timeline.'
     ],
     faqs: [
+      {
+        question: "How do you calculate the rent vs buy break-even year?",
+        answer: "The break-even year occurs when cumulative home equity and property appreciation surpass the total costs of buying, selling, mortgage interest, property taxes, and the opportunity cost of investing the down payment in index funds."
+      },
       {
         question: 'What is the break-even year in a rent vs buy calculation?',
         answer: 'The break-even year is the exact point in time when the cumulative financial benefits of homeownership (equity accumulation and home price appreciation) equal and begin to exceed the costs of renting and investing your down payment in the market.'
@@ -1449,7 +1513,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Refinance Calculator — Free Mortgage Refinance Break-Even & Savings Tool',
     metaDescription: 'Free online refinance calculator. Calculate your monthly mortgage savings, months to break even on closing costs, and lifetime interest savings before refinancing.',
     primaryKeyword: 'refinance calculator',
-    secondaryKeywords: ['refinance break-even', 'should I refinance', 'refinance savings', 'months to recoup closing costs'],
+    secondaryKeywords: ['refinance break-even', 'should I refinance', 'refinance savings', 'months to recoup closing costs', 'should I refinance my mortgage', 'refinance break-even months', 'refinance closing costs recovery', 'refinance savings calculator'],
     directAnswer: 'A refinance calculator determines whether replacing your current mortgage with a new loan saves money by calculating your monthly payment reduction, lifetime interest savings, and the number of months required to recoup closing costs. Refinancing makes financial sense when your break-even period is significantly shorter than the time you plan to stay in the home.',
     formulaHtml: `
       <p>Break-even period and net savings formulas:</p>
@@ -1492,6 +1556,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Closing costs rolled into the loan balance increase the principal and accrue interest over time.'
     ],
     faqs: [
+      {
+        question: "How do I calculate my refinance break-even months?",
+        answer: "Divide total closing costs by your monthly payment savings. If refinancing costs $4,000 in fees and lowers your monthly payment by $160, your break-even point is 4,000 / 160 = 25 months (2.1 years)."
+      },
       {
         question: 'What is the break-even period on a mortgage refinance?',
         answer: 'The break-even period is the number of months it takes for your accumulated monthly payment savings to equal the upfront closing costs paid to complete the refinance. For example, if closing costs are $6,000 and you save $300 per month, your break-even is 20 months.'
@@ -1540,7 +1608,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'FIRE Calculator — Free Financial Independence Retire Early Planner',
     metaDescription: 'Free online FIRE calculator. Calculate your exact FIRE number, savings rate, and years to early retirement across Lean FIRE, Regular FIRE, and Fat FIRE targets.',
     primaryKeyword: 'FIRE calculator',
-    secondaryKeywords: ['financial independence retire early calculator', 'FIRE number', 'early retirement calculator'],
+    secondaryKeywords: ['financial independence retire early calculator', 'FIRE number', 'early retirement calculator', 'FIRE number calculation', 'financial independence number'],
     directAnswer: 'A FIRE calculator computes your exact FIRE number (the total investment nest egg required for financial independence) and projects how many years of aggressive saving remain until work becomes optional. Based on the 25x annual expenses rule and safe withdrawal rates, it charts your journey to Financial Independence, Retire Early.',
     formulaHtml: `
       <p>FIRE Number and savings rate calculations:</p>
@@ -1584,6 +1652,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Pre-Medicare private health insurance costs must be budgeted into early retirement living expenses.'
     ],
     faqs: [
+      {
+        question: "How is your FIRE number calculated?",
+        answer: "Your Financial Independence number equals your anticipated annual retirement living expenses multiplied by 25 (under the 4% rule) or 30 to 33 (under a conservative 3.0% to 3.3% safe withdrawal rate for early retirements)."
+      },
       {
         question: 'What is a FIRE number?',
         answer: 'Your FIRE number is the total net worth invested in income-producing assets needed to cover your living expenses permanently without requiring earned employment income, typically calculated as 25 to 30 times your annual expenses.'
@@ -1631,7 +1703,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Debt Payoff Calculator — Free Snowball vs Avalanche Debt Eliminator',
     metaDescription: 'Free online debt payoff calculator. Compare the Debt Snowball vs Debt Avalanche methods, calculate total interest saved, and map your exact debt-free date.',
     primaryKeyword: 'debt payoff calculator',
-    secondaryKeywords: ['snowball vs avalanche', 'debt-free date', 'interest saved', 'multi-debt payoff'],
+    secondaryKeywords: ['snowball vs avalanche', 'debt-free date', 'interest saved', 'multi-debt payoff', 'debt snowball method steps', 'debt avalanche method steps', 'debt free date', 'which debt to pay first', 'multi debt payoff plan'],
     directAnswer: 'A debt payoff calculator models accelerated debt elimination across multiple credit cards, personal loans, and student loans, comparing the Debt Avalanche (highest interest rate first) against the Debt Snowball (smallest balance first). It shows your exact debt-free calendar date, total interest paid under each method, and the savings from adding extra monthly cash.',
     formulaHtml: `
       <p>Payoff methodology comparison:</p>
@@ -1667,6 +1739,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Does not factor in variable APR rate adjustments initiated by card issuers.'
     ],
     faqs: [
+      {
+        question: "Which debt should you pay first: highest interest or lowest balance?",
+        answer: "To minimize total interest and get debt-free fastest mathematically, pay the highest interest rate debt first (Debt Avalanche). If you need rapid psychological wins to stay motivated, pay the smallest balance first (Debt Snowball)."
+      },
       {
         question: 'Which is better: Debt Avalanche or Debt Snowball?',
         answer: 'The Debt Avalanche is mathematically superior because paying high-interest debts first saves the most money and finishes fastest. However, academic behavioral studies (such as Harvard Business School research) show the Debt Snowball has higher real-world completion rates because quick early victories motivate borrowers to persist.'
@@ -1715,7 +1791,7 @@ export const financialCalculators: CalculatorDefinition[] = [
     metaTitle: 'Paycheck Calculator — Free Salary & Hourly Take-Home Pay Estimator',
     metaDescription: 'Free online paycheck calculator. Calculate your exact net take-home pay per paycheck after federal taxes, Social Security, Medicare, and deductions under 2026 tax rules.',
     primaryKeyword: 'paycheck calculator',
-    secondaryKeywords: ['take-home pay calculator', '2026 tax brackets calculator', 'salary after tax'],
+    secondaryKeywords: ['take-home pay calculator', '2026 tax brackets calculator', 'salary after tax', 'take home pay after tax', 'salary to hourly calculator', 'hourly to salary calculator', 'paycheck after deductions'],
     directAnswer: 'A paycheck calculator determines your exact net take-home pay per pay period after deducting federal income tax, Social Security (6.2%), Medicare (1.45%), state income taxes, and pre-tax retirement or health deductions. It reveals how much deposited cash lands in your bank account every payday.',
     formulaHtml: `
       <p>Net paycheck calculation flow:</p>
@@ -1759,6 +1835,10 @@ export const financialCalculators: CalculatorDefinition[] = [
       'Additional voluntary payroll deductions (union dues, FSA, supplemental life insurance) vary by employer.'
     ],
     faqs: [
+      {
+        question: "How do you calculate hourly wage from an annual salary?",
+        answer: "Assuming a standard 40-hour workweek across 52 weeks (2,080 annual work hours), divide your annual salary by 2,080. For example, a $70,000 salary equals $70,000 / 2,080 = $33.65 per hour before deductions."
+      },
       {
         question: 'What is the FICA tax deducted from my paycheck?',
         answer: 'FICA stands for the Federal Insurance Contributions Act. It consists of a 6.2% Social Security tax (capped at the annual wage base) and a 1.45% Medicare tax (uncapped, with an additional 0.9% surtax on high earners), matched dollar-for-dollar by your employer.'

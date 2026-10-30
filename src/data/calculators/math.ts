@@ -87,7 +87,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'Scientific Calculator — Free Online Advanced Math & Trig Tool',
     metaDescription: 'Free online scientific calculator. Compute trigonometric functions (sin, cos, tan), inverse trig, logarithms (log, ln), powers, roots, and factorials in Degrees or Radians.',
     primaryKeyword: 'scientific calculator',
-    secondaryKeywords: ['scientific calculator online', 'trigonometry calculator', 'logarithm calculator'],
+    secondaryKeywords: ['scientific calculator online', 'trigonometry calculator', 'logarithm calculator', 'scientific notation calculator'],
     directAnswer: 'A scientific calculator performs advanced mathematical operations beyond basic arithmetic, including trigonometric functions (sine, cosine, tangent), inverse trigonometry, natural and common logarithms (ln, log), powers, roots, factorials, and universal mathematical constants (π, e). It operates in both Degree and Radian modes for STEM students and engineering professionals.',
     formulaHtml: `
       <p>Scientific function foundations:</p>
@@ -123,6 +123,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Factorials (n!) are computed for non-negative integers up to 170! before exceeding 64-bit IEEE floating-point limits.'
     ],
     faqs: [
+      {
+        question: "How does scientific notation work on this calculator?",
+        answer: "Scientific notation expresses numbers as a coefficient multiplied by 10 raised to an exponent (e.g., 4.5 × 10^6). Use the EXP or EE key to compute very large or very small values."
+      },
       {
         question: 'When should I use Degree mode vs Radian mode?',
         answer: 'Use Degree mode for everyday geometry, surveying, and physics problems where angles are stated in degrees (e.g. 0° to 360°). Use Radian mode for calculus, advanced physics, and harmonic motion where angles relate to circle arc length.'
@@ -339,7 +343,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'Average and Statistics Calculator — Free Mean, Median & Standard Deviation Tool',
     metaDescription: 'Free online average and statistics calculator. Calculate mean, median, mode, range, standard deviation, and variance for sample and population data with full working.',
     primaryKeyword: 'average calculator',
-    secondaryKeywords: ['statistics calculator', 'mean median mode calculator', 'standard deviation'],
+    secondaryKeywords: ['statistics calculator', 'mean median mode calculator', 'standard deviation', 'mean median mode range explained', 'standard deviation example'],
     directAnswer: 'An average and statistics calculator computes key measures of central tendency (mean, median, mode) and dispersion (sample and population standard deviation, variance, range) from a set of numbers. It provides full descriptive statistical analysis for researchers, students, and analysts.',
     formulaHtml: `
       <p>Descriptive statistics formulas for dataset {x₁, x₂, ..., x_n}:</p>
@@ -380,6 +384,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Datasets with no repeated numbers have no mode, while datasets with multiple peaks are multimodal.'
     ],
     faqs: [
+      {
+        question: "What is the difference between mean, median, and mode?",
+        answer: "Mean is the mathematical average (sum / count); median is the middle value when sorted in ascending order; mode is the most frequently occurring value in the dataset."
+      },
       {
         question: 'What is the difference between sample and population standard deviation?',
         answer: 'Use sample standard deviation (dividing by n - 1, known as Bessel\'s correction) when your data is a subset or sample of a larger group. Use population standard deviation (dividing by N) only when your dataset contains every single member of the entire group being studied.'
@@ -424,7 +432,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'Probability and Data Calculator — Free Combinations, Permutations & Odds Tool',
     metaDescription: 'Free online probability calculator. Calculate event odds, independent and dependent probabilities, permutations (nPr), and combinations (nCr) with step-by-step solutions.',
     primaryKeyword: 'probability calculator',
-    secondaryKeywords: ['probability and data calculator', 'probability formula', 'data probability'],
+    secondaryKeywords: ['probability and data calculator', 'probability formula', 'data probability', 'probability of dice and coins'],
     directAnswer: 'A probability and data calculator computes the likelihood of random events occurring, alongside fundamental combinatorics metrics: combinations (nCr) where order does not matter, and permutations (nPr) where order matters. It evaluates single events, complementary odds, and compound probabilities (AND / OR logic) for mathematics and statistics.',
     formulaHtml: `
       <p>Foundational Probability & Combinatorics Formulas:</p>
@@ -462,6 +470,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Assumes all fundamental outcomes in the sample space are equally likely.'
     ],
     faqs: [
+      {
+        question: "What is the probability of rolling a specific number on standard dice?",
+        answer: "A single fair 6-sided die has a 1/6 (16.67%) chance for each face. Rolling two dice has 36 possible outcomes, with 7 being the most probable outcome (6/36 = 16.67%)."
+      },
       {
         question: 'What is the difference between a permutation and a combination?',
         answer: 'In a combination, order does not matter (e.g. selecting 3 friends for a movie). In a permutation, order matters (e.g. 1st, 2nd, and 3rd place in a race, or digits in a locker combination lock).'
@@ -507,7 +519,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'Fraction Calculator — Free Add, Subtract, Multiply & Divide Fractions',
     metaDescription: 'Free online fraction calculator. Easily add, subtract, multiply, and divide fractions and mixed numbers with step-by-step common denominators and simplest form reductions.',
     primaryKeyword: 'fraction calculator',
-    secondaryKeywords: ['fraction addition subtraction', 'simplify fractions', 'mixed numbers calculator'],
+    secondaryKeywords: ['fraction addition subtraction', 'simplify fractions', 'mixed numbers calculator', 'fraction to decimal', 'adding fractions unlike denominators'],
     directAnswer: 'A fraction calculator adds, subtracts, multiplies, and divides fractions and mixed numbers, providing full step-by-step working including finding the Least Common Denominator (LCD), converting improper fractions, and simplifying to lowest terms. It solves everyday math problems for students, woodworkers, and culinary recipes.',
     formulaHtml: `
       <p>Fraction Arithmetic Rules:</p>
@@ -546,6 +558,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Extremely large denominators with large prime factors are reduced using Euclidean Greatest Common Divisor (GCD) algorithms.'
     ],
     faqs: [
+      {
+        question: "How do you add fractions with unlike denominators?",
+        answer: "Find the Least Common Denominator (LCD), convert each fraction into an equivalent fraction with that common denominator, add the numerators, and simplify to lowest terms."
+      },
       {
         question: 'How do you find the Least Common Denominator (LCD)?',
         answer: 'The Least Common Denominator is the smallest positive number that is a common multiple of the denominators. For example, for denominators 4 and 6, the multiples of 4 are (4, 8, 12, 16...) and 6 are (6, 12, 18...), making 12 the LCD.'
@@ -593,7 +609,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'Percentage Calculator — Free Online Percentage, Change & Difference Tool',
     metaDescription: 'Free online percentage calculator. Calculate percentage of a number, percentage increase or decrease, and percentage difference with instant step-by-step formulas.',
     primaryKeyword: 'percentage calculator',
-    secondaryKeywords: ['percentage change calculator', 'percentage increase decrease', 'percent of a number'],
+    secondaryKeywords: ['percentage change calculator', 'percentage increase decrease', 'percent of a number', 'percentage increase decrease formula', 'percentage of a number examples', 'reverse percentage calculator', 'percentage tricks', 'how to calculate percentage quickly'],
     directAnswer: 'A percentage calculator solves all common percentage calculations: finding a percentage of a given number, calculating the percentage increase or decrease between two values, and finding what percentage one number is of another. It provides instant solutions for shopping discounts, salary raises, test scores, and financial returns.',
     formulaHtml: `
       <p>The Three Core Percentage Formulas:</p>
@@ -628,6 +644,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Be cautious of percentage points versus percentages (e.g. an interest rate rising from 4% to 5% is a 1 percentage point increase, but a 25% relative increase).'
     ],
     faqs: [
+      {
+        question: "What is the reverse percentage formula to find the original price?",
+        answer: "To find the original price before a discount: Original Price = Sale Price / (1 - Discount Rate in decimal). For example, $80 after a 20% discount had an original price of 80 / 0.80 = $100."
+      },
       {
         question: 'What is the difference between percentage and percentage points?',
         answer: 'A percentage point is the simple arithmetic difference between two percentages (e.g. 5% minus 4% = 1 percentage point). Percentage change measures the relative proportion of change: (5 - 4) ÷ 4 = a 25% increase.'
@@ -673,7 +693,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'GPA Calculator — Free College & High School Grade Point Average Tool',
     metaDescription: 'Free online GPA calculator. Calculate your semester and cumulative GPA on a 4.0 unweighted or 5.0 weighted scale with credit hours, letter grades, and honors/AP weight.',
     primaryKeyword: 'GPA calculator',
-    secondaryKeywords: ['grade calculator', 'cumulative GPA', 'weighted GPA', 'CGPA calculator'],
+    secondaryKeywords: ['grade calculator', 'cumulative GPA', 'weighted GPA', 'CGPA calculator', 'GPA scale 4.0 explained', 'weighted vs unweighted GPA', 'CGPA to percentage India 10 point scale', 'GPA goal planner'],
     directAnswer: 'A GPA calculator computes your semester and cumulative Grade Point Average (GPA) on a standard 4.0 unweighted scale or 5.0 weighted scale for Honors/AP/IB coursework. By multiplying each course’s numerical grade points by its credit hours and dividing by total credits attempted, it produces your official academic standing.',
     formulaHtml: `
       <p>Weighted Grade Point Average formula:</p>
@@ -709,6 +729,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Institutional grading policies vary (some universities do not recognize A+ as 4.3 or drop minus grades).'
     ],
     faqs: [
+      {
+        question: "How is CGPA converted to percentage on a 10-point scale?",
+        answer: "Under standard academic conventions (such as CBSE in India), multiply your CGPA by 9.5: Percentage = CGPA × 9.5. An 8.4 CGPA equals 8.4 × 9.5 = 79.8%."
+      },
       {
         question: 'What is the difference between weighted and unweighted GPA?',
         answer: 'An unweighted GPA measures all courses on a standard 0 to 4.0 scale regardless of rigor. A weighted GPA awards extra points (typically +0.5 for Honors and +1.0 for AP, IB, or Dual Enrollment college courses), allowing GPAs up to 4.5 or 5.0 to reflect academic difficulty.'
@@ -759,7 +783,7 @@ export const mathCalculators: CalculatorDefinition[] = [
     metaTitle: 'Final Grade Calculator — What Do I Need on My Final Exam?',
     metaDescription: 'Free online final grade calculator. Find out exactly what score you need on your final exam to get an A, B, or C in your class based on your current grade and final exam weight.',
     primaryKeyword: 'final grade calculator',
-    secondaryKeywords: ['what do I need on the final', 'grade goal calculator', 'final exam grade'],
+    secondaryKeywords: ['what do I need on the final', 'grade goal calculator', 'final exam grade', 'what grade do I need on final exam'],
     directAnswer: 'A final grade calculator computes the exact percentage score you must achieve on your final examination to earn your desired overall letter grade in a course. By factoring in your current course grade and the percentage weight assigned to the final exam, it removes exam anxiety and provides a clear academic target.',
     formulaHtml: `
       <p>Final Exam Required Score Formula:</p>
@@ -793,6 +817,10 @@ export const mathCalculators: CalculatorDefinition[] = [
       'Assumes all non-final course assignments (homework, quizzes, midterms) have already been graded.'
     ],
     faqs: [
+      {
+        question: "What formula determines what grade you need on a final exam?",
+        answer: "Required Final Exam Score = [Target Grade - (Current Grade × (1 - Final Exam Weight))] / Final Exam Weight."
+      },
       {
         question: 'What if the calculator says I need more than 100% on the final?',
         answer: 'If the required score exceeds 100%, it means that even a perfect score on the final exam will not raise your cumulative grade to your chosen target, unless your professor curves the class or offers extra credit.'

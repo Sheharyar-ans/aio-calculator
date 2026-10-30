@@ -138,9 +138,24 @@ if (schemaType === 'tool' && toolData) {
       url: 'https://aio-calculator.com/'
     },
     datePublished: articleData.publishDate,
-    dateModified: articleData.updateDate,
+    dateModified: articleData.updateDate || articleData.publishDate,
     mainEntityOfPage: canonicalUrl
   };
+
+  if (articleData.faqs && articleData.faqs.length > 0) {
+    faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: articleData.faqs.map((faq: any) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    };
+  }
 }
 
 // Prepare quick search index payload
