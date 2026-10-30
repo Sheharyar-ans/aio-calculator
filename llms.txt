@@ -1,0 +1,87 @@
+# AIO Calculator
+
+> Fast, free, modern online calculators with instant client-side computation. No sign-up, no paywalls, and no upload of personal financial or health data.
+
+Website: https://aio-calculator.com/
+
+## Core Principles
+- All calculations run directly in the client browser where possible.
+- Headings, mathematical formulas, worked examples, and FAQs are server-rendered as clean semantic HTML.
+- Sourced and dated reference numbers (e.g., IRS tax brackets per Rev. Proc. 2025-32, WHO BMI classification, Freddie Mac PMMS mortgage reference rates).
+- No hard-coded mandatory rates; all interest rates and brackets are user-editable.
+
+## All Tool Categories & Direct URLs
+
+### Financial Calculators
+- [EMI Calculator](https://aio-calculator.com/emi-calculator/): Calculate monthly instalment (EMI) for loans.
+- [Loan Interest Analyzer](https://aio-calculator.com/loan-interest-analyzer/): Total interest analysis and loan cost comparison.
+- [Mortgage Calculator](https://aio-calculator.com/mortgage-calculator/): Monthly mortgage payment with PITI (Principal, Interest, Taxes, Insurance) and PMI.
+- [Credit Card Calculator](https://aio-calculator.com/credit-card-calculator/): Payoff timeline and interest savings between minimum and fixed payments.
+- [Amortization Calculator](https://aio-calculator.com/amortization-calculator/): Complete loan amortization schedule with monthly principal vs interest split.
+- [SIP Investment Planner](https://aio-calculator.com/sip-investment-planner/): Systematic Investment Plan returns and wealth growth.
+- [FD vs RD Comparison](https://aio-calculator.com/fd-vs-rd-comparison/): Fixed Deposit vs Recurring Deposit returns comparison.
+- [Investment Calculator](https://aio-calculator.com/investment-calculator/): Lump sum investment growth and compound balance projections.
+- [Investment and ROI Calculator](https://aio-calculator.com/investment-roi-calculator/): Return on investment percentage, annualized ROI, and profit.
+- [Retirement Calculator](https://aio-calculator.com/retirement-calculator/): Retirement nest egg requirements and sustainable withdrawal planning.
+- [Budget Calculator](https://aio-calculator.com/budget-calculator/): 50/30/20 monthly budget breakdown across needs, wants, and savings.
+- [Savings Calculator](https://aio-calculator.com/savings-calculator/): Target savings timeline and emergency fund growth with compound interest.
+- [Income Tax Calculator](https://aio-calculator.com/income-tax-calculator/): Federal income tax, effective tax rate, and take-home pay estimate.
+- [Currency and Inflation Calculator](https://aio-calculator.com/currency-inflation-calculator/): Purchasing power erosion and historical/projected inflation impact.
+- [Compound Interest Calculator](https://aio-calculator.com/compound-interest-calculator/): Compound growth with regular monthly contributions and compounding frequency.
+- [Home Affordability Calculator](https://aio-calculator.com/home-affordability-calculator/): Maximum purchase price based on income, debt-to-income (DTI) ratio, and down payment.
+- [Rent vs Buy Calculator](https://aio-calculator.com/rent-vs-buy-calculator/): Total cost comparison and break-even year between homeownership and renting.
+- [Refinance Calculator](https://aio-calculator.com/refinance-calculator/): Monthly savings, break-even months to recoup closing costs, and lifetime interest impact.
+- [FIRE Calculator](https://aio-calculator.com/fire-calculator/): Financial Independence, Retire Early targets, FIRE number, and years to financial freedom.
+- [Debt Payoff Calculator](https://aio-calculator.com/debt-payoff-calculator/): Debt Snowball vs Debt Avalanche payoff timeline, interest saved, and debt-free date.
+- [Paycheck Calculator](https://aio-calculator.com/paycheck-calculator/): Gross to net take-home salary after federal tax, FICA (Social Security & Medicare), and deductions.
+- [Auto Loan Calculator](https://aio-calculator.com/auto-loan-calculator/): Car loan monthly payment, trade-in value, sales tax, and total financing interest.
+
+### Fitness & Health Calculators
+- [BMI and Ideal Weight Calculator](https://aio-calculator.com/bmi-ideal-weight-calculator/): Body Mass Index and Devine/Hamwi/Robinson ideal weight range.
+- [BMI and Body Fat Calculator](https://aio-calculator.com/bmi-body-fat-calculator/): U.S. Navy circumference method body fat percentage and fat mass vs lean mass.
+- [Calorie Intake / Deficit Tracker](https://aio-calculator.com/calorie-intake-deficit-tracker/): Daily calorie targets for healthy sustainable weight loss or gain.
+- [Calorie and Macro Calculator](https://aio-calculator.com/calorie-macro-calculator/): Total Daily Energy Expenditure (TDEE), BMR, and protein/carb/fat macro split.
+- [TDEE Calculator](https://aio-calculator.com/tdee-calculator/): Mifflin-St Jeor Total Daily Energy Expenditure by activity multiplier.
+- [Fitness and Workout Calculator](https://aio-calculator.com/fitness-workout-calculator/): MET-based workout calorie burn and target heart rate training zones.
+- [Pregnancy Due Date Finder](https://aio-calculator.com/pregnancy-due-date-finder/): Estimated date of delivery (EDD) based on LMP, conception date, or ultrasound.
+- [Steps to Km Converter](https://aio-calculator.com/steps-to-km-converter/): Walking and running step count to distance (km, miles) and calories burned.
+
+### Math Calculators
+- [Basic Math Calculator](https://aio-calculator.com/basic-math-calculator/): Standard arithmetic calculator with memory functions and keyboard support.
+- [Scientific Calculator](https://aio-calculator.com/scientific-calculator/): Trigonometry, logarithms, exponents, factorial, and power operations.
+- [Algebra and Equations Calculator](https://aio-calculator.com/algebra-equations-calculator/): Linear and quadratic equation solver with step-by-step discriminant working.
+- [Geometry Calculator](https://aio-calculator.com/geometry-calculator/): Area, perimeter, surface area, and volume for 2D and 3D shapes.
+- [Average and Statistics Calculator](https://aio-calculator.com/average-statistics-calculator/): Mean, median, mode, sample and population standard deviation, variance, and range.
+- [Probability and Data Calculator](https://aio-calculator.com/probability-data-calculator/): Combinations nCr, permutations nPr, single event and compound probability.
+- [Fraction Calculator](https://aio-calculator.com/fraction-calculator/): Add, subtract, multiply, and divide fractions with mixed numbers and simplification.
+- [Percentage Calculator](https://aio-calculator.com/percentage-calculator/): Percentage of a number, percentage increase/decrease, and percentage difference.
+- [GPA Calculator](https://aio-calculator.com/gpa-calculator/): Semester and cumulative Grade Point Average on 4.0 scale with weighted credits.
+- [Final Grade Calculator](https://aio-calculator.com/final-grade-calculator/): Required final exam score needed to achieve a target course grade.
+
+### Everyday Utility Calculators & Hubs
+- [Time and Date Calculator](https://aio-calculator.com/time-date-calculator/): Age calculator, date difference, day counter, and business day calculator.
+- [Unit and Conversion Calculator](https://aio-calculator.com/unit-conversion-calculator/): Length, weight, volume, temperature, shoe size, and currency conversion.
+- [Finance and Shopping Tools](https://aio-calculator.com/finance-shopping-tools/): Tip calculator, percentage discount, and sales tax.
+- [Home and Vehicle Tools](https://aio-calculator.com/home-vehicle-tools/): Fuel cost per trip, fuel economy (MPG vs L/100km), tire size comparison, and electricity cost.
+- [Tech and Security Tools](https://aio-calculator.com/tech-security-tools/): Cryptographic password generator, IPv4 subnet calculator (CIDR), and binary/hex/decimal converter.
+- [Sleep Calculator](https://aio-calculator.com/sleep-calculator/): Optimal bedtime and wake-up times based on natural 90-minute ultradian sleep cycles.
+- [Free Online Dice Roller (1 to 100)](https://aio-calculator.com/free-online-dice-roller-1-to-100/): Cryptographically random dice roller supporting d4 to d100 with advantage/disadvantage rolls.
+- [Countdown Timer](https://aio-calculator.com/countdown-timer/): Real-time countdown to future events, holidays, and milestones with days/hours/minutes/seconds.
+- [Timezone Converter](https://aio-calculator.com/timezone-converter/): Multi-city world clock and meeting planner across global time zones.
+
+### Category Hubs & Directory
+- [Financial Calculators](https://aio-calculator.com/financial-calculators/): All personal finance, mortgage, investment, and debt tools.
+- [Fitness and Health Calculators](https://aio-calculator.com/fitness-health-calculators/): Body composition, metabolic rate, pregnancy, and fitness calculators.
+- [Math Calculators](https://aio-calculator.com/math-calculators/): Academic, statistics, algebra, geometry, and arithmetic calculators.
+- [Everyday Tools](https://aio-calculator.com/everyday-tools/): Daily utility tools for time, units, travel, shopping, and security.
+- [All Tools Directory](https://aio-calculator.com/all-tools/): Searchable, filterable index of all 45+ interactive online calculators.
+
+### Guides & Company Information
+- [Blog](https://aio-calculator.com/blog/): Comprehensive calculation guides, financial formulas, and methodology articles.
+- [How to Use a Mortgage Calculator](https://aio-calculator.com/how-to-use-a-mortgage-calculator/): Complete guide to mortgage calculation, PITI, amortization, and loan terms.
+- [Plan Your Monthly Loans Interest Rates Instantly](https://aio-calculator.com/plan-your-monthly-loans-interest-rates-instantly/): How loan interest works, amortization schedules, and reducing interest costs.
+- [About Us](https://aio-calculator.com/about-us/): Editorial standards, testing methodology, and privacy guarantee.
+- [Contact Us](https://aio-calculator.com/contact-us/): Bug reports, tool suggestions, and feedback.
+- [Privacy Policy](https://aio-calculator.com/privacy-policy/): Strict zero-data-retention client-side computation policy.
+- [Disclaimer](https://aio-calculator.com/disclaimer-aio-calculator/): Educational and informational calculation disclaimer.
+- [Terms and Conditions](https://aio-calculator.com/terms-conditions-aio-calculator/): Website terms of service.

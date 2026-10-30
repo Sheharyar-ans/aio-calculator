@@ -6,6 +6,7 @@ node_modules/
 # Build caches & temp
 .astro/
 .cache/
+_astro_source_archive/
 
 # OS and Log files
 .DS_Store

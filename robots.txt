@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Explicit allowance for AI Search & Answer Engine Crawlers (for citation indexation)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://aio-calculator.com/sitemap.xml
+Sitemap: https://aio-calculator.com/sitemap-index.xml

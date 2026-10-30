@@ -1,9 +1,29 @@
 # AIO Calculator — Deployment & Hosting Portability Guide
 
 > **Production Target:** `https://aio-calculator.com/`  
-> **Architecture:** 100% Static HTML + Modern Vanilla CSS & JavaScript  
-> **Server Runtime Required:** None (Zero Node.js, Zero PHP, Zero Databases)  
-> **Portability Guarantee:** The compiled `dist/` directory can be copied to Apache, LiteSpeed (CloudPages), Nginx, or any static host without altering a single line of code.
+> **Architecture:** 100% Pure Static HTML5 + CSS3 + Vanilla JavaScript  
+> **Server Runtime Required:** None (Zero Node.js, Zero PHP, Zero Databases, Zero Build Step)  
+> **Portability Guarantee:** The entire repository is pure static files. It can be deployed directly to Cloudflare Pages, CloudPages (LiteSpeed), Apache, Nginx, or GitHub Pages without compilation.
+
+---
+
+## 1. Deploying to Cloudflare Pages (Instant Zero-Error Deployment)
+
+Because the repository is now **100% pure static HTML, CSS, and Vanilla JavaScript**, Cloudflare Pages requires **NO build step** and will deploy in under 10 seconds:
+
+### Cloudflare Pages Settings:
+1. Log into your **Cloudflare Dashboard** &rarr; **Workers & Pages** &rarr; **Create application** &rarr; **Pages** &rarr; **Connect to Git**.
+2. Select repository: `Sheharyar-ans/aio-calculator` (Branch: `main`).
+3. Set **Build Settings**:
+   - **Framework preset:** `None`
+   - **Build command:** *(leave completely blank or empty)*
+   - **Build output directory:** `/` *(or leave blank / `.`)*
+4. Click **Save and Deploy**.
+
+### Why This Fixes Cloudflare Build Errors:
+- **No Node.js / TypeScript build step required:** Cloudflare serves the pre-compiled, semantic HTML files directly.
+- **Native `_headers` included:** Custom Cloudflare Pages security headers (CSP, HSTS, X-Content-Type-Options) and 1-year immutable caching for `/assets/*` are already configured.
+- **Native `_redirects` included:** Trailing-slash and 301 redirects are enforced automatically.
 
 ---
 
