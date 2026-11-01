@@ -3,47 +3,49 @@
 > Fast, free, modern online calculators with instant client-side computation. No sign-up, no paywalls, and no upload of personal financial or health data.
 
 Website: https://aio-calculator.com/
+Full Specifications & Formulas: https://aio-calculator.com/llms-full.txt
+Sitemap: https://aio-calculator.com/sitemap.xml
 
 ## Core Principles
-- All calculations run directly in the client browser where possible.
-- Headings, mathematical formulas, worked examples, and FAQs are server-rendered as clean semantic HTML.
+- All calculations run directly in the client browser with zero server data retention.
+- Headings, mathematical formulas, worked examples, and FAQs are rendered as clean semantic HTML.
 - Sourced and dated reference numbers (e.g., IRS tax brackets per Rev. Proc. 2025-32, WHO BMI classification, Freddie Mac PMMS mortgage reference rates).
 - No hard-coded mandatory rates; all interest rates and brackets are user-editable.
 
 ## All Tool Categories & Direct URLs
 
 ### Financial Calculators
-- [EMI Calculator](https://aio-calculator.com/emi-calculator/): Calculate monthly instalment (EMI) for loans.
-- [Loan Interest Analyzer](https://aio-calculator.com/loan-interest-analyzer/): Total interest analysis and loan cost comparison.
-- [Mortgage Calculator](https://aio-calculator.com/mortgage-calculator/): Monthly mortgage payment with PITI (Principal, Interest, Taxes, Insurance) and PMI.
-- [Credit Card Calculator](https://aio-calculator.com/credit-card-calculator/): Payoff timeline and interest savings between minimum and fixed payments.
+- [EMI Calculator](https://aio-calculator.com/emi-calculator/): Calculate monthly instalment (EMI) for personal, car, and home loans using reducing balance amortization.
+- [Loan Interest Analyzer](https://aio-calculator.com/loan-interest-analyzer/): Total interest analysis, APR comparison, and loan cost breakdown.
+- [Mortgage Calculator](https://aio-calculator.com/mortgage-calculator/): Monthly mortgage payment with PITI (Principal, Interest, Taxes, Insurance) and Private Mortgage Insurance (PMI).
+- [Credit Card Calculator](https://aio-calculator.com/credit-card-calculator/): Payoff timeline and interest savings between minimum and fixed monthly payments.
 - [Amortization Calculator](https://aio-calculator.com/amortization-calculator/): Complete loan amortization schedule with monthly principal vs interest split.
-- [SIP Investment Planner](https://aio-calculator.com/sip-investment-planner/): Systematic Investment Plan returns and wealth growth.
-- [FD vs RD Comparison](https://aio-calculator.com/fd-vs-rd-comparison/): Fixed Deposit vs Recurring Deposit returns comparison.
-- [Investment Calculator](https://aio-calculator.com/investment-calculator/): Lump sum investment growth and compound balance projections.
-- [Investment and ROI Calculator](https://aio-calculator.com/investment-roi-calculator/): Return on investment percentage, annualized ROI, and profit.
-- [Retirement Calculator](https://aio-calculator.com/retirement-calculator/): Retirement nest egg requirements and sustainable withdrawal planning.
-- [Budget Calculator](https://aio-calculator.com/budget-calculator/): 50/30/20 monthly budget breakdown across needs, wants, and savings.
+- [SIP Investment Planner](https://aio-calculator.com/sip-investment-planner/): Systematic Investment Plan returns and wealth growth using compound interest.
+- [FD vs RD Comparison](https://aio-calculator.com/fd-vs-rd-comparison/): Fixed Deposit lump sum vs Recurring Deposit monthly instalment returns comparison.
+- [Investment Calculator](https://aio-calculator.com/investment-calculator/): Lump sum investment growth and compound balance projections over 1 to 40 years.
+- [Investment and ROI Calculator](https://aio-calculator.com/investment-roi-calculator/): Return on investment percentage, annualized ROI (CAGR), and net profit.
+- [Retirement Calculator](https://aio-calculator.com/retirement-calculator/): Retirement nest egg requirements and sustainable withdrawal planning based on age benchmarks.
+- [Budget Calculator](https://aio-calculator.com/budget-calculator/): 50/30/20 monthly budget breakdown across essential needs, discretionary wants, and savings.
 - [Savings Calculator](https://aio-calculator.com/savings-calculator/): Target savings timeline and emergency fund growth with compound interest.
-- [Income Tax Calculator](https://aio-calculator.com/income-tax-calculator/): Federal income tax, effective tax rate, and take-home pay estimate.
-- [Currency and Inflation Calculator](https://aio-calculator.com/currency-inflation-calculator/): Purchasing power erosion and historical/projected inflation impact.
+- [Income Tax Calculator](https://aio-calculator.com/income-tax-calculator/): Federal income tax, effective tax rate, and take-home pay estimate based on tax brackets.
+- [Currency and Inflation Calculator](https://aio-calculator.com/currency-inflation-calculator/): Purchasing power erosion and historical/projected inflation impact over time.
 - [Compound Interest Calculator](https://aio-calculator.com/compound-interest-calculator/): Compound growth with regular monthly contributions and compounding frequency.
-- [Home Affordability Calculator](https://aio-calculator.com/home-affordability-calculator/): Maximum purchase price based on income, debt-to-income (DTI) ratio, and down payment.
-- [Rent vs Buy Calculator](https://aio-calculator.com/rent-vs-buy-calculator/): Total cost comparison and break-even year between homeownership and renting.
+- [Home Affordability Calculator](https://aio-calculator.com/home-affordability-calculator/): Maximum purchase price based on gross salary, 28/36 debt-to-income (DTI) ratio, and down payment.
+- [Rent vs Buy Calculator](https://aio-calculator.com/rent-vs-buy-calculator/): Total cost comparison, 5% unrecoverable cost rule, and break-even year between owning and renting.
 - [Refinance Calculator](https://aio-calculator.com/refinance-calculator/): Monthly savings, break-even months to recoup closing costs, and lifetime interest impact.
-- [FIRE Calculator](https://aio-calculator.com/fire-calculator/): Financial Independence, Retire Early targets, FIRE number, and years to financial freedom.
+- [FIRE Calculator](https://aio-calculator.com/fire-calculator/): Financial Independence, Retire Early targets, FIRE number (25x expenses), and years to financial freedom.
 - [Debt Payoff Calculator](https://aio-calculator.com/debt-payoff-calculator/): Debt Snowball vs Debt Avalanche payoff timeline, interest saved, and debt-free date.
-- [Paycheck Calculator](https://aio-calculator.com/paycheck-calculator/): Gross to net take-home salary after federal tax, FICA (Social Security & Medicare), and deductions.
+- [Paycheck Calculator](https://aio-calculator.com/paycheck-calculator/): Gross to net take-home salary after federal tax, FICA (Social Security and Medicare), and deductions.
 - [Auto Loan Calculator](https://aio-calculator.com/auto-loan-calculator/): Car loan monthly payment, trade-in value, sales tax, and total financing interest.
 
 ### Fitness & Health Calculators
-- [BMI and Ideal Weight Calculator](https://aio-calculator.com/bmi-ideal-weight-calculator/): Body Mass Index and Devine/Hamwi/Robinson ideal weight range.
+- [BMI and Ideal Weight Calculator](https://aio-calculator.com/bmi-ideal-weight-calculator/): Body Mass Index and Devine/Hamwi/Robinson ideal weight range by height.
 - [BMI and Body Fat Calculator](https://aio-calculator.com/bmi-body-fat-calculator/): U.S. Navy circumference method body fat percentage and fat mass vs lean mass.
 - [Calorie Intake / Deficit Tracker](https://aio-calculator.com/calorie-intake-deficit-tracker/): Daily calorie targets for healthy sustainable weight loss or gain.
-- [Calorie and Macro Calculator](https://aio-calculator.com/calorie-macro-calculator/): Total Daily Energy Expenditure (TDEE), BMR, and protein/carb/fat macro split.
-- [TDEE Calculator](https://aio-calculator.com/tdee-calculator/): Mifflin-St Jeor Total Daily Energy Expenditure by activity multiplier.
+- [Calorie and Macro Calculator](https://aio-calculator.com/calorie-macro-calculator/): Total Daily Energy Expenditure (TDEE), BMR, and protein/carb/fat macro split for cutting and bulking.
+- [TDEE Calculator](https://aio-calculator.com/tdee-calculator/): Mifflin-St Jeor Total Daily Energy Expenditure by physical activity level multiplier.
 - [Fitness and Workout Calculator](https://aio-calculator.com/fitness-workout-calculator/): MET-based workout calorie burn and target heart rate training zones.
-- [Pregnancy Due Date Finder](https://aio-calculator.com/pregnancy-due-date-finder/): Estimated date of delivery (EDD) based on LMP, conception date, or ultrasound.
+- [Pregnancy Due Date Finder](https://aio-calculator.com/pregnancy-due-date-finder/): Estimated date of delivery (EDD) based on LMP (Naegele's Rule), conception date, or ultrasound.
 - [Steps to Km Converter](https://aio-calculator.com/steps-to-km-converter/): Walking and running step count to distance (km, miles) and calories burned.
 
 ### Math Calculators
@@ -60,28 +62,33 @@ Website: https://aio-calculator.com/
 
 ### Everyday Utility Calculators & Hubs
 - [Time and Date Calculator](https://aio-calculator.com/time-date-calculator/): Age calculator, date difference, day counter, and business day calculator.
-- [Unit and Conversion Calculator](https://aio-calculator.com/unit-conversion-calculator/): Length, weight, volume, temperature, shoe size, and currency conversion.
+- [Unit and Conversion Calculator](https://aio-calculator.com/unit-conversion-calculator/): Length, weight, volume, temperature, and metric-imperial conversions.
 - [Finance and Shopping Tools](https://aio-calculator.com/finance-shopping-tools/): Tip calculator, percentage discount, and sales tax.
-- [Home and Vehicle Tools](https://aio-calculator.com/home-vehicle-tools/): Fuel cost per trip, fuel economy (MPG vs L/100km), tire size comparison, and electricity cost.
+- [Home and Vehicle Tools](https://aio-calculator.com/home-vehicle-tools/): Fuel cost per trip, fuel economy (MPG vs L/100km), and electricity cost per kWh.
 - [Tech and Security Tools](https://aio-calculator.com/tech-security-tools/): Cryptographic password generator, IPv4 subnet calculator (CIDR), and binary/hex/decimal converter.
 - [Sleep Calculator](https://aio-calculator.com/sleep-calculator/): Optimal bedtime and wake-up times based on natural 90-minute ultradian sleep cycles.
-- [Free Online Dice Roller (1 to 100)](https://aio-calculator.com/free-online-dice-roller-1-to-100/): Cryptographically random dice roller supporting d4 to d100 with advantage/disadvantage rolls.
+- [Free Online Dice Roller (1 to 100)](https://aio-calculator.com/free-online-dice-roller-1-to-100/): Cryptographically random dice roller supporting d4 to d100.
 - [Countdown Timer](https://aio-calculator.com/countdown-timer/): Real-time countdown to future events, holidays, and milestones with days/hours/minutes/seconds.
 - [Timezone Converter](https://aio-calculator.com/timezone-converter/): Multi-city world clock and meeting planner across global time zones.
+
+### Educational Guides & Deep-Dive Articles
+- [Compound Interest Explained](https://aio-calculator.com/compound-interest-formula-explained/): Mathematical formula, compounding frequencies, and why time beats capital size.
+- [How Much House Can You Afford](https://aio-calculator.com/how-much-house-can-you-afford/): The 28/36 debt-to-income rule, down payment tiers, and home buying budgets.
+- [Rent vs Buy: Which Is Better](https://aio-calculator.com/rent-vs-buy-which-is-better/): The 5% unrecoverable cost framework, opportunity costs, and break-even year math.
+- [Debt Snowball vs Avalanche](https://aio-calculator.com/debt-snowball-vs-avalanche/): Mathematical interest optimization vs psychological momentum steps to debt freedom.
+- [TDEE, Macros, and Protein Guide](https://aio-calculator.com/tdee-macros-protein-guide/): BMR vs TDEE, Mifflin-St Jeor equation, protein intake per kg, and macro splits.
+- [How to Calculate EMI and Save Interest](https://aio-calculator.com/how-to-calculate-emi-and-save-interest/): Reducing balance formula, flat rate trap, and prepayment acceleration tricks.
+- [Credit Card Payoff Plan](https://aio-calculator.com/credit-card-payoff-plan/): Anatomy of the minimum payment trap and fixed repayment escape strategies.
+- [Retirement Savings by Age and FIRE Number](https://aio-calculator.com/retirement-savings-by-age-and-fire-number/): Fidelity age milestones, the 4% rule, and financial independence math.
+- [GPA and Final Grade Planning Guide](https://aio-calculator.com/gpa-final-grade-planning-guide/): Weighted vs unweighted GPA, CBSE CGPA to percentage conversion, and required exam scores.
+- [Percentage Tricks for Everyday Life](https://aio-calculator.com/percentage-tricks-everyday-life/): Reversibility rule, percentage increase/decrease, reverse discounts, and restaurant tips.
+- [How to Use a Mortgage Calculator](https://aio-calculator.com/how-to-use-a-mortgage-calculator/): Complete guide to mortgage calculation, PITI, amortization, and loan terms.
+- [Plan Your Monthly Loans Interest Rates Instantly](https://aio-calculator.com/plan-your-monthly-loans-interest-rates-instantly/): How loan interest works, amortization schedules, and reducing interest costs.
 
 ### Category Hubs & Directory
 - [Financial Calculators](https://aio-calculator.com/financial-calculators/): All personal finance, mortgage, investment, and debt tools.
 - [Fitness and Health Calculators](https://aio-calculator.com/fitness-health-calculators/): Body composition, metabolic rate, pregnancy, and fitness calculators.
 - [Math Calculators](https://aio-calculator.com/math-calculators/): Academic, statistics, algebra, geometry, and arithmetic calculators.
 - [Everyday Tools](https://aio-calculator.com/everyday-tools/): Daily utility tools for time, units, travel, shopping, and security.
-- [All Tools Directory](https://aio-calculator.com/all-tools/): Searchable, filterable index of all 45+ interactive online calculators.
-
-### Guides & Company Information
-- [Blog](https://aio-calculator.com/blog/): Comprehensive calculation guides, financial formulas, and methodology articles.
-- [How to Use a Mortgage Calculator](https://aio-calculator.com/how-to-use-a-mortgage-calculator/): Complete guide to mortgage calculation, PITI, amortization, and loan terms.
-- [Plan Your Monthly Loans Interest Rates Instantly](https://aio-calculator.com/plan-your-monthly-loans-interest-rates-instantly/): How loan interest works, amortization schedules, and reducing interest costs.
-- [About Us](https://aio-calculator.com/about-us/): Editorial standards, testing methodology, and privacy guarantee.
-- [Contact Us](https://aio-calculator.com/contact-us/): Bug reports, tool suggestions, and feedback.
-- [Privacy Policy](https://aio-calculator.com/privacy-policy/): Strict zero-data-retention client-side computation policy.
-- [Disclaimer](https://aio-calculator.com/disclaimer-aio-calculator/): Educational and informational calculation disclaimer.
-- [Terms and Conditions](https://aio-calculator.com/terms-conditions-aio-calculator/): Website terms of service.
+- [All Tools Directory](https://aio-calculator.com/all-tools/): Searchable, filterable index of all interactive online calculators.
+- [Blog Directory](https://aio-calculator.com/blog/): Comprehensive knowledgebase of calculation guides and financial insights.

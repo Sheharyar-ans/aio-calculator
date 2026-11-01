@@ -1,0 +1,30 @@
+# ==============================================================================
+# Cloudflare Pages Headers Configuration
+# Global Security Headers & Asset Cache Directives
+# ==============================================================================
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+  Content-Security-Policy: default-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; media-src 'self' https:; font-src 'self' data: https:; frame-ancestors 'self';
+  X-XSS-Protection: 1; mode=block
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Static Assets: 1 Year Immutable Edge & Browser Caching
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Feeds, Crawlers & Manifests: 1 Hour Revalidation
+/llms.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/robots.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/sitemap*.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: application/xml; charset=utf-8

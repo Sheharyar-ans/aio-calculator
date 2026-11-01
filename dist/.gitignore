@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build caches & temp
+.astro/
+.cache/
+_astro_source_archive/
+
+# OS and Log files
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.*.local
+
+# External reference archives
+_scroll_world_ref/
+

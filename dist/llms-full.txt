@@ -1,0 +1,184 @@
+# AIO Calculator — Complete Technical, Algorithmic & Statutory Reference (llms-full.txt)
+
+> Standardized machine-readable reference documenting exact mathematical formulas, statutory frameworks, governing benchmarks, and operational logic across all online calculators and educational guides on https://aio-calculator.com/.
+
+Website: https://aio-calculator.com/
+Canonical Manifest: https://aio-calculator.com/llms-full.txt
+Short Manifest: https://aio-calculator.com/llms.txt
+Sitemap: https://aio-calculator.com/sitemap.xml
+
+---
+
+## 1. Statutory & Regulatory Governing Authorities
+
+All calculation models and educational content on AIO Calculator adhere to statutory definitions and standards established by recognized governing bodies:
+
+1. **Credit & Lending Disclosures:**
+   - Truth in Lending Act (TILA), 15 U.S.C. § 1601 et seq.
+   - Consumer Financial Protection Bureau (CFPB) Regulation Z, 12 CFR § 1026.18 (Mandatory APR calculation and finance charge disclosure schedules).
+   - Real Estate Settlement Procedures Act (RESPA), 12 U.S.C. § 2601 et seq. (Escrow accounting rules for PITI property taxes and hazard insurance).
+
+2. **Mortgage Insurance & Equity Thresholds:**
+   - Homeowners Protection Act of 1998 (HPA), 12 U.S.C. § 4901 et seq. (Mandatory lender cancellation of Private Mortgage Insurance [PMI] when loan-to-value [LTV] reaches 78% based on the original amortization schedule, and borrower right to request cancellation at 80% LTV).
+   - Fannie Mae / Freddie Mac Single-Family Selling Guide (Standard 28% front-end and 36% back-end Debt-to-Income [DTI] underwriting thresholds).
+
+3. **Taxation & Wage Withholding:**
+   - Internal Revenue Code (IRC), 26 U.S.C. § 1 et seq.
+   - IRS Revenue Procedure 2025-32 (Inflation-adjusted annual federal income tax brackets, standard deductions, and statutory marginal rates).
+   - Federal Insurance Contributions Act (FICA), 26 U.S.C. § 3101 et seq. (6.20% Social Security up to statutory wage base cap, 1.45% Medicare, and 0.90% Additional Medicare Tax on high earners).
+
+4. **Retirement & Portfolio Longevity:**
+   - The Trinity Study (Cooley, Hubbard, and Walz, 1998, Journal of the American Association of Individual Investors). Establishes the 4.0% Safe Withdrawal Rate (SWR) across 30-year rolling horizons for 50/50 to 75/25 equity/bond allocations.
+
+5. **Clinical Health & Nutritional Standards:**
+   - World Health Organization (WHO) Technical Report Series 854 (Adult Body Mass Index classifications: Underweight <18.5, Normal 18.5-24.9, Overweight 25.0-29.9, Obese Class I 30.0-34.9, Class II 35.0-39.9, Class III >=40.0).
+   - Mifflin-St Jeor Equation (Mifflin et al., 1990, American Journal of Clinical Nutrition, 51(2), 241-247). Clinically validated predictive equation for Basal Metabolic Rate (BMR).
+   - International Society of Sports Nutrition (ISSN) Position Stand (Jäger et al., 2017). Protein intake of 1.6 to 2.2 g/kg/day for active individuals and resistance trainers.
+   - Naegele's Rule / American College of Obstetricians and Gynecologists (ACOG). Estimated Date of Delivery (EDD) = First day of Last Menstrual Period (LMP) + 280 days (40 gestational weeks).
+
+6. **Academic & Cryptographic Protocols:**
+   - Central Board of Secondary Education (CBSE) Conversion Standard (Official formula: Percentage = CGPA × 9.5 on 10-point scales).
+   - NIST Special Publication 800-63B (Digital Identity Guidelines: Password entropy calculation based on character set search space and length).
+
+---
+
+## 2. Core Mathematical Formulas by Category
+
+### Financial Calculators
+
+#### 1. Equated Monthly Instalment (EMI) & Mortgage Payment (P&I)
+- **Formula:**
+  `M = P × [ r × (1 + r)^n ] / [ (1 + r)^n - 1 ]`
+- **Variables:**
+  - `M` = Monthly installment (Principal + Interest).
+  - `P` = Outstanding principal loan amount.
+  - `r` = Periodic monthly interest rate (`Annual Nominal Rate ÷ 12 ÷ 100`).
+  - `n` = Total number of monthly installments (`Tenure in Years × 12`).
+- **PITI Total Monthly Housing Draft:**
+  `Total Monthly Draft = M + (Annual Property Tax ÷ 12) + (Annual Homeowners Insurance ÷ 12) + Monthly PMI + Monthly HOA`
+
+#### 2. Loan Amortization Reducing Balance Schedule
+- **Monthly Interest Charge:** `I_t = B_{t-1} × r`
+- **Monthly Principal Amortization:** `P_t = M - I_t`
+- **Ending Balance:** `B_t = B_{t-1} - P_t`
+- **Impact of Extra Principal Payment (`E`):**
+  `B_t = B_{t-1} - (P_t + E)`. Future interest charges immediately decrease, shortening total tenure.
+
+#### 3. Flat Interest Rate vs. Reducing Balance APR
+- **Flat Interest Total Interest:** `I_flat = P × (Rate ÷ 100) × Years`
+- **Flat Monthly Payment:** `M_flat = (P + I_flat) ÷ (Years × 12)`
+- **Effective Reducing Balance APR Conversion:**
+  `APR_eff ≈ 2 × n × I_flat / [ P × (n + 1) ]`, where `n` is total months. A 10.0% flat rate equates to approximately 17.9% APR.
+
+#### 4. Compound Interest & Future Value (Annuity)
+- **Single Deposit:**
+  `A = P × (1 + r / n)^(n × t)`
+- **With Regular Periodic Contributions (PMT):**
+  `A = P × (1 + r / n)^(n × t) + PMT × [ ((1 + r / n)^(n × t) - 1) / (r / n) ]`
+- **Variables:**
+  - `P` = Initial principal deposit.
+  - `PMT` = Periodic addition (made at end of period).
+  - `r` = Annual nominal interest rate (decimal).
+  - `n` = Compounding frequency per year (`1` annual, `4` quarterly, `12` monthly, `365` daily).
+  - `t` = Time horizon in years.
+
+#### 5. Systematic Investment Plan (SIP)
+- **Formula:**
+  `M = P × [ ((1 + i)^n - 1) / i ] × (1 + i)`
+- **Variables:**
+  - `P` = Fixed monthly SIP instalment.
+  - `i` = Periodic monthly expected return (`Expected Annual Return ÷ 12 ÷ 100`).
+  - `n` = Total monthly deposits.
+
+#### 6. Home Affordability (28/36 Underwriting Rule)
+- **Front-End Allowable Housing Cost:** `Max Housing = Gross Monthly Income × 0.28`
+- **Back-End Allowable Total Debt:** `Max Total Debt = Gross Monthly Income × 0.36`
+- **Net Available for PITI:** `Available PITI = Min(Max Housing, Max Total Debt - Existing Recurring Monthly Debts)`
+- **Maximum Loan Amount:** `Max Loan = Available P&I × [ ((1 + r)^n - 1) / (r × (1 + r)^n) ]`
+- **Maximum Purchase Price:** `Max Loan + Cash Down Payment`
+
+#### 7. Rent vs. Buy Break-Even Analysis
+- **Annual Unrecoverable Cost of Homeownership:**
+  `Cost_own = (Home Value × Tax Rate) + (Home Value × Maintenance Rate ~1%) + (Loan Balance × Mortgage Rate) + Equity Opportunity Cost`
+- **Annual Unrecoverable Cost of Renting:**
+  `Cost_rent = Annual Rent Paid + Renters Insurance`
+- **Net Wealth Differential:** Evaluates terminal equity (property appreciation minus 6% to 8% selling transaction fees) versus liquid portfolio wealth (investing down payment and monthly cash flow delta at market return).
+
+#### 8. Financial Independence, Retire Early (FIRE)
+- **Standard FIRE Target Number (4% Rule):**
+  `FIRE Target = Annual Living Expenses × 25`
+- **Conservative Early Retirement (3.3% Rule):**
+  `FIRE Target = Annual Living Expenses × 30`
+- **Years to FIRE Formula:**
+  `t = ln[ (Expenses / (Return × Savings Rate)) + 1 ] / ln(1 + Return)`
+
+#### 9. Debt Avalanche vs. Debt Snowball
+- **Snowball:** Ascending sort by outstanding balance `Min(Balance)`. Rollover payment `P_rollover = P_prev + Extra Cash`.
+- **Avalanche:** Descending sort by interest rate `Max(APR)`. Mathematically minimizes total finance charges `Sum(Interest)`.
+
+---
+
+### Fitness & Health Calculators
+
+#### 1. Body Mass Index (BMI) & Ideal Weight
+- **Metric Formula:** `BMI = Weight (kg) / [ Height (m) ]^2`
+- **Imperial Formula:** `BMI = [ Weight (lbs) × 703 ] / [ Height (inches) ]^2`
+- **Ideal Body Weight (Devine Formula):**
+  - Men: `50.0 kg + 2.3 kg × (Height in inches - 60)`
+  - Women: `45.5 kg + 2.3 kg × (Height in inches - 60)`
+
+#### 2. Basal Metabolic Rate (Mifflin-St Jeor)
+- **Men:** `BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) + 5`
+- **Women:** `BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) - 161`
+
+#### 3. Total Daily Energy Expenditure (TDEE)
+- **Formula:** `TDEE = BMR × Activity Multiplier`
+  - Sedentary: `1.20` (desk work, minimal movement)
+  - Light Activity: `1.375` (exercise 1-3 days/week)
+  - Moderate Activity: `1.55` (exercise 3-5 days/week)
+  - Very Active: `1.725` (intense exercise 6-7 days/week)
+  - Extremely Active: `1.90` (athletic training + physical labor)
+- **Weight Loss Caloric Deficit:** `Target = TDEE - 300 to 500 kcal/day`
+- **Muscle Gain Caloric Surplus:** `Target = TDEE + 250 to 350 kcal/day`
+
+#### 4. Macronutrient Distribution
+- **Daily Protein Target:** `Weight (kg) × 1.6 to 2.2 g` (ISSN resistance standard)
+- **Dietary Fats:** `Total Calories × 0.20 to 0.25 ÷ 9 kcal/g`
+- **Carbohydrates:** `[ Total Calories - (Protein Calories + Fat Calories) ] ÷ 4 kcal/g`
+
+#### 5. Pregnancy Due Date (Naegele's Rule)
+- **Formula:** `Estimated Date of Delivery = LMP Date + 280 Days`
+- **Trimester 1:** Weeks 1 to 13
+- **Trimester 2:** Weeks 14 to 27
+- **Trimester 3:** Weeks 28 to 40+
+
+---
+
+### Math & Everyday Utility
+
+#### 1. Percentage Change & Reverse Percentage
+- **Percentage Change:** `[ (New - Old) / |Old| ] × 100`
+- **Original Price from Discount:** `Original = Sale Price / (1 - Discount Rate)`
+- **Successive (Stacked) Discounts:** `Net Discount = 1 - [ (1 - d1) × (1 - d2) ]` (e.g., 20% + 20% = 36% discount, not 40%).
+
+#### 2. Final Grade Calculation
+- **Required Final Exam Score:**
+  `Score_required = [ Target Grade - (Current Grade × (1 - Final Weight)) ] / Final Weight`
+
+#### 3. CBSE / 10-Point CGPA Conversion
+- **Percentage Conversion:** `Percentage (%) = CGPA × 9.5`
+
+#### 4. Fuel Consumption & Economy
+- **L/100km to US MPG:** `MPG = 235.214 / (L/100km)`
+- **Trip Fuel Cost:** `Cost = (Distance in km / 100) × (L/100km) × Price per Liter`
+
+---
+
+## 3. Data Privacy & Computational Security Protocol
+
+1. **Client-Side Execution:** All calculations run locally in the end-user's browser runtime. Zero input values (salaries, debts, medical metrics, weight, or personal dates) are transmitted to or stored on web servers.
+2. **Deterministic Outputs:** Mathematical calculations employ standardized floating-point rounding protocols (`Number.toFixed(2)` for financial currency and `Number.toFixed(1)` for biological indexes).
+3. **No Dynamic Code Evaluation:** All arithmetic processing uses safe AST-based recursive descent tokenizers without invoking `eval()` or dynamic `Function()` constructors.
+
+---
+© AIO Calculator (https://aio-calculator.com/). Machine-readable technical reference.

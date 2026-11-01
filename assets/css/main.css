@@ -901,3 +901,168 @@ th {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Touch Target Accessibility (Phase 5: Minimum 44px to 48px) */
+button,
+.btn,
+.form-input,
+.form-select,
+.hub-tab-btn,
+.sidebar-link {
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+/* Court-Ready Print Stylesheet (Phase 5: Clean Print Optimization) */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide interactive chrome and navigation */
+  .site-header,
+  .site-footer,
+  .sidebar,
+  .hub-nav,
+  .btn,
+  button,
+  .search-trigger,
+  #search-modal-backdrop,
+  .calculator-actions,
+  .hero-section,
+  .scroll-world-stage,
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .tool-page-grid {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .prose {
+    max-width: 100% !important;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #000000 !important;
+  }
+
+  h1 {
+    font-size: 18pt !important;
+    border-bottom: 2pt solid #000000;
+    padding-bottom: 4pt;
+    margin-bottom: 12pt;
+  }
+
+  h2 {
+    font-size: 14pt !important;
+    margin-top: 14pt;
+    margin-bottom: 6pt;
+  }
+
+  h3 {
+    font-size: 12pt !important;
+    margin-top: 10pt;
+  }
+
+  p, ul, ol, dl {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Table formatting for records */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 12pt 0 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  th, td {
+    border: 1pt solid #4b5563 !important;
+    padding: 5pt 8pt !important;
+    font-size: 9.5pt !important;
+  }
+
+  th {
+    background-color: #f3f4f6 !important;
+    font-weight: 700 !important;
+  }
+
+  /* Card and Formula containers */
+  .example-card,
+  .math-formula,
+  .formula-box,
+  .calc-card,
+  .direct-answer-lead {
+    border: 1pt solid #9ca3af !important;
+    padding: 8pt 10pt !important;
+    margin-bottom: 10pt !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    background: #ffffff !important;
+  }
+
+  /* Verification and legal signature block */
+  .print-legal-block {
+    display: block !important;
+    margin-top: 24pt !important;
+    padding-top: 10pt !important;
+    border-top: 1pt solid #000000 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .print-signature-grid {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 20pt !important;
+  }
+
+  .print-signature-line {
+    width: 45% !important;
+    border-top: 1pt solid #000000 !important;
+    padding-top: 4pt !important;
+    font-size: 9pt !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8.5pt;
+    color: #4b5563 !important;
+  }
+
+  a[href^="/"]::after {
+    content: " (https://aio-calculator.com" attr(href) ")";
+    font-size: 8.5pt;
+    color: #4b5563 !important;
+  }
+}
+

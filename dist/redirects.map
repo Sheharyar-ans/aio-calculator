@@ -1,0 +1,8 @@
+# AIO Calculator — URL Redirect Map
+# Rule: Exactly ONE old-site redirect is permitted and configured.
+# Old dice post redirects 301 to the new canonical dice tool page.
+# NO other old URL has been deleted, renamed, or redirected in this build.
+
+/free-online-dice-roller/  /free-online-dice-roller-1-to-100/  301
+
+# No other redirects. All 40 old URLs exist at their exact original flat slugs.

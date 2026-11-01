@@ -1,0 +1,297 @@
+{
+  "algebra-equations-calculator": {
+    "file": "algebra-equations-calculator\\index.html",
+    "words": 48,
+    "text": "An algebra and equations calculator solves linear equations (ax + b = 0) and quadratic polynomial equations (ax² + bx + c = 0), providing step-by-step algebraic working, discriminant evaluations, and both exact and decimal roots. It enables students and engineers to verify variable solutions for x instantly."
+  },
+  "amortization-calculator": {
+    "file": "amortization-calculator\\index.html",
+    "words": 46,
+    "text": "An amortization calculator generates a complete schedule of periodic loan payments, detailing the exact allocation of every installment toward principal repayment versus interest charges over time. In the early stages of a loan, payments consist predominantly of interest, while later payments shift progressively toward reducing principal."
+  },
+  "auto-loan-calculator": {
+    "file": "auto-loan-calculator\\index.html",
+    "words": 54,
+    "text": "An auto loan calculator computes your monthly car payment, total financing interest charges, and all-in vehicle cost based on vehicle price, trade-in credit, cash down payment, sales tax rate, and loan term. Covering both new and used car loans on a single page, it clarifies how loan duration influences monthly affordability versus total interest."
+  },
+  "average-statistics-calculator": {
+    "file": "average-statistics-calculator\\index.html",
+    "words": 39,
+    "text": "An average and statistics calculator computes key measures of central tendency (mean, median, mode) and dispersion (sample and population standard deviation, variance, range) from a set of numbers. It provides full descriptive statistical analysis for researchers, students, and analysts."
+  },
+  "basic-math-calculator": {
+    "file": "basic-math-calculator\\index.html",
+    "words": 40,
+    "text": "A basic math calculator performs foundational arithmetic calculations: addition, subtraction, multiplication, and division: alongside percentages, reciprocals, and square roots. Operating with zero latency directly in your browser, it features a responsive keypad, clear display, and full physical keyboard number-pad support."
+  },
+  "bmi-body-fat-calculator": {
+    "file": "bmi-body-fat-calculator\\index.html",
+    "words": 57,
+    "text": "A body fat percentage calculator estimates the proportion of your total body weight composed of adipose tissue relative to lean muscle, bone, and water. Using the scientifically validated U.S. Navy circumference method based on neck, waist, hip, and height measurements, it provides a much more accurate evaluation of physical fitness and health risks than height-weight BMI alone."
+  },
+  "bmi-ideal-weight-calculator": {
+    "file": "bmi-ideal-weight-calculator\\index.html",
+    "words": 61,
+    "text": "Body Mass Index (BMI) is a screening metric that evaluates body weight relative to height to assess whether an individual falls into an underweight, normal, overweight, or obese classification. For adults, a healthy BMI ranges between 18.5 and 24.9 according to the World Health Organization (WHO), while ideal body weight formulas estimate target healthy weights based on biological sex and height."
+  },
+  "budget-calculator": {
+    "file": "budget-calculator\\index.html",
+    "words": 47,
+    "text": "A budget calculator divides your monthly take-home income into structured spending and savings categories to ensure living within your financial means. Utilizing the popular 50/30/20 framework, it allocates 50% of net income toward essential needs, 30% toward personal wants, and 20% toward debt repayment and wealth-building savings."
+  },
+  "calorie-intake-deficit-tracker": {
+    "file": "calorie-intake-deficit-tracker\\index.html",
+    "words": 56,
+    "text": "A calorie deficit tracker calculates the specific daily caloric intake needed to produce safe, sustainable fat loss by creating a negative energy balance below your Total Daily Energy Expenditure (TDEE). A consistent daily deficit of 500 calories equates to approximately one pound of body fat lost per week, balancing fat reduction while preserving lean muscle mass."
+  },
+  "calorie-macro-calculator": {
+    "file": "calorie-macro-calculator\\index.html",
+    "words": 50,
+    "text": "A calorie and macro calculator determines your Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), and optimal distribution of daily calories across the three primary macronutrients: protein, carbohydrates, and dietary fats. Tailoring your macros ensures you maintain energy levels and retain lean muscle while hitting your body composition targets."
+  },
+  "compound-interest-calculator": {
+    "file": "compound-interest-calculator\\index.html",
+    "words": 44,
+    "text": "A compound interest calculator computes the exponential growth of an investment when interest earned is reinvested to generate its own earnings over time. By incorporating an initial principal deposit, recurring regular additions, and compounding frequency, it demonstrates why starting early creates massive long-term wealth."
+  },
+  "compound-interest-formula-explained": {
+    "file": "compound-interest-formula-explained\\index.html",
+    "words": 43,
+    "text": "Compound interest is the interest calculated on the initial principal plus all previously accumulated interest from past periods. Mathematically expressed as A = P(1 + r/n) nt , compounding accelerates asset growth exponentially because your earnings continuously generate their own earnings over time."
+  },
+  "countdown-timer": {
+    "file": "countdown-timer\\index.html",
+    "words": 42,
+    "text": "A countdown timer calculates the exact remaining time until a future calendar date, milestone, holiday, or deadline in real time, updating second by second. It converts the remaining duration into days, hours, minutes, and seconds, providing clear visual anticipation and deadline tracking."
+  },
+  "credit-card-calculator": {
+    "file": "credit-card-calculator\\index.html",
+    "words": 48,
+    "text": "A credit card payoff calculator calculates the exact number of months and total interest required to eliminate your revolving balance. It directly compares paying only the lender minimum requirement against fixed monthly payments, illustrating how small extra amounts can cut years of repayment and thousands in financing costs."
+  },
+  "credit-card-payoff-plan": {
+    "file": "credit-card-payoff-plan\\index.html",
+    "words": 82,
+    "text": "Paying only the minimum payment on a credit card is mathematically engineered to keep you in debt for 15 to 25 years while charging you double or triple the original purchase price in interest. On a $6,000 credit card balance at a 22.99% APR, paying the statutory minimum takes 18 years and 4 months , costing $8,245.00 in finance charges . Adopting a fixed payment plan of $250 per month clears the same debt in just 32 months and saves over $6,500."
+  },
+  "currency-inflation-calculator": {
+    "file": "currency-inflation-calculator\\index.html",
+    "words": 64,
+    "text": "An inflation calculator measures how purchasing power changes over time due to compound price inflation, showing what a specific sum of money from the past is worth today or what today’s dollars will buy in the future. It answers: &quot;How much purchasing power does my money lose over 10 or 20 years?&quot; For converting exchange rates between currencies, visit our Unit and Conversion Calculator."
+  },
+  "debt-payoff-calculator": {
+    "file": "debt-payoff-calculator\\index.html",
+    "words": 53,
+    "text": "A debt payoff calculator models accelerated debt elimination across multiple credit cards, personal loans, and student loans, comparing the Debt Avalanche (highest interest rate first) against the Debt Snowball (smallest balance first). It shows your exact debt-free calendar date, total interest paid under each method, and the savings from adding extra monthly cash."
+  },
+  "debt-snowball-vs-avalanche": {
+    "file": "debt-snowball-vs-avalanche\\index.html",
+    "words": 60,
+    "text": "The Debt Avalanche method mathematically gets you debt-free faster and saves the most money by targeting debts with the highest interest rate first. In contrast, the Debt Snowball method prioritizes the smallest balance first, delivering rapid psychological wins that help borrowers stay motivated. While Avalanche saves more in interest, Snowball produces higher real-world completion rates for borrowers struggling with consistency."
+  },
+  "emi-calculator": {
+    "file": "emi-calculator\\index.html",
+    "words": 55,
+    "text": "An Equated Monthly Instalment (EMI) is the fixed monthly payment made by a borrower to a lender on a specified date each month. It repays both principal and interest across the loan term, ensuring the debt is fully amortized by the maturity date. This calculator computes your exact monthly payment and total interest cost instantly."
+  },
+  "fd-vs-rd-comparison": {
+    "file": "fd-vs-rd-comparison\\index.html",
+    "words": 60,
+    "text": "An FD vs RD comparison calculator evaluates the return difference between investing a single lump-sum amount in a Fixed Deposit (FD) versus investing periodic monthly installments in a Recurring Deposit (RD) over the same timeframe. Because an FD has all capital compounding from day one, it generates significantly higher total interest than an RD of the same total deposited principal."
+  },
+  "final-grade-calculator": {
+    "file": "final-grade-calculator\\index.html",
+    "words": 52,
+    "text": "A final grade calculator computes the exact percentage score you must achieve on your final examination to earn your desired overall letter grade in a course. By factoring in your current course grade and the percentage weight assigned to the final exam, it removes exam anxiety and provides a clear academic target."
+  },
+  "finance-shopping-tools": {
+    "file": "finance-shopping-tools\\index.html",
+    "words": 44,
+    "text": "Finance and shopping tools provide daily retail and dining utilities: calculating restaurant tips with fair per-person bill splits, computing markdown discounts and double coupons, and determining state and municipal sales tax. It helps shoppers and diners calculate exact out-of-pocket costs instantly before checking out."
+  },
+  "fire-calculator": {
+    "file": "fire-calculator\\index.html",
+    "words": 50,
+    "text": "A FIRE calculator computes your exact FIRE number (the total investment nest egg required for financial independence) and projects how many years of aggressive saving remain until work becomes optional. Based on the 25x annual expenses rule and safe withdrawal rates, it charts your journey to Financial Independence, Retire Early."
+  },
+  "fitness-workout-calculator": {
+    "file": "fitness-workout-calculator\\index.html",
+    "words": 44,
+    "text": "A fitness and workout calculator estimates the total calories burned during specific physical activities using scientific Metabolic Equivalent of Task (MET) values, and determines your target aerobic training heart rate zones using the Karvonen formula. It helps athletes optimize cardiovascular intensity and energy expenditure."
+  },
+  "fraction-calculator": {
+    "file": "fraction-calculator\\index.html",
+    "words": 42,
+    "text": "A fraction calculator adds, subtracts, multiplies, and divides fractions and mixed numbers, providing full step-by-step working including finding the Least Common Denominator (LCD), converting improper fractions, and simplifying to lowest terms. It solves everyday math problems for students, woodworkers, and culinary recipes."
+  },
+  "free-online-dice-roller-1-to-100": {
+    "file": "free-online-dice-roller-1-to-100\\index.html",
+    "words": 52,
+    "text": "The Free Online Dice Roller generates provably fair, cryptographically random dice rolls for tabletop gaming (D&amp;D, RPGs, board games) and random number selection from 1 to 100. Supporting standard polyhedral dice: d4, d6, d8, d10, d12, d20, and percentile d100: it tracks roll history, modifiers (+/-), and multi-dice sums with zero lag."
+  },
+  "geometry-calculator": {
+    "file": "geometry-calculator\\index.html",
+    "words": 43,
+    "text": "A geometry calculator computes the geometric properties of 2D shapes (area, perimeter, circumference) and 3D solids (surface area, volume). By selecting a shape: such as a circle, rectangle, triangle, sphere, cylinder, or cone: and providing known dimensions, it calculates all corresponding measurements instantly."
+  },
+  "gpa-calculator": {
+    "file": "gpa-calculator\\index.html",
+    "words": 48,
+    "text": "A GPA calculator computes your semester and cumulative Grade Point Average (GPA) on a standard 4.0 unweighted scale or 5.0 weighted scale for Honors/AP/IB coursework. By multiplying each course’s numerical grade points by its credit hours and dividing by total credits attempted, it produces your official academic standing."
+  },
+  "gpa-final-grade-planning-guide": {
+    "file": "gpa-final-grade-planning-guide\\index.html",
+    "words": 66,
+    "text": "To calculate the exact score you need on your final exam to secure your desired course grade, use the formula: Required = [Target &minus; (Current &times; (1 &minus; Final Weight))] &divide; Final Weight . For instance, if you currently have an 83%, the final exam counts for 30% of your grade, and you want an 85% overall, you must score an 89.67% on the final exam."
+  },
+  "home-affordability-calculator": {
+    "file": "home-affordability-calculator\\index.html",
+    "words": 52,
+    "text": "A home affordability calculator computes the maximum home purchase price and loan amount you qualify for based on your gross annual household income, recurring monthly debt obligations, down payment cash, and lender Debt-to-Income (DTI) guidelines. It ensures you select a home price that leaves sufficient breathing room for savings, emergencies, and life."
+  },
+  "home-vehicle-tools": {
+    "file": "home-vehicle-tools\\index.html",
+    "words": 41,
+    "text": "Home and vehicle tools provide essential automotive and residential utility calculations: trip fuel expenses, vehicle fuel efficiency (MPG vs L/100km), tire size diameter and speedometer discrepancies, and household appliance electricity consumption costs. It helps homeowners and drivers budget operating expenses accurately."
+  },
+  "how-much-house-can-you-afford": {
+    "file": "how-much-house-can-you-afford\\index.html",
+    "words": 66,
+    "text": "You can afford a house where your total monthly housing cost (mortgage principal, interest, property taxes, homeowners insurance, and HOA fees) stays under 28% of your gross monthly income, with total monthly debt payments remaining below 36%. For a household earning $100,000 annually with moderate debts, this typically translates to an affordable home price between $350,000 and $420,000 depending on down payment and prevailing interest rates."
+  },
+  "how-to-calculate-emi-and-save-interest": {
+    "file": "how-to-calculate-emi-and-save-interest\\index.html",
+    "words": 75,
+    "text": "To calculate your Equated Monthly Instalment (EMI), apply the reducing-balance amortization formula: E = P &times; r &times; (1 + r) n / [(1 + r) n - 1] . On a $100,000 loan at 8.5% interest for 15 years (180 months), your monthly EMI is $984.74 . You can save tens of thousands in interest by making one extra payment per year or increasing your EMI by 5% annually, cutting years off your debt."
+  },
+  "income-tax-calculator": {
+    "file": "income-tax-calculator\\index.html",
+    "words": 54,
+    "text": "An income tax calculator computes your estimated annual federal income tax liability, marginal tax bracket, and effective overall tax rate based on your gross income, filing status, and deductions. By applying progressive tax brackets to your taxable income, it illustrates exactly how much of your earnings go to federal taxes versus your take-home pay."
+  },
+  "investment-calculator": {
+    "file": "investment-calculator\\index.html",
+    "words": 61,
+    "text": "An investment calculator projects the future growth of a lump-sum capital investment over time based on expected annual returns and compounding frequency. It answers the question: &quot;How much will my current portfolio balance be worth in 10, 20, or 30 years?&quot; If you want to calculate return on investment percentage from an asset sale, visit our companion Investment and ROI Calculator."
+  },
+  "investment-roi-calculator": {
+    "file": "investment-roi-calculator\\index.html",
+    "words": 56,
+    "text": "An Investment and ROI Calculator computes the exact percentage return, annualized compound growth rate (CAGR), and net financial profit realized on an investment relative to its initial cost. It answers the question: &quot;What percentage return did I earn on this trade, property, or venture?&quot; If you need forward-looking compound balance growth, use our companion Investment Calculator."
+  },
+  "loan-interest-analyzer": {
+    "file": "loan-interest-analyzer\\index.html",
+    "words": 52,
+    "text": "A loan interest analyzer evaluates the true borrowing cost of debt by calculating the cumulative interest paid and the interest-to-principal ratio across your loan term. Unlike a basic payment calculator that only reports your monthly bill, this tool shows the exact percentage of your money going to finance charges versus actual equity."
+  },
+  "mortgage-calculator": {
+    "file": "mortgage-calculator\\index.html",
+    "words": 53,
+    "text": "A mortgage payment is the monthly sum paid to a home lender, typically comprising Principal, Interest, Property Taxes, and Homeowners Insurance (PITI), plus Private Mortgage Insurance (PMI) if your down payment is under 20%. This calculator computes your complete all-in monthly housing cost and reveals your total interest over 15 or 30 years."
+  },
+  "paycheck-calculator": {
+    "file": "paycheck-calculator\\index.html",
+    "words": 44,
+    "text": "A paycheck calculator determines your exact net take-home pay per pay period after deducting federal income tax, Social Security (6.2%), Medicare (1.45%), state income taxes, and pre-tax retirement or health deductions. It reveals how much deposited cash lands in your bank account every payday."
+  },
+  "percentage-calculator": {
+    "file": "percentage-calculator\\index.html",
+    "words": 47,
+    "text": "A percentage calculator solves all common percentage calculations: finding a percentage of a given number, calculating the percentage increase or decrease between two values, and finding what percentage one number is of another. It provides instant solutions for shopping discounts, salary raises, test scores, and financial returns."
+  },
+  "percentage-tricks-everyday-life": {
+    "file": "percentage-tricks-everyday-life\\index.html",
+    "words": 71,
+    "text": "You can solve any everyday percentage calculation in seconds using three foundational rules: (1) Reversibility: x% of y = y% of x (e.g., 18% of 50 is 50% of 18 = 9); (2) Percentage Change: [(New &minus; Old) / Old] &times; 100 ; and (3) Reverse Percentage: Original = Sale Price &divide; (1 &minus; Discount Rate) . On a $120 item discounted by 30%, your final checkout price is $84.00 ."
+  },
+  "pregnancy-due-date-finder": {
+    "file": "pregnancy-due-date-finder\\index.html",
+    "words": 52,
+    "text": "A pregnancy due date finder estimates your baby’s expected delivery date (EDD) and current gestational age based on the first day of your Last Menstrual Period (LMP), conception date, or ultrasound date. Using clinical Naegele’s rule (280 days / 40 weeks from LMP), it generates an organized trimester timeline and developmental milestones."
+  },
+  "probability-data-calculator": {
+    "file": "probability-data-calculator\\index.html",
+    "words": 46,
+    "text": "A probability and data calculator computes the likelihood of random events occurring, alongside fundamental combinatorics metrics: combinations (nCr) where order does not matter, and permutations (nPr) where order matters. It evaluates single events, complementary odds, and compound probabilities (AND / OR logic) for mathematics and statistics."
+  },
+  "refinance-calculator": {
+    "file": "refinance-calculator\\index.html",
+    "words": 55,
+    "text": "A refinance calculator determines whether replacing your current mortgage with a new loan saves money by calculating your monthly payment reduction, lifetime interest savings, and the number of months required to recoup closing costs. Refinancing makes financial sense when your break-even period is significantly shorter than the time you plan to stay in the home."
+  },
+  "rent-vs-buy-calculator": {
+    "file": "rent-vs-buy-calculator\\index.html",
+    "words": 49,
+    "text": "A rent vs buy calculator compares the comprehensive financial cost of purchasing and maintaining a home against renting an equivalent property and investing the down payment difference in stock index funds. By projecting home appreciation, mortgage interest, property taxes, maintenance, and investment returns, it identifies your exact break-even year."
+  },
+  "rent-vs-buy-which-is-better": {
+    "file": "rent-vs-buy-which-is-better\\index.html",
+    "words": 77,
+    "text": "Neither renting nor buying is universally superior; the mathematically optimal choice depends strictly on your planned duration in the home. Buying typically breaks even with renting after 5 to 7 years because it takes that long for home price appreciation and principal amortization to overcome upfront closing costs (2% - 5%), selling fees (6% - 8%), mortgage interest, and maintenance. If staying under 5 years, renting and investing the down payment almost always yields higher net wealth."
+  },
+  "retirement-calculator": {
+    "file": "retirement-calculator\\index.html",
+    "words": 53,
+    "text": "A retirement calculator determines how much capital you must accumulate to maintain your desired standard of living after you stop working. By evaluating your current age, planned retirement age, savings rate, and expected investment growth, it projects whether your nest egg will sustain you through your retirement years without running out of money."
+  },
+  "retirement-savings-by-age-and-fire-number": {
+    "file": "retirement-savings-by-age-and-fire-number\\index.html",
+    "words": 73,
+    "text": "To achieve financial independence and traditional retirement by age 67, aim to save 1&times; your salary by age 30, 3&times; by 40, 6&times; by 50, and 10&times; by 67. If pursuing early retirement via the FIRE movement (Financial Independence, Retire Early), your target FIRE Number equals your projected annual expenses multiplied by 25 (based on the 4% Safe Withdrawal Rule). For example, $50,000 in annual spending requires a invested portfolio of $1,250,000 ."
+  },
+  "savings-calculator": {
+    "file": "savings-calculator\\index.html",
+    "words": 53,
+    "text": "A savings calculator determines the future accumulated balance of your bank savings account or emergency fund when regular contributions compound with interest over time. It can also reverse-calculate the exact monthly deposit required to reach a specific financial savings milestone (such as a house down payment or vacation fund) by a target deadline."
+  },
+  "scientific-calculator": {
+    "file": "scientific-calculator\\index.html",
+    "words": 47,
+    "text": "A scientific calculator performs advanced mathematical operations beyond basic arithmetic, including trigonometric functions (sine, cosine, tangent), inverse trigonometry, natural and common logarithms (ln, log), powers, roots, factorials, and universal mathematical constants (π, e). It operates in both Degree and Radian modes for STEM students and engineering professionals."
+  },
+  "sip-investment-planner": {
+    "file": "sip-investment-planner\\index.html",
+    "words": 46,
+    "text": "A Systematic Investment Plan (SIP) calculator determines the future maturity value of regular, disciplined monthly contributions to mutual funds or exchange-traded funds (ETFs). By investing a fixed sum on a set monthly date, you harness rupee-cost / dollar-cost averaging and compounding growth to build long-term wealth."
+  },
+  "sleep-calculator": {
+    "file": "sleep-calculator\\index.html",
+    "words": 51,
+    "text": "A sleep calculator determines the ideal times to fall asleep or wake up based on natural 90-minute human sleep cycles (ultradian rhythms). Waking up at the conclusion of a full sleep cycle: rather than in the middle of deep REM sleep: prevents sleep inertia, ensuring you wake feeling alert and rejuvenated."
+  },
+  "steps-to-km-converter": {
+    "file": "steps-to-km-converter\\index.html",
+    "words": 54,
+    "text": "A steps to km converter converts your pedometer or smartwatch daily step counts into kilometers and miles, while calculating calories burned based on your biological sex, height, and estimated stride length. For an average adult walking stride (approx. 0.74 to 0.79 meters), 10,000 steps equals roughly 7.5 to 8.0 kilometers (4.7 to 5.0 miles)."
+  },
+  "tdee-calculator": {
+    "file": "tdee-calculator\\index.html",
+    "words": 47,
+    "text": "A TDEE calculator determines your Total Daily Energy Expenditure: the total number of calories your body burns in a 24-hour period across basal metabolic function, physical exercise, and daily movement. Knowing your precise TDEE is the essential scientific starting point for maintaining, losing, or gaining body weight."
+  },
+  "tdee-macros-protein-guide": {
+    "file": "tdee-macros-protein-guide\\index.html",
+    "words": 83,
+    "text": "To determine what you should actually eat, calculate your Total Daily Energy Expenditure (TDEE) by multiplying your Basal Metabolic Rate (BMR via the Mifflin-St Jeor formula) by your physical activity multiplier (1.2 to 1.9). For fat loss, eat a 300 to 500 kcal deficit below TDEE; for muscle gain, eat a 250 to 400 kcal surplus. In both cases, anchor your nutrition by consuming 1.6 to 2.2 grams of protein per kilogram of body weight, filling remaining calories with carbohydrates and essential fats."
+  },
+  "tech-security-tools": {
+    "file": "tech-security-tools\\index.html",
+    "words": 39,
+    "text": "Tech and security tools provide essential digital utilities for developers, network administrators, and security-conscious internet users: generating cryptographically strong random passwords and passphrases in-browser, calculating IPv4 CIDR subnet network/broadcast addresses, and converting numbers between binary, decimal, and hexadecimal representations."
+  },
+  "time-date-calculator": {
+    "file": "time-date-calculator\\index.html",
+    "words": 47,
+    "text": "A time and date calculator computes chronological intervals between dates and times, including chronological age in years, months, and days, duration between two calendar dates, business work days excluding weekends and holidays, and world time differences. It combines all common temporal calculations into one fast, browser-based hub."
+  },
+  "timezone-converter": {
+    "file": "timezone-converter\\index.html",
+    "words": 39,
+    "text": "A timezone converter translates local times across world time zones (UTC/GMT, Eastern, Pacific, Central European, India, Japan), accounting for daylight saving time (DST) shifts. It enables remote workers, international businesses, and travelers to schedule cross-border meetings without scheduling errors."
+  },
+  "unit-conversion-calculator": {
+    "file": "unit-conversion-calculator\\index.html",
+    "words": 42,
+    "text": "A unit and conversion calculator converts measurements between Metric and Imperial systems across physical dimensions: length, weight, volume, area, speed, and temperature: alongside practical utilities for international shoe size charts and foreign currency conversions. It ensures quick conversions without memorizing conversion factors."
+  }
+}
