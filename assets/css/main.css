@@ -1,8 +1,4 @@
-/* ==========================================================================
-   AIO Calculator — Core Design System & CSS
-   Mobile-First, High Contrast, Zero Layout Shift, Accessible
-   ========================================================================== */
-
+/* Hallmark: Bespoke anti-slop design system for AIO Calculator */
 :root {
   --color-primary: #1d4ed8;
   --color-primary-hover: #1e40af;
@@ -15,6 +11,14 @@
   --color-warning-light: #fffbeb;
   --color-danger: #be123c;
   --color-danger-light: #fff1f2;
+  --color-purple: #7e22ce;
+  --color-purple-light: #f3e8ff;
+  --color-amber: #b45309;
+  --color-amber-light: #fef3c7;
+  --color-orange: #c2410c;
+  --color-orange-light: #ffedd5;
+  --color-teal: #0f766e;
+  --color-teal-light: #ccfbf1;
 
   --color-slate-900: #0f172a;
   --color-slate-800: #1e293b;
@@ -52,6 +56,11 @@
   padding: 0;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 html {
   font-family: var(--font-sans);
   font-size: 16px;
@@ -60,12 +69,24 @@ html {
   background-color: var(--color-slate-50);
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: clip;
+}
+
+button:active, .btn:active, .popular-pill:active, .tool-card:active {
+  transform: scale(0.98);
+}
+
+button:disabled, .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 a {
@@ -84,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-slate-900);
   font-weight: 700;
   line-height: 1.25;
+  text-wrap: balance;
 }
 
 h1 {
@@ -137,7 +159,7 @@ li {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--color-white);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-slate-200);
   height: var(--header-height);
@@ -192,7 +214,7 @@ li {
   font-size: 0.95rem;
   padding: 0.4rem 0.6rem;
   border-radius: var(--radius-sm);
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .nav-link:hover {
@@ -217,7 +239,7 @@ li {
   border-radius: var(--radius-full);
   font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .btn-search-trigger:hover {
@@ -390,7 +412,7 @@ li {
   background-color: var(--color-white);
   border: 1.5px solid var(--color-slate-300);
   border-radius: var(--radius-md);
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .form-input.has-prefix {
@@ -404,7 +426,7 @@ li {
 .form-input:focus, .form-select:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
 }
 
 .form-range {
@@ -416,7 +438,7 @@ li {
 
 /* Results Display Box (Strictly Zero Layout Shift: Pre-allocated height) */
 .results-box {
-  background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+  background: linear-gradient(135deg, var(--color-slate-50) 0%, var(--color-primary-light) 100%);
   border: 1.5px solid var(--color-primary-border);
   border-radius: var(--radius-md);
   padding: 1.25rem;
@@ -433,8 +455,8 @@ li {
 .result-label {
   font-size: 0.85rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: normal;
   color: var(--color-slate-600);
   margin-bottom: 0.35rem;
 }
@@ -485,7 +507,7 @@ li {
   cursor: pointer;
   border: 1px solid transparent;
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .btn-primary {
@@ -519,7 +541,7 @@ li {
 .math-formula {
   background-color: var(--color-white);
   border: 1px solid var(--color-slate-200);
-  border-left: 4px solid var(--color-primary);
+  border: 1px solid var(--color-primary-border);
   padding: 1rem 1.25rem;
   border-radius: var(--radius-sm);
   margin: 1.25rem 0;
@@ -571,14 +593,14 @@ li {
 
 .alert-warning {
   background-color: var(--color-warning-light);
-  border-left: 4px solid var(--color-warning);
-  color: #78350f;
+  border: 1px solid var(--color-warning-light);
+  color: var(--color-warning);
 }
 
 .alert-info {
   background-color: var(--color-primary-light);
-  border-left: 4px solid var(--color-primary);
-  color: #1e3a8a;
+  border: 1px solid var(--color-primary-border);
+  color: var(--color-primary-hover);
 }
 
 /* FAQs */
@@ -666,7 +688,7 @@ li {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .sidebar-link:hover {
@@ -811,7 +833,7 @@ th {
 .search-modal-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(15, 23, 42, 0.6);
+  background-color: rgba(15, 23, 42, 0.7);
   backdrop-filter: blur(4px);
   z-index: 100;
   display: none;
@@ -1076,7 +1098,7 @@ button,
   border: 1px solid var(--color-slate-300);
   border-radius: var(--radius-full);
   padding: 0.25rem 0.65rem 0.25rem 0.75rem;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
   position: relative;
 }
 
@@ -1124,7 +1146,7 @@ button,
   gap: 0.45rem;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--color-slate-900);
 }
 
 .calc-currency-bar-right {
@@ -1144,25 +1166,25 @@ button,
   padding: 0.35rem 0.7rem;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #334155;
+  color: var(--color-slate-700);
   background: #ffffff;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--color-slate-300);
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
   min-height: 34px;
 }
 
 .curr-pill:hover {
-  border-color: #2563eb;
-  color: #2563eb;
-  background: #eff6ff;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-primary-light);
 }
 
 .curr-pill.active {
-  background: #2563eb;
+  background: var(--color-primary);
   color: #ffffff;
-  border-color: #2563eb;
+  border-color: var(--color-primary);
   box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
 }
 
@@ -1170,9 +1192,9 @@ button,
   padding: 0.35rem 0.65rem;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #334155;
+  color: var(--color-slate-700);
   background: #ffffff;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--color-slate-300);
   border-radius: 6px;
   cursor: pointer;
   outline: none;
@@ -1182,7 +1204,7 @@ button,
 
 .calc-currency-select:hover,
 .calc-currency-select:focus {
-  border-color: #2563eb;
+  border-color: var(--color-primary);
   background: #ffffff;
 }
 
