@@ -1,7 +1,7 @@
 /**
- * AIO Calculator — Modular Engine: fd-rd
+ * AIO Calculator : Modular Engine: fd-rd
  * 100% Client-Side Vanilla JavaScript (Zero Server Runtime, Pure Static)
- * CloudPages / LiteSpeed High-Performance Modular Asset
+ * Multi-Currency Enabled via AIO_CURRENCY
  */
 (function () {
   'use strict';
@@ -25,6 +25,9 @@
     if (!formContainer) return;
 
     var formatCurrency = function (val, maxDec) {
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.format === 'function') {
+        return window.AIO_CURRENCY.format(val, maxDec);
+      }
       if (maxDec === undefined) maxDec = 2;
       if (isNaN(val) || !isFinite(val)) return '$0.00';
       return new Intl.NumberFormat('en-US', {
@@ -32,6 +35,18 @@
         currency: 'USD',
         maximumFractionDigits: maxDec
       }).format(val);
+    };
+
+    var getCurSymbol = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getSymbol === 'function')
+        ? window.AIO_CURRENCY.getSymbol()
+        : '$';
+    };
+
+    var getCurBarHtml = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getBarHtml === 'function')
+        ? window.AIO_CURRENCY.getBarHtml()
+        : '';
     };
 
     var formatNumber = function (val, dec) {
@@ -50,12 +65,11 @@
 
     // Tool Engine
     function buildFdRd(def) {
-      formContainer.innerHTML =
-        '<div class="calc-grid">' +
+      formContainer.innerHTML = getCurBarHtml() + '<div class="calc-grid">' +
           '<div class="form-group">' +
-            '<label class="form-label" for="fdrd-amt">Total Deposit Capital ($)</label>' +
+            '<label class="form-label" for="fdrd-amt">Total Deposit Capital (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="fdrd-amt" class="form-input has-prefix" value="' + (def.amount || 12000) + '" step="1000" />' +
             '</div>' +
           '</div>' +
@@ -96,11 +110,20 @@
 
         breakdownRows.innerHTML =
           '<div class="breakdown-row"><span>Fixed Deposit (Lump Sum) Returns:</span><span>' + formatCurrency(fdMaturity) + '</span></div>' +
-          '<div class="breakdown-row"><span>Recurring Deposit ($' + formatNumber(monthlyInstallment, 0) + '/mo) Returns:</span><span>' + formatCurrency(rdMaturity) + '</span></div>' +
+          '<div class="breakdown-row"><span>Recurring Deposit (' + formatCurrency(monthlyInstallment, 0) + '/mo) Returns:</span><span>' + formatCurrency(rdMaturity) + '</span></div>' +
           '<div class="breakdown-row highlight"><span>FD Advantage:</span><span style="color: var(--color-success);">+' + formatCurrency(fdMaturity - rdMaturity) + ' more interest</span></div>';
       }
 
       formContainer.querySelectorAll('input').forEach(function (inp) { inp.addEventListener('input', compute); });
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.bindBar === 'function') {
+        window.AIO_CURRENCY.bindBar(formContainer, compute);
+      }
+      window.addEventListener('aioCurrencyChange', function () {
+        if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.updateForms === 'function') {
+          window.AIO_CURRENCY.updateForms(window.AIO_CURRENCY.getCurrent());
+        }
+        compute();
+      });
       compute();
     }
 

@@ -1,7 +1,7 @@
 /**
- * AIO Calculator — Modular Engine: retirement
+ * AIO Calculator : Modular Engine: retirement
  * 100% Client-Side Vanilla JavaScript (Zero Server Runtime, Pure Static)
- * CloudPages / LiteSpeed High-Performance Modular Asset
+ * Multi-Currency Enabled via AIO_CURRENCY
  */
 (function () {
   'use strict';
@@ -25,6 +25,9 @@
     if (!formContainer) return;
 
     var formatCurrency = function (val, maxDec) {
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.format === 'function') {
+        return window.AIO_CURRENCY.format(val, maxDec);
+      }
       if (maxDec === undefined) maxDec = 2;
       if (isNaN(val) || !isFinite(val)) return '$0.00';
       return new Intl.NumberFormat('en-US', {
@@ -32,6 +35,18 @@
         currency: 'USD',
         maximumFractionDigits: maxDec
       }).format(val);
+    };
+
+    var getCurSymbol = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getSymbol === 'function')
+        ? window.AIO_CURRENCY.getSymbol()
+        : '$';
+    };
+
+    var getCurBarHtml = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getBarHtml === 'function')
+        ? window.AIO_CURRENCY.getBarHtml()
+        : '';
     };
 
     var formatNumber = function (val, dec) {
@@ -50,8 +65,7 @@
 
     // Tool Engine
     function buildRetirement(def) {
-      formContainer.innerHTML =
-        '<div class="calc-grid">' +
+      formContainer.innerHTML = getCurBarHtml() + '<div class="calc-grid">' +
           '<div class="form-group">' +
             '<label class="form-label" for="ret-age">Current Age</label>' +
             '<input type="number" id="ret-age" class="form-input" value="' + (def.currentAge || 35) + '" min="18" max="80" />' +
@@ -61,23 +75,23 @@
             '<input type="number" id="ret-target-age" class="form-input" value="' + (def.retirementAge || 65) + '" min="30" max="90" />' +
           '</div>' +
           '<div class="form-group">' +
-            '<label class="form-label" for="ret-cur">Current Savings ($)</label>' +
+            '<label class="form-label" for="ret-cur">Current Savings (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="ret-cur" class="form-input has-prefix" value="' + (def.currentSavings || 80000) + '" step="5000" />' +
             '</div>' +
           '</div>' +
           '<div class="form-group">' +
-            '<label class="form-label" for="ret-mo">Monthly Addition ($)</label>' +
+            '<label class="form-label" for="ret-mo">Monthly Addition (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="ret-mo" class="form-input has-prefix" value="' + (def.monthlySavings || 800) + '" step="50" />' +
             '</div>' +
           '</div>' +
           '<div class="form-group" style="grid-column: span 2;">' +
-            '<label class="form-label" for="ret-spend">Desired Annual Spending in Retirement ($)</label>' +
+            '<label class="form-label" for="ret-spend">Desired Annual Spending in Retirement (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="ret-spend" class="form-input has-prefix" value="' + (def.annualExpense || 70000) + '" step="5000" />' +
             '</div>' +
           '</div>' +
@@ -109,6 +123,15 @@
       }
 
       formContainer.querySelectorAll('input').forEach(function (inp) { inp.addEventListener('input', compute); });
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.bindBar === 'function') {
+        window.AIO_CURRENCY.bindBar(formContainer, compute);
+      }
+      window.addEventListener('aioCurrencyChange', function () {
+        if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.updateForms === 'function') {
+          window.AIO_CURRENCY.updateForms(window.AIO_CURRENCY.getCurrent());
+        }
+        compute();
+      });
       compute();
     }
 

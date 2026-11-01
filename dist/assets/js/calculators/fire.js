@@ -1,7 +1,7 @@
 /**
- * AIO Calculator — Modular Engine: fire
+ * AIO Calculator : Modular Engine: fire
  * 100% Client-Side Vanilla JavaScript (Zero Server Runtime, Pure Static)
- * CloudPages / LiteSpeed High-Performance Modular Asset
+ * Multi-Currency Enabled via AIO_CURRENCY
  */
 (function () {
   'use strict';
@@ -25,6 +25,9 @@
     if (!formContainer) return;
 
     var formatCurrency = function (val, maxDec) {
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.format === 'function') {
+        return window.AIO_CURRENCY.format(val, maxDec);
+      }
       if (maxDec === undefined) maxDec = 2;
       if (isNaN(val) || !isFinite(val)) return '$0.00';
       return new Intl.NumberFormat('en-US', {
@@ -32,6 +35,18 @@
         currency: 'USD',
         maximumFractionDigits: maxDec
       }).format(val);
+    };
+
+    var getCurSymbol = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getSymbol === 'function')
+        ? window.AIO_CURRENCY.getSymbol()
+        : '$';
+    };
+
+    var getCurBarHtml = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getBarHtml === 'function')
+        ? window.AIO_CURRENCY.getBarHtml()
+        : '';
     };
 
     var formatNumber = function (val, dec) {
@@ -50,26 +65,25 @@
 
     // Tool Engine
     function buildFire(def) {
-      formContainer.innerHTML =
-        '<div class="calc-grid">' +
+      formContainer.innerHTML = getCurBarHtml() + '<div class="calc-grid">' +
           '<div class="form-group">' +
-            '<label class="form-label" for="fire-exp">Annual Living Expenses ($)</label>' +
+            '<label class="form-label" for="fire-exp">Annual Living Expenses (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="fire-exp" class="form-input has-prefix" value="' + (def.annualExpenses || 55000) + '" step="5000" />' +
             '</div>' +
           '</div>' +
           '<div class="form-group">' +
-            '<label class="form-label" for="fire-cur">Current Portfolio Value ($)</label>' +
+            '<label class="form-label" for="fire-cur">Current Portfolio Value (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="fire-cur" class="form-input has-prefix" value="' + (def.currentInvestments || 120000) + '" step="10000" />' +
             '</div>' +
           '</div>' +
           '<div class="form-group">' +
-            '<label class="form-label" for="fire-save">Annual Savings Contribution ($)</label>' +
+            '<label class="form-label" for="fire-save">Annual Savings Contribution (' + getCurSymbol() + ')</label>' +
             '<div class="input-wrapper">' +
-              '<span class="input-prefix">$</span>' +
+              '<span class="input-prefix">' + getCurSymbol() + '</span>' +
               '<input type="number" id="fire-save" class="form-input has-prefix" value="55000" step="5000" />' +
             '</div>' +
           '</div>' +
@@ -108,6 +122,15 @@
       }
 
       formContainer.querySelectorAll('input').forEach(function (inp) { inp.addEventListener('input', compute); });
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.bindBar === 'function') {
+        window.AIO_CURRENCY.bindBar(formContainer, compute);
+      }
+      window.addEventListener('aioCurrencyChange', function () {
+        if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.updateForms === 'function') {
+          window.AIO_CURRENCY.updateForms(window.AIO_CURRENCY.getCurrent());
+        }
+        compute();
+      });
       compute();
     }
 

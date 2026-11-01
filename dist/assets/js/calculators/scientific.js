@@ -1,7 +1,7 @@
 /**
- * AIO Calculator — Modular Engine: scientific
+ * AIO Calculator : Modular Engine: scientific
  * 100% Client-Side Vanilla JavaScript (Zero Server Runtime, Pure Static)
- * CloudPages / LiteSpeed High-Performance Modular Asset
+ * Multi-Currency Enabled via AIO_CURRENCY
  */
 (function () {
   'use strict';
@@ -25,6 +25,9 @@
     if (!formContainer) return;
 
     var formatCurrency = function (val, maxDec) {
+      if (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.format === 'function') {
+        return window.AIO_CURRENCY.format(val, maxDec);
+      }
       if (maxDec === undefined) maxDec = 2;
       if (isNaN(val) || !isFinite(val)) return '$0.00';
       return new Intl.NumberFormat('en-US', {
@@ -32,6 +35,18 @@
         currency: 'USD',
         maximumFractionDigits: maxDec
       }).format(val);
+    };
+
+    var getCurSymbol = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getSymbol === 'function')
+        ? window.AIO_CURRENCY.getSymbol()
+        : '$';
+    };
+
+    var getCurBarHtml = function () {
+      return (window.AIO_CURRENCY && typeof window.AIO_CURRENCY.getBarHtml === 'function')
+        ? window.AIO_CURRENCY.getBarHtml()
+        : '';
     };
 
     var formatNumber = function (val, dec) {
