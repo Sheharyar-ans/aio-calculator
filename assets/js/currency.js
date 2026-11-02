@@ -220,13 +220,15 @@
   function init() {
     var cur = getStoredCurrency();
 
-    // Bind header global dropdown
-    var globalSelect = document.getElementById('global-currency-select');
-    if (globalSelect) {
-      globalSelect.value = cur;
-      globalSelect.addEventListener('change', function () {
-        setCurrency(this.value);
-      });
+    // Bind header & footer global dropdowns
+    var globalSelects = document.querySelectorAll('#global-currency-select, .footer-currency-select, .header-currency-select');
+    for (var g = 0; g < globalSelects.length; g++) {
+      (function (selectEl) {
+        selectEl.value = cur;
+        selectEl.addEventListener('change', function () {
+          setCurrency(this.value);
+        });
+      })(globalSelects[g]);
     }
 
     syncControls(cur);
