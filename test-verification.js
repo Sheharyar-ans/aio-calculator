@@ -68,7 +68,15 @@ const expectedNewPages = [
   '/fraction-calculator/',
   '/countdown-timer/',
   '/timezone-converter/',
-  '/scientific-calculator/'
+  '/scientific-calculator/',
+  '/youtube-money-calculator/',
+  '/freelance-hourly-rate-calculator/',
+  '/social-engagement-rate-calculator/',
+  '/hourly-to-salary-calculator/',
+  '/remote-work-savings-calculator/',
+  '/ev-vs-gas-savings-calculator/',
+  '/pet-age-food-calculator/',
+  '/water-intake-calculator/'
 ];
 
 console.log('--- STARTING VERIFICATION AUDIT ---');

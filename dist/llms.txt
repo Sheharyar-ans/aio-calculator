@@ -37,6 +37,9 @@ Sitemap: https://aio-calculator.com/sitemap.xml
 - [Debt Payoff Calculator](https://aio-calculator.com/debt-payoff-calculator/): Debt Snowball vs Debt Avalanche payoff timeline, interest saved, and debt-free date.
 - [Paycheck Calculator](https://aio-calculator.com/paycheck-calculator/): Gross to net take-home salary after federal tax, FICA (Social Security and Medicare), and deductions.
 - [Auto Loan Calculator](https://aio-calculator.com/auto-loan-calculator/): Car loan monthly payment, trade-in value, sales tax, and total financing interest.
+- [YouTube Money Calculator](https://aio-calculator.com/youtube-money-calculator/): Video ad revenue, niche RPM, and AdSense creator income estimator.
+- [Freelance Hourly Rate Calculator](https://aio-calculator.com/freelance-hourly-rate-calculator/): Calculate minimum billable hourly rate from target salary, overhead, and self-employment tax.
+- [Hourly to Salary Calculator](https://aio-calculator.com/hourly-to-salary-calculator/): Convert hourly wage to weekly, monthly, and annual salary with overtime, paid time off, and tax adjustments.
 
 ### Fitness & Health Calculators
 - [BMI and Ideal Weight Calculator](https://aio-calculator.com/bmi-ideal-weight-calculator/): Body Mass Index and Devine/Hamwi/Robinson ideal weight range by height.
@@ -47,6 +50,7 @@ Sitemap: https://aio-calculator.com/sitemap.xml
 - [Fitness and Workout Calculator](https://aio-calculator.com/fitness-workout-calculator/): MET-based workout calorie burn and target heart rate training zones.
 - [Pregnancy Due Date Finder](https://aio-calculator.com/pregnancy-due-date-finder/): Estimated date of delivery (EDD) based on LMP (Naegele's Rule), conception date, or ultrasound.
 - [Steps to Km Converter](https://aio-calculator.com/steps-to-km-converter/): Walking and running step count to distance (km, miles) and calories burned.
+- [Daily Water Intake Calculator](https://aio-calculator.com/water-intake-calculator/): Baseline hydration requirements by body weight, climate heat index, and activity level.
 
 ### Math Calculators
 - [Basic Math Calculator](https://aio-calculator.com/basic-math-calculator/): Standard arithmetic calculator with memory functions and keyboard support.
@@ -70,6 +74,10 @@ Sitemap: https://aio-calculator.com/sitemap.xml
 - [Free Online Dice Roller (1 to 100)](https://aio-calculator.com/free-online-dice-roller-1-to-100/): Cryptographically random dice roller supporting d4 to d100.
 - [Countdown Timer](https://aio-calculator.com/countdown-timer/): Real-time countdown to future events, holidays, and milestones with days/hours/minutes/seconds.
 - [Timezone Converter](https://aio-calculator.com/timezone-converter/): Multi-city world clock and meeting planner across global time zones.
+- [Social Media Engagement Rate Calculator](https://aio-calculator.com/social-engagement-rate-calculator/): Cross-platform engagement rate by followers, reach, and total interactions.
+- [Remote Work Savings Calculator](https://aio-calculator.com/remote-work-savings-calculator/): Measure annual commute fuel, vehicle depreciation, transit fares, and lunch savings from working remotely.
+- [EV vs Gas Car Savings Calculator](https://aio-calculator.com/ev-vs-gas-savings-calculator/): Lifetime fuel, electricity kWh, and maintenance cost comparison between electric and internal combustion vehicles.
+- [Pet Age and Daily Food Portion Calculator](https://aio-calculator.com/pet-age-food-calculator/): Calculate biological dog and cat age in human years and daily calorie/gram feeding portions.
 
 ### Educational Guides & Deep-Dive Articles
 - [Compound Interest Explained](https://aio-calculator.com/compound-interest-formula-explained/): Mathematical formula, compounding frequencies, and why time beats capital size.

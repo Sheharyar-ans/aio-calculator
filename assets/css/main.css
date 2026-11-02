@@ -1218,3 +1218,128 @@ button,
     justify-content: flex-start;
   }
 }
+
+/* ==========================================================================
+   SaaS Landing Page Enhancements & Visual Analytics Widgets
+   ========================================================================== */
+.saas-value-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 2rem 0;
+}
+
+.saas-pillar-card {
+  background: #ffffff;
+  border: 1px solid var(--color-slate-200);
+  border-radius: var(--radius-md);
+  padding: 1.15rem;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.saas-pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-border);
+}
+
+.saas-pillar-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.saas-pillar-title {
+  font-weight: 700;
+  font-size: 0.925rem;
+  color: var(--color-slate-900);
+  margin-bottom: 0.25rem;
+}
+
+.saas-pillar-desc {
+  font-size: 0.8125rem;
+  color: var(--color-slate-600);
+  line-height: 1.45;
+}
+
+.saas-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-slate-200);
+}
+
+.saas-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-slate-300);
+  background: #ffffff;
+  color: var(--color-slate-700);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.saas-action-btn:hover {
+  background: var(--color-slate-50);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.embed-widget-box {
+  display: none;
+  background: var(--color-slate-50);
+  border: 1px solid var(--color-slate-300);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.embed-widget-box.active {
+  display: block;
+}
+
+.embed-textarea {
+  width: 100%;
+  height: 70px;
+  font-family: monospace;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: 1px solid var(--color-slate-300);
+  border-radius: 4px;
+  color: var(--color-slate-800);
+  resize: none;
+}
+
+.visual-analytics-box {
+  background: #ffffff;
+  border: 1px solid var(--color-slate-200);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.analytics-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+}
