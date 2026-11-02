@@ -961,5 +961,118 @@
       "Plan Your Monthly Loans & Interest Rates Instantly: A Borrower’s Guide",
       "loan-interest-analyzer"
     ]
+  },
+  {
+    "name": "YouTube Money Calculator",
+    "slug": "youtube-money-calculator",
+    "url": "/youtube-money-calculator/",
+    "desc": "Calculate daily, monthly, and annual YouTube ad earnings and RPM revenue by views and niche.",
+    "cat": "creator",
+    "keywords": [
+      "youtube money calculator",
+      "youtube earnings calculator",
+      "youtube cpm calculator",
+      "youtube revenue",
+      "youtube views to money",
+      "how much youtube pays"
+    ]
+  },
+  {
+    "name": "Freelance Hourly Rate Calculator",
+    "slug": "freelance-hourly-rate-calculator",
+    "url": "/freelance-hourly-rate-calculator/",
+    "desc": "Calculate how much to charge per hour and per project to meet your net income and business expense goals.",
+    "cat": "creator",
+    "keywords": [
+      "freelance hourly rate calculator",
+      "how much to charge freelance",
+      "consultant rate calculator",
+      "freelance pricing",
+      "day rate calculator"
+    ]
+  },
+  {
+    "name": "Social Engagement Rate Calculator",
+    "slug": "social-engagement-rate-calculator",
+    "url": "/social-engagement-rate-calculator/",
+    "desc": "Analyze Instagram, TikTok, and social media engagement rates by followers, likes, comments, and shares.",
+    "cat": "creator",
+    "keywords": [
+      "engagement rate calculator",
+      "instagram engagement calculator",
+      "social media engagement rate",
+      "tiktok engagement rate",
+      "influencer rate"
+    ]
+  },
+  {
+    "name": "Hourly to Salary Calculator",
+    "slug": "hourly-to-salary-calculator",
+    "url": "/hourly-to-salary-calculator/",
+    "desc": "Convert hourly wage to annual gross salary, monthly, bi-weekly, and daily take-home pay.",
+    "cat": "financial",
+    "keywords": [
+      "hourly to salary calculator",
+      "hourly to annual pay",
+      "wage to salary",
+      "25 an hour is how much a year",
+      "salary converter"
+    ]
+  },
+  {
+    "name": "Remote Work Savings Calculator",
+    "slug": "remote-work-savings-calculator",
+    "url": "/remote-work-savings-calculator/",
+    "desc": "Calculate annual fuel, vehicle maintenance, commute hours, and cash saved by working from home.",
+    "cat": "everyday",
+    "keywords": [
+      "remote work savings calculator",
+      "work from home savings",
+      "commute cost calculator",
+      "gas savings wfh",
+      "remote vs office cost"
+    ]
+  },
+  {
+    "name": "EV vs Gas Car Savings Calculator",
+    "slug": "ev-vs-gas-savings-calculator",
+    "url": "/ev-vs-gas-savings-calculator/",
+    "desc": "Compare electric vehicle charging costs vs gasoline fuel expenses to find your break-even savings timeline.",
+    "cat": "everyday",
+    "keywords": [
+      "ev vs gas calculator",
+      "electric car savings calculator",
+      "ev charging cost comparison",
+      "gas vs electric car cost",
+      "electric vehicle savings"
+    ]
+  },
+  {
+    "name": "Pet Age & Food Portion Calculator",
+    "slug": "pet-age-food-calculator",
+    "url": "/pet-age-food-calculator/",
+    "desc": "Calculate dog and cat age in human years and compute daily calorie needs (MER/RER) and kibble grams.",
+    "cat": "everyday",
+    "keywords": [
+      "pet age calculator",
+      "dog age in human years",
+      "cat age calculator",
+      "dog food calorie calculator",
+      "cat food portion calculator"
+    ]
+  },
+  {
+    "name": "Daily Water Intake Calculator",
+    "slug": "water-intake-calculator",
+    "url": "/water-intake-calculator/",
+    "desc": "Calculate personalized daily hydration targets in liters, ounces, and glasses based on weight and activity.",
+    "cat": "fitness",
+    "keywords": [
+      "daily water intake calculator",
+      "how much water should i drink",
+      "water intake by weight",
+      "hydration calculator",
+      "water calculator"
+    ]
   }
 ]
