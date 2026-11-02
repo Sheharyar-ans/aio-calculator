@@ -7,10 +7,10 @@ export const clusterD = [
     dataDefaults: '{"expression":"48 / 2 * (9 + 3)"}',
     categoryName: 'Math',
     categoryUrl: '/math-calculators/',
-    pageTitle: 'Calculator Math Online Free: Simple Fast Web Calculator',
-    metaDescription: 'Use our calculator math online free tool for instant calculations. Fast, private browser arithmetic with keyboard hotkeys and basic operator precedence.',
+    pageTitle: 'Free Math Calculator Online: Fast Step-by-Step Calculations',
+    metaDescription: 'Use our free online math calculator for instant arithmetic, algebra, square roots, and percentages. Clean desktop & mobile layout with zero distractions.',
     h1: 'Calculator Math Online Free',
-    capsuleText: 'Our free online math calculator executes instant arithmetic operations, including addition, subtraction, multiplication, division, percentages, and powers. Operating completely within your client web browser, it applies mathematical order of operations (PEMDAS) with zero latency, keyboard hotkey support, and complete user data privacy.',
+    capsuleText: 'A basic math calculator performs foundational arithmetic operations including addition, subtraction, multiplication, and division, while adhering strictly to the mathematical order of operations (PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction). It delivers instant, zero-latency precision for daily financial, academic, and household math with zero tracking.',
     firstViewportCta: 'Execute your math calculations instantly above, or reference keyboard hotkeys and mathematical operator precedence rules below.',
     heroImage: {
       url: 'https://images.pexels.com/photos/5412270/pexels-photo-5412270.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&fit=crop',

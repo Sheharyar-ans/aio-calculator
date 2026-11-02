@@ -7,10 +7,10 @@ export const clusterC = [
     dataDefaults: '{"initialCost":60000,"finalValue":95000,"years":4}',
     categoryName: 'Financial Calculators',
     categoryUrl: '/financial-calculators/',
-    pageTitle: 'ROI Calculator: Return on Investment & Annualized Gain',
-    metaDescription: 'Calculate simple and annualized return on investment with our free ROI calculator. Analyze net profits, capital growth, and multi-year investment returns.',
+    pageTitle: 'ROI Calculator: Return on Investment & Profit Tool [2026]',
+    metaDescription: 'Calculate your exact Return on Investment (ROI), annualized yield, and net profit percentage instantly. Includes visual charts and payback estimates.',
     h1: 'ROI Calculator: Return on Investment',
-    capsuleText: 'Return on investment measures investment profitability through the formula: ROI equals net profit divided by initial investment cost multiplied by 100. For instance, earning 2,500 dollars profit on a 10,000 dollar asset purchase yields a 25 percent simple return on investment.',
+    capsuleText: 'Return on Investment (ROI) is calculated by subtracting initial investment cost from final value, dividing that net profit by the initial cost, and multiplying by 100 to yield a percentage. For multi-year holdings, annualized ROI compounds that return to reflect true year-over-year capital efficiency.',
     firstViewportCta: 'Compute your simple and annualized ROI above, or review our multi-year compound growth benchmarks below.',
     heroImage: {
       url: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&fit=crop',

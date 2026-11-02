@@ -9,10 +9,10 @@ export const clusterB = [
     hubNavHtml: `<nav class="hub-nav" aria-label="Tool Sections"><a href="#age-calculator" class="hub-tab-btn">Age Calculator</a><a href="#date-difference" class="hub-tab-btn">Date Difference</a><a href="#day-counter" class="hub-tab-btn">Day Counter &amp; Business Days</a><a href="#time-zone-converter" class="hub-tab-btn">Time Zone Converter</a></nav>`,
     categoryName: 'Everyday Tools',
     categoryUrl: '/everyday-tools/',
-    pageTitle: 'Time and Date Calculator: Duration & Business Days Tool',
-    metaDescription: 'Calculate exact days, hours, and business days between dates with our free time and date calculator. Add or subtract calendar days, leap years, and weeks.',
+    pageTitle: 'Time and Date Calculator: Days Between Dates & Hours [Free]',
+    metaDescription: 'Calculate exact business days, elapsed calendar duration, working hours, and time differences between any two dates. Fast, accurate, and 100% free tool.',
     h1: 'Time and Date Calculator',
-    capsuleText: 'A time and date calculator computes the exact duration between two calendar moments, measuring total elapsed days, weekdays, hours, and minutes. It accurately adjusts for leap years, month length variations, and optional non-working weekend exclusions to provide precise business day intervals.',
+    capsuleText: 'To calculate the duration between two dates, determine total elapsed days, account for leap years (366 days), and optionally subtract weekend days and observed statutory holidays. Dividing calendar days by 7 gives complete weeks, while multiplying total days by 24 gives total elapsed clock hours.',
     firstViewportCta: 'Calculate your exact date difference, working days, or age above, or reference our practical chronological calculation rules below.',
     heroImage: {
       url: 'https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&fit=crop',
