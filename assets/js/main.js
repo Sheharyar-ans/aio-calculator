@@ -179,7 +179,7 @@
       });
     }
 
-    // Monetag In-Page / Push Ad Tag Loader
+    // Monetag In-Page / Push Ad Tag Loader (Zone 12217426)
     try {
       if (!document.querySelector('script[src*="5gvci.com"]')) {
         var monetagScript = document.createElement('script');
@@ -187,6 +187,18 @@
         monetagScript.async = true;
         monetagScript.setAttribute('data-cfasync', 'false');
         document.head.appendChild(monetagScript);
+      }
+    } catch (e) {}
+
+    // Monetag Ad Tag (Zone 307457)
+    try {
+      if (!document.querySelector('script[src*="quge5.com"]')) {
+        var tag2 = document.createElement('script');
+        tag2.src = 'https://quge5.com/88/tag.min.js';
+        tag2.setAttribute('data-zone', '307457');
+        tag2.setAttribute('data-cfasync', 'false');
+        tag2.async = true;
+        document.head.appendChild(tag2);
       }
     } catch (e) {}
   });
