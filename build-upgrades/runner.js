@@ -63,6 +63,7 @@ function generateHtml(page) {
     "url": canonicalUrl,
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
     "description": page.metaDescription,
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "creator": { "@type": "Organization", "name": "AIO Calculator" }

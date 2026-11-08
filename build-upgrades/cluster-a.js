@@ -7,8 +7,8 @@ export const clusterA = [
     dataDefaults: '{"steps":10000,"heightCm":178,"weightKg":79.4,"gender":"male"}',
     categoryName: 'Fitness and Health Calculators',
     categoryUrl: '/fitness-health-calculators/',
-    pageTitle: 'Steps to Km Converter: Instant Stride Chart & 10k [2026]',
-    metaDescription: 'Convert 1,000 to 50,000 steps into exact kilometers and miles instantly. Includes custom stride-length presets and calorie burn estimates. Calculate now.',
+    pageTitle: 'Steps to Km Converter (Instant Stride & 10k Steps) [2026]',
+    metaDescription: 'Convert 1,000 to 50,000 steps into exact kilometers and miles instantly. Includes stride length calculator and calorie burn chart. Free, no sign-up.',
     h1: 'Steps to Km Converter',
     capsuleText: 'To convert steps to km, multiply your total step count by your average stride length in meters and divide by 1,000. For an average adult stride of 0.762 meters, 10,000 steps equals 7.62 kilometers (4.73 miles) and 1,000 steps equals 0.76 kilometers (0.47 miles).',
     firstViewportCta: 'Convert your walking or running steps to kilometers instantly above, or reference our complete stride-length conversion tables below.',
@@ -126,6 +126,13 @@ export const clusterA = [
             <td>530 to 640 kcal</td>
           </tr>
           <tr>
+            <td><strong>15,000 steps</strong></td>
+            <td>11.43 km</td>
+            <td>7.10 miles</td>
+            <td>2 hours 17 minutes</td>
+            <td>570 to 690 kcal</td>
+          </tr>
+          <tr>
             <td><strong>17,000 steps</strong></td>
             <td>12.95 km</td>
             <td>8.05 miles</td>
@@ -182,6 +189,7 @@ export const clusterA = [
     <h2>Scientific Standards and Cardiovascular Step Milestones</h2>
     <p>While the popular 10,000 steps target originated as a marketing campaign for the 1965 Japanese pedometer Manpo-kei (meaning 10,000-steps meter), clinical epidemiological studies validate that significant cardiovascular disease risk reduction occurs well before reaching 10,000 steps.</p>
     <p>Comprehensive meta-analyses published in The Lancet Public Health and JAMA demonstrate that for adults aged 60 and older, all-cause mortality risk plateaus between 6,000 and 8,000 steps per day (roughly 4.5 to 6.0 kilometers). For adults under age 60, mortality benefits continue to accrue up to 8,000 to 10,000 steps daily (approximately 6.0 to 7.6 kilometers). Increasing daily volume from a sedentary baseline of 3,500 steps to 7,000 steps cuts premature mortality risk by approximately 50 percent.</p>
+    <p>To accurately balance your ambulatory expenditure with nutritional intake, track your energy deficit using our <a href="/calorie-intake-deficit-tracker/">Calorie Intake / Deficit Tracker</a>. If your daily regimen incorporates structured cardio drills, weight lifting, or interval training alongside walking, measure your complete exertion using our <a href="/fitness-workout-calculator/">Fitness and Workout Calculator</a>.</p>
 
     <h2>Three Practical Step Conversion Scenarios</h2>
     <div class="scenarios-grid" style="display: grid; gap: 1.5rem; margin-top: 1rem;">
