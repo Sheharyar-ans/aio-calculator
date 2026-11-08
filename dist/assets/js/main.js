@@ -168,5 +168,26 @@
         window.location.href = mailtoUrl;
       });
     }
+
+    // 5. Monetag Ads Integration (Zone 12217426)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .catch(function (err) {
+            console.warn('Monetag SW registration note:', err);
+          });
+      });
+    }
+
+    // Monetag In-Page / Push Ad Tag Loader
+    try {
+      if (!document.querySelector('script[src*="5gvci.com"]')) {
+        var monetagScript = document.createElement('script');
+        monetagScript.src = 'https://5gvci.com/act/files/tag.min.js?z=12217426';
+        monetagScript.async = true;
+        monetagScript.setAttribute('data-cfasync', 'false');
+        document.head.appendChild(monetagScript);
+      }
+    } catch (e) {}
   });
 })();
