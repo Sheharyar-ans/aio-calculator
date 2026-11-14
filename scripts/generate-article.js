@@ -113,6 +113,7 @@ const htmlContent = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <meta name="theme-color" content="#2563eb">
 <meta name="application-name" content="AIO Calculator">
 <meta name="apple-mobile-web-app-title" content="AIO Calculator">
+<meta name="google-site-verification" content="ZD4Hn5yvdW1xyfd9y_0wFjEdCKq_64SfbTDBXfrv1uM">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><!-- OpenGraph --><meta property="og:site_name" content="AIO Calculator"><meta property="og:title" content="${pageTitle}"><meta property="og:description" content="${metaDescription}"><meta property="og:url" content="${canonicalUrl}"><meta property="og:type" content="article">
 <meta property="og:image" content="https://images.pexels.com/photos/4397840/pexels-photo-4397840.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&fit=crop">
 <meta property="og:image:width" content="1200">
